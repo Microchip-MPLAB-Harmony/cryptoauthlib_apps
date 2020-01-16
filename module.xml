@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module name="CryptoAuthLib Applications" id="f20b2a4c-5d54-4cab-acef-c48b994b659e">
+    <ConfigRoot path="config/module.py"/>
+</Module>

@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <Configurator>
+    <Name dnOrder="0" value="pic32mz_ef_curiosity_2"/>
+    <Processor dnOrder="1" value="PIC32MZ2048EFM144"/>
+    <Harmony dnOrder="2" path="../../.."/>
+    <Manifest dnOrder="3">
+      <Files dnOrder="0">
+        <File dnOrder="0">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">ATECC608A_0.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9739CFA4A4D208EA9A7CDA0456FF1D2C</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9739CFA4A4D208EA9A7CDA0456FF1D2C</UserChecksum>
+        </File>
+        <File dnOrder="1">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">91F986C16A5CD1FD987BEEAEAE035FD8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">91F986C16A5CD1FD987BEEAEAE035FD8</UserChecksum>
+        </File>
+        <File dnOrder="2">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_aes.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">B4462C50988FF3E48E4B976A9602EFA2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B4462C50988FF3E48E4B976A9602EFA2</UserChecksum>
+        </File>
+        <File dnOrder="3">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_aes_cbc.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">EFD4BBA8CF9C82A8A5AD49EF0911AFC6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">EFD4BBA8CF9C82A8A5AD49EF0911AFC6</UserChecksum>
+        </File>
+        <File dnOrder="4">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_aes_cmac.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">D6A061F82A3A363126DEE4CB2AFEB2A3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D6A061F82A3A363126DEE4CB2AFEB2A3</UserChecksum>
+        </File>
+        <File dnOrder="5">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_aes_ctr.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">DC576D0F6B1B1E57DA5973589B90FCCD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DC576D0F6B1B1E57DA5973589B90FCCD</UserChecksum>
+        </File>
+        <File dnOrder="6">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_aes_gcm.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8571DE6214F6E5217E4A792CCB2A295F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8571DE6214F6E5217E4A792CCB2A295F</UserChecksum>
+        </File>
+        <File dnOrder="7">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_checkmac.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">40184736BF90F71D7F26CD7CA7F9416D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">40184736BF90F71D7F26CD7CA7F9416D</UserChecksum>
+        </File>
+        <File dnOrder="8">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_counter.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">D2C46255E89F6BEE2E37AE3EB76EA6C2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D2C46255E89F6BEE2E37AE3EB76EA6C2</UserChecksum>
+        </File>
+        <File dnOrder="9">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_derivekey.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">7DC28FB5ECB4816490C8F4181DB3B267</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7DC28FB5ECB4816490C8F4181DB3B267</UserChecksum>
+        </File>
+        <File dnOrder="10">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_ecdh.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">860706FD06E6AED66E4059A7C1EA0AFA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">860706FD06E6AED66E4059A7C1EA0AFA</UserChecksum>
+        </File>
+        <File dnOrder="11">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_gendig.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">A194C78718DA58145644432BAB9F16EB</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A194C78718DA58145644432BAB9F16EB</UserChecksum>
+        </File>
+        <File dnOrder="12">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_genkey.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">64DE885A7E383135F952AB6B3870DDA7</GeneratedChecksum>
+          <UserChecksum dnOrder="5">64DE885A7E383135F952AB6B3870DDA7</UserChecksum>
+        </File>
+        <File dnOrder="13">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_hmac.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">623A0201825EC6895525A602C35D565F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">623A0201825EC6895525A602C35D565F</UserChecksum>
+        </File>
+        <File dnOrder="14">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_info.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">CBF1C35007705C50827F5BEE39ADCDA8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CBF1C35007705C50827F5BEE39ADCDA8</UserChecksum>
+        </File>
+        <File dnOrder="15">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_kdf.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">CBF11DF7C7CD0F9FCB0CA8E5A1D71338</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CBF11DF7C7CD0F9FCB0CA8E5A1D71338</UserChecksum>
+        </File>
+        <File dnOrder="16">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_lock.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">F77A626087A3E8C402F775247728ECC2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F77A626087A3E8C402F775247728ECC2</UserChecksum>
+        </File>
+        <File dnOrder="17">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_mac.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E97A9C76EE1908BFEC13D6F18FD659E1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E97A9C76EE1908BFEC13D6F18FD659E1</UserChecksum>
+        </File>
+        <File dnOrder="18">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_nonce.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">933382B910FB1106CAB06EE649BF1649</GeneratedChecksum>
+          <UserChecksum dnOrder="5">933382B910FB1106CAB06EE649BF1649</UserChecksum>
+        </File>
+        <File dnOrder="19">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_privwrite.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">80BC5677D3E074663C5FC036CD7207BA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">80BC5677D3E074663C5FC036CD7207BA</UserChecksum>
+        </File>
+        <File dnOrder="20">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_random.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">FF9942A5D2620041152ECA4D74C98FB1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">FF9942A5D2620041152ECA4D74C98FB1</UserChecksum>
+        </File>
+        <File dnOrder="21">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_read.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9236F69C5E791B12F77514058347F50C</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9236F69C5E791B12F77514058347F50C</UserChecksum>
+        </File>
+        <File dnOrder="22">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_secureboot.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">022D9F3703461B909D36EDCCE112C311</GeneratedChecksum>
+          <UserChecksum dnOrder="5">022D9F3703461B909D36EDCCE112C311</UserChecksum>
+        </File>
+        <File dnOrder="23">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_selftest.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">D9EBBCB59D1BFAB1117561BB0305880F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D9EBBCB59D1BFAB1117561BB0305880F</UserChecksum>
+        </File>
+        <File dnOrder="24">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_sha.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">BEE72D49D33FDA8EB5B118588395D26B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">BEE72D49D33FDA8EB5B118588395D26B</UserChecksum>
+        </File>
+        <File dnOrder="25">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_sign.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">1C6E20B0D0560ABB1606A2C567B59569</GeneratedChecksum>
+          <UserChecksum dnOrder="5">1C6E20B0D0560ABB1606A2C567B59569</UserChecksum>
+        </File>
+        <File dnOrder="26">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_updateextra.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">49D0AA3BC00668CAC35060A142A44142</GeneratedChecksum>
+          <UserChecksum dnOrder="5">49D0AA3BC00668CAC35060A142A44142</UserChecksum>
+        </File>
+        <File dnOrder="27">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_verify.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">95E3DF0142C900AE366C1313F68C71F3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">95E3DF0142C900AE366C1313F68C71F3</UserChecksum>
+        </File>
+        <File dnOrder="28">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_basic_write.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">DDCBA3BA252DAB72F6394F958D03457B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DDCBA3BA252DAB72F6394F958D03457B</UserChecksum>
+        </File>
+        <File dnOrder="29">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_cfgs.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">F93C20953A7455948A1B2778F100F451</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F93C20953A7455948A1B2778F100F451</UserChecksum>
+        </File>
+        <File dnOrder="30">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_command.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">B46318A5FB837303880A98EA26347D8A</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B46318A5FB837303880A98EA26347D8A</UserChecksum>
+        </File>
+        <File dnOrder="31">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_crypto_sw_ecdsa.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9F9BB0B17E2DD2EC2B9C0F8C108B9D7B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9F9BB0B17E2DD2EC2B9C0F8C108B9D7B</UserChecksum>
+        </File>
+        <File dnOrder="32">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_crypto_sw_rand.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">D7007A10729F916EC9C3CD60C4BC1AC9</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D7007A10729F916EC9C3CD60C4BC1AC9</UserChecksum>
+        </File>
+        <File dnOrder="33">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_crypto_sw_sha1.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">7A072E85012E2078BAA8192F3AED55AA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7A072E85012E2078BAA8192F3AED55AA</UserChecksum>
+        </File>
+        <File dnOrder="34">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_crypto_sw_sha2.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">BCE2DA889EE27A8693BFA4C6A342FAEA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">BCE2DA889EE27A8693BFA4C6A342FAEA</UserChecksum>
+        </File>
+        <File dnOrder="35">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_device.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8684E7230A5021D6718F806AA4B3ED72</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8684E7230A5021D6718F806AA4B3ED72</UserChecksum>
+        </File>
+        <File dnOrder="36">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_execution.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">727B965A0F761D2311B8723B2173D981</GeneratedChecksum>
+          <UserChecksum dnOrder="5">727B965A0F761D2311B8723B2173D981</UserChecksum>
+        </File>
+        <File dnOrder="37">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_hal.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">DA45D34A62F1C2C1FE9CB405B3A8045E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DA45D34A62F1C2C1FE9CB405B3A8045E</UserChecksum>
+        </File>
+        <File dnOrder="38">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_helpers.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">C78FC0DA04A634A7032F8B6600DDE4A4</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C78FC0DA04A634A7032F8B6600DDE4A4</UserChecksum>
+        </File>
+        <File dnOrder="39">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_host.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/host</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/host/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">828CA0CD18C14A7F9FF44C3FED3540D6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">828CA0CD18C14A7F9FF44C3FED3540D6</UserChecksum>
+        </File>
+        <File dnOrder="40">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_iface.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">6AD6F74C5AB71EBD82AFADBFA2F4FFB3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">6AD6F74C5AB71EBD82AFADBFA2F4FFB3</UserChecksum>
+        </File>
+        <File dnOrder="41">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atca_jwt.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/jwt</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/jwt/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">59B8F0780EFD27507E56B02450E12810</GeneratedChecksum>
+          <UserChecksum dnOrder="5">59B8F0780EFD27507E56B02450E12810</UserChecksum>
+        </File>
+        <File dnOrder="42">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_client.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">3A2EF15399C9F36EBA4069DC6AD75E7E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3A2EF15399C9F36EBA4069DC6AD75E7E</UserChecksum>
+        </File>
+        <File dnOrder="43">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_date.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9140C3C54B04665FA09F4F65766CCF20</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9140C3C54B04665FA09F4F65766CCF20</UserChecksum>
+        </File>
+        <File dnOrder="44">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_def.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">1A0AB7B3C551343206F9515C2C8EA9A1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">1A0AB7B3C551343206F9515C2C8EA9A1</UserChecksum>
+        </File>
+        <File dnOrder="45">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_der.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">36594078BFF3F292A1F33A7EE55E3E47</GeneratedChecksum>
+          <UserChecksum dnOrder="5">36594078BFF3F292A1F33A7EE55E3E47</UserChecksum>
+        </File>
+        <File dnOrder="46">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_host_hw.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">73F3B7C0CEB79958C591A9948F43152D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">73F3B7C0CEB79958C591A9948F43152D</UserChecksum>
+        </File>
+        <File dnOrder="47">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_host_sw.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">CC96D767A51423C8C49E39565CF09FA4</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CC96D767A51423C8C49E39565CF09FA4</UserChecksum>
+        </File>
+        <File dnOrder="48">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">atcacert_pem.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">262BA49A166D5F2A7B26906FCAB7F25B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">262BA49A166D5F2A7B26906FCAB7F25B</UserChecksum>
+        </File>
+        <File dnOrder="49">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">exceptions.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/</LogicalPath>
+          <PhysicalPath dnOrder="3">/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">3477C6F788508451FADB8F17D7E78273</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3477C6F788508451FADB8F17D7E78273</UserChecksum>
+        </File>
+        <File dnOrder="50">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">hal_i2c_harmony.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">DD072380453F9741F608A602692468EB</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DD072380453F9741F608A602692468EB</UserChecksum>
+        </File>
+        <File dnOrder="51">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">hal_i2c_harmony_init.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal/</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">63D1CD78914D7EE7425FA372C92B8071</GeneratedChecksum>
+          <UserChecksum dnOrder="5">63D1CD78914D7EE7425FA372C92B8071</UserChecksum>
+        </File>
+        <File dnOrder="52">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">hal_pic32_delay.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal/</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">04C90D6C19C62922CD1201770E617AB4</GeneratedChecksum>
+          <UserChecksum dnOrder="5">04C90D6C19C62922CD1201770E617AB4</UserChecksum>
+        </File>
+        <File dnOrder="53">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">initialization.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/</LogicalPath>
+          <PhysicalPath dnOrder="3">/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">127D4AA871897178173843C1B9B8702F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">127D4AA871897178173843C1B9B8702F</UserChecksum>
+        </File>
+        <File dnOrder="54">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">interrupts.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/</LogicalPath>
+          <PhysicalPath dnOrder="3">/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">19FE760A55E077486B39216253C4CBA5</GeneratedChecksum>
+          <UserChecksum dnOrder="5">19FE760A55E077486B39216253C4CBA5</UserChecksum>
+        </File>
+        <File dnOrder="55">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">main.c</Name>
+          <LogicalPath dnOrder="2"/>
+          <PhysicalPath dnOrder="3">/../../</PhysicalPath>
+          <GeneratedChecksum dnOrder="4"/>
+          <UserChecksum dnOrder="5"/>
+        </File>
+        <File dnOrder="56">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_clk.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/clk/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/clk/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">6F0849B53B20F70D6DFE5D5493B447B3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">6F0849B53B20F70D6DFE5D5493B447B3</UserChecksum>
+        </File>
+        <File dnOrder="57">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_evic.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/evic/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/evic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">570523FF4E005868E5A318F51CCFCB0D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">570523FF4E005868E5A318F51CCFCB0D</UserChecksum>
+        </File>
+        <File dnOrder="58">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_gpio.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/gpio/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/gpio/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E78B285A1E74ACF7ABE945D29255D640</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E78B285A1E74ACF7ABE945D29255D640</UserChecksum>
+        </File>
+        <File dnOrder="59">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_i2c1.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/i2c/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/i2c/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8690A2810A667D4B700B7208DEF40710</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8690A2810A667D4B700B7208DEF40710</UserChecksum>
+        </File>
+        <File dnOrder="60">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_uart6.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/uart/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/uart/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E5CCEF7C048BA9C840D82E6785E56AA1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E5CCEF7C048BA9C840D82E6785E56AA1</UserChecksum>
+        </File>
+        <File dnOrder="61">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">sha1_routines.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto/hashes</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/hashes/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">B6FB082610A56ED96FEF191699A00577</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B6FB082610A56ED96FEF191699A00577</UserChecksum>
+        </File>
+        <File dnOrder="62">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">sha2_routines.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto/hashes</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/hashes/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">C62D135CB1CA037B46DCDACD94A795AA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C62D135CB1CA037B46DCDACD94A795AA</UserChecksum>
+        </File>
+        <File dnOrder="63">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">xc32_monitor.c</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/stdio/</LogicalPath>
+          <PhysicalPath dnOrder="3">/stdio/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">4BBDD52CA72372F7CFF475B7E8B07C73</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4BBDD52CA72372F7CFF475B7E8B07C73</UserChecksum>
+        </File>
+        <File dnOrder="64">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_basic.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">F49F1E5837BB7AB517F11A865A88D365</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F49F1E5837BB7AB517F11A865A88D365</UserChecksum>
+        </File>
+        <File dnOrder="65">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_basic_aes_gcm.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">6D254E2CBC222D7802C5D2359EC92C71</GeneratedChecksum>
+          <UserChecksum dnOrder="5">6D254E2CBC222D7802C5D2359EC92C71</UserChecksum>
+        </File>
+        <File dnOrder="66">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_bool.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">93DB47489716B520278DD19D7D3F8415</GeneratedChecksum>
+          <UserChecksum dnOrder="5">93DB47489716B520278DD19D7D3F8415</UserChecksum>
+        </File>
+        <File dnOrder="67">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_cfgs.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8A8175D1D3EEEE6437EA97029DC9DD9F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8A8175D1D3EEEE6437EA97029DC9DD9F</UserChecksum>
+        </File>
+        <File dnOrder="68">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_command.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">FFD617167436BCED2879367FA04CA15D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">FFD617167436BCED2879367FA04CA15D</UserChecksum>
+        </File>
+        <File dnOrder="69">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_compiler.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">723166599E2B490A0F895EFEF9CE43FC</GeneratedChecksum>
+          <UserChecksum dnOrder="5">723166599E2B490A0F895EFEF9CE43FC</UserChecksum>
+        </File>
+        <File dnOrder="70">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_config.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">5DA4C74BDAE202E34C144ABFB07C5B5E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5DA4C74BDAE202E34C144ABFB07C5B5E</UserChecksum>
+        </File>
+        <File dnOrder="71">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_crypto_sw.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">2A639FE61D84D48FF637146C27589DA7</GeneratedChecksum>
+          <UserChecksum dnOrder="5">2A639FE61D84D48FF637146C27589DA7</UserChecksum>
+        </File>
+        <File dnOrder="72">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_crypto_sw_ecdsa.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">968E9597526F089A5EC086B087351E97</GeneratedChecksum>
+          <UserChecksum dnOrder="5">968E9597526F089A5EC086B087351E97</UserChecksum>
+        </File>
+        <File dnOrder="73">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_crypto_sw_rand.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8E0DDC868DE447D29F815DF725B456FF</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8E0DDC868DE447D29F815DF725B456FF</UserChecksum>
+        </File>
+        <File dnOrder="74">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_crypto_sw_sha1.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">C589C8E6EE306545CC850BD76C04AF75</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C589C8E6EE306545CC850BD76C04AF75</UserChecksum>
+        </File>
+        <File dnOrder="75">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_crypto_sw_sha2.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">436D90AACF12FB5BB1803A3C2CCD87E4</GeneratedChecksum>
+          <UserChecksum dnOrder="5">436D90AACF12FB5BB1803A3C2CCD87E4</UserChecksum>
+        </File>
+        <File dnOrder="76">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_device.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">3BFB6D29B7403BEB2F9CA673964F4EAC</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3BFB6D29B7403BEB2F9CA673964F4EAC</UserChecksum>
+        </File>
+        <File dnOrder="77">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_devtypes.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9F0F2B2BF21A68D1912BA41A0D82A4E3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9F0F2B2BF21A68D1912BA41A0D82A4E3</UserChecksum>
+        </File>
+        <File dnOrder="78">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_execution.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">862C50D68490328A0999BBD97E338FCB</GeneratedChecksum>
+          <UserChecksum dnOrder="5">862C50D68490328A0999BBD97E338FCB</UserChecksum>
+        </File>
+        <File dnOrder="79">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_hal.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8C26278BE11829E081BBA8B53D0A2744</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8C26278BE11829E081BBA8B53D0A2744</UserChecksum>
+        </File>
+        <File dnOrder="80">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_helpers.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/basic</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/basic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E40D8DA567B04A2514EB5D05D1CD6B79</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E40D8DA567B04A2514EB5D05D1CD6B79</UserChecksum>
+        </File>
+        <File dnOrder="81">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_host.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/host</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/host/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8BF64EC2C84423C36499416A7AD9DEC0</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8BF64EC2C84423C36499416A7AD9DEC0</UserChecksum>
+        </File>
+        <File dnOrder="82">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_iface.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">0797FE8DBBD4AE8C1BB9AB3626A9708E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">0797FE8DBBD4AE8C1BB9AB3626A9708E</UserChecksum>
+        </File>
+        <File dnOrder="83">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_jwt.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/jwt</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/jwt/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">3FA8387D89C1B62EAD5B8C34024BDBD7</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3FA8387D89C1B62EAD5B8C34024BDBD7</UserChecksum>
+        </File>
+        <File dnOrder="84">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_start_config.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">020C76CD6D5D9555C514427B9B3EAC49</GeneratedChecksum>
+          <UserChecksum dnOrder="5">020C76CD6D5D9555C514427B9B3EAC49</UserChecksum>
+        </File>
+        <File dnOrder="85">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_start_iface.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/hal</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">020C76CD6D5D9555C514427B9B3EAC49</GeneratedChecksum>
+          <UserChecksum dnOrder="5">020C76CD6D5D9555C514427B9B3EAC49</UserChecksum>
+        </File>
+        <File dnOrder="86">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_status.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">AB644F31444C3504EEA618BFA59716C2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">AB644F31444C3504EEA618BFA59716C2</UserChecksum>
+        </File>
+        <File dnOrder="87">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atca_version.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8878BE16F82957CC5D605916383AC665</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8878BE16F82957CC5D605916383AC665</UserChecksum>
+        </File>
+        <File dnOrder="88">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">ACA2B6331F5BB81EAB975F4E7D3CCCC9</GeneratedChecksum>
+          <UserChecksum dnOrder="5">ACA2B6331F5BB81EAB975F4E7D3CCCC9</UserChecksum>
+        </File>
+        <File dnOrder="89">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_client.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">C51BBCE1FF77149BD11632E9A895A795</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C51BBCE1FF77149BD11632E9A895A795</UserChecksum>
+        </File>
+        <File dnOrder="90">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_date.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E46907AF96724265D4AF4493AEE181D8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E46907AF96724265D4AF4493AEE181D8</UserChecksum>
+        </File>
+        <File dnOrder="91">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_def.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">024C44E9D61724EBBCEE5BDB538129B9</GeneratedChecksum>
+          <UserChecksum dnOrder="5">024C44E9D61724EBBCEE5BDB538129B9</UserChecksum>
+        </File>
+        <File dnOrder="92">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_der.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">92C49F0A55EAE77F08391F544DFC10BF</GeneratedChecksum>
+          <UserChecksum dnOrder="5">92C49F0A55EAE77F08391F544DFC10BF</UserChecksum>
+        </File>
+        <File dnOrder="93">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_host_hw.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">5DE6B4808DC7D0698C44DEB0A35B6E31</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5DE6B4808DC7D0698C44DEB0A35B6E31</UserChecksum>
+        </File>
+        <File dnOrder="94">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_host_sw.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">83CA133BF9E97275F51DF85A4D7268A1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">83CA133BF9E97275F51DF85A4D7268A1</UserChecksum>
+        </File>
+        <File dnOrder="95">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">atcacert_pem.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/atcacert</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">DA90649E3E59B24ECC31279EE45DA75F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DA90649E3E59B24ECC31279EE45DA75F</UserChecksum>
+        </File>
+        <File dnOrder="96">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">cryptoauthlib.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">49618FE6109FA32E5CBF00C20E1F5486</GeneratedChecksum>
+          <UserChecksum dnOrder="5">49618FE6109FA32E5CBF00C20E1F5486</UserChecksum>
+        </File>
+        <File dnOrder="97">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">definitions.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/</LogicalPath>
+          <PhysicalPath dnOrder="3">/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">E4D071F702C9E34F4545EF6CD5202D24</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E4D071F702C9E34F4545EF6CD5202D24</UserChecksum>
+        </File>
+        <File dnOrder="98">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">device.h</Name>
+          <LogicalPath dnOrder="2">packs/PIC32MZ2048EFM144_DFP/</LogicalPath>
+          <PhysicalPath dnOrder="3">/../../packs/PIC32MZ2048EFM144_DFP/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">5D5C52527AB1435153DB9B50ADE6B79D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5D5C52527AB1435153DB9B50ADE6B79D</UserChecksum>
+        </File>
+        <File dnOrder="99">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_clk.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/clk/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/clk/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">7066CC390335CF75126E2A50C46E3BDD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7066CC390335CF75126E2A50C46E3BDD</UserChecksum>
+        </File>
+        <File dnOrder="100">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_evic.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/evic/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/evic/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">B38028A617FDD4D90B80660771629645</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B38028A617FDD4D90B80660771629645</UserChecksum>
+        </File>
+        <File dnOrder="101">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_gpio.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/gpio/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/gpio/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">C3EB5D6856249F16760FC8D1DA99FE36</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C3EB5D6856249F16760FC8D1DA99FE36</UserChecksum>
+        </File>
+        <File dnOrder="102">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_i2c1.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/i2c/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/i2c/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">D9FABFEA435EFF1F4FD9B61917E54CD1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D9FABFEA435EFF1F4FD9B61917E54CD1</UserChecksum>
+        </File>
+        <File dnOrder="103">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_i2c_master.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/i2c/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/i2c/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">0CE7018D4B951DF14C45D3AC2E8F9B19</GeneratedChecksum>
+          <UserChecksum dnOrder="5">0CE7018D4B951DF14C45D3AC2E8F9B19</UserChecksum>
+        </File>
+        <File dnOrder="104">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_uart6.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/uart/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/uart/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">4048988B3590F67C7F4767F4CE7CA811</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4048988B3590F67C7F4767F4CE7CA811</UserChecksum>
+        </File>
+        <File dnOrder="105">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_uart_common.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/peripheral/uart/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/uart/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">A5B40F859F555A11C166EBEE10E8B5CD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A5B40F859F555A11C166EBEE10E8B5CD</UserChecksum>
+        </File>
+        <File dnOrder="106">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">sha1_routines.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto/hashes</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/hashes/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">8362C1AD4197CABEBF8D248BBA630F63</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8362C1AD4197CABEBF8D248BBA630F63</UserChecksum>
+        </File>
+        <File dnOrder="107">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">sha2_routines.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto/hashes</LogicalPath>
+          <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/hashes/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">CD3AD6E7663DA02AC67D10F21FB99F88</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CD3AD6E7663DA02AC67D10F21FB99F88</UserChecksum>
+        </File>
+        <File dnOrder="108">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">toolchain_specifics.h</Name>
+          <LogicalPath dnOrder="2">config/pic32mz_ef_curiosity_2/</LogicalPath>
+          <PhysicalPath dnOrder="3">/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">F7924D60AC5CC08996AB2DAEC62D3C54</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F7924D60AC5CC08996AB2DAEC62D3C54</UserChecksum>
+        </File>
+      </Files>
+      <Settings dnOrder="1">
+        <Setting append="true" category="C32" delimiter=";" dnOrder="0" key="extra-include-directories" value="../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib;../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib/config;"/>
+        <Setting append="true" category="C32" delimiter=";" dnOrder="1" key="extra-include-directories" value="../src;../src/config/pic32mz_ef_curiosity_2;../src/packs/PIC32MZ2048EFM144_DFP;;../src/mips"/>
+        <Setting append="true" category="C32" delimiter=";" dnOrder="2" key="preprocessor-macros" value="ATCA_INCLUDE_CONFIG"/>
+        <Setting category="C32-LD" dnOrder="3" key="heap-size" value="512"/>
+        <Setting category="C32-LD" dnOrder="4" key="no-device-startup-code" value="true"/>
+        <Setting category="C32-LD" dnOrder="5" key="preprocessor-macros" value=""/>
+      </Settings>
+    </Manifest>
+    <Settings dnOrder="4">
+      <Setting dnOrder="0" key="CMSISPath" value=".\dev_packs\arm\CMSIS\5.5.1"/>
+      <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32MZ_EF_DFP\1.0.39\atdf\PIC32MZ2048EFM144.atdf"/>
+      <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
+      <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
+      <Setting dnOrder="4" key="MERGE_STRATEGY" value="USER_ALL"/>
+      <Setting dnOrder="5" key="PackageFilter" value="audio;bootloader;bsp;bt;core;crypto;cryptoauthlib;cryptoauthlib_apps;csp;gfx;gfx_apps;micrium_ucos3;motor_control;net;touch;usb;wireless;"/>
+    </Settings>
+  </Configurator>
+</Configuration>

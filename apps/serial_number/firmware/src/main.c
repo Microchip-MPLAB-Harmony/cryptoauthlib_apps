@@ -31,7 +31,8 @@
 
 extern ATCAIfaceCfg atecc608a_0_init_data;
 uint8_t sernum[9];
-
+char displayStr[ATCA_SERIAL_NUM_SIZE * 3];
+size_t displen = sizeof(displayStr);
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
@@ -45,14 +46,15 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
     
-    printf("Starting Cryptoauth Serial Number Example\n");
+    printf("Starting Cryptoauth Serial Number Example\r\n");
     
     status = atcab_init(&atecc608a_0_init_data);
-    printf("atcab_init: %d\n", status);
+    printf("atcab_init: %d\r\n", status);
     if (ATCA_SUCCESS == status)
     {
         status = atcab_read_serial_number(sernum);
-        printf("atcab_read_serial_number: %d\n", status);
+        atcab_bin2hex(sernum, 9, displayStr, &displen);
+        printf("Serial Number of the Device: %s\r\n\n", displayStr);
     }
     
     atcab_release();

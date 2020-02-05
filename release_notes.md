@@ -5,9 +5,10 @@
 
 ## CryptoAuthLib Applications Release v3.1.0
 ### New Features
-    * Initial deployment of Harmony 3 support
 
-- **Development kit and demo application support** - The following table provides number of peripheral library application available for different development kits
+* Initial deployment of Harmony 3 support
+
+* The following table provides number of peripheral library application available for different development kits
 
     | Development Kits                                                                                                                               | Number of applications |
     | ---                                                                                                                                            | --- |

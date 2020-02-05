@@ -17,17 +17,13 @@ This repository contains the MPLAB® Harmony 3 CryptoAuthLib Applications soluti
 
 - [Release Notes](./release_notes.md)
 - [MPLAB® Harmony License](mplab_harmony_license.md)
-- [MPLAB® Harmony 3 CryptoAuthLib Applications Wiki](https://github.com/Microchip-MPLAB-Harmony/cryptoauthlib_apps/wiki)
-- [MPLAB® Harmony 3 CryptoAuthLib Applications API Help](https://microchip-mplab-harmony.github.io/cryptoauthlib_apps)
+- [MPLAB® Harmony 3 CryptoAuthLib API Help](https://microchiptech.github.io/cryptoauthlib/)
 
 # Contents Summary
 
 | Folder     | Description                                               |
 | ---        | ---                                                       |
 | apps        | Example applications for CryptoAuthLib Applications library components      |
-| config     | CryptoAuthLib Applications module configuration file                        |
-| docs       | CryptoAuthLib Applications library help documentation                       |
-| drivers    | Driver/Firmware files for different products              |
 
 
 ____

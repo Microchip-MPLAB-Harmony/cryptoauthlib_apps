@@ -31,8 +31,6 @@
 #include "atcacert/atcacert_host_hw.h"
 #include "tng/tng_atca.h"
 #include "tng/tng_atcacert_client.h"
-#include "tng/tngtls_cert_def_1_signer.h"
-#include "tng/tnglora_cert_def_1_signer.h"
 
 extern ATCAIfaceCfg atecc608a_0_init_data;
 
@@ -64,29 +62,14 @@ ATCA_STATUS print_cert_pem_format(uint8_t* g_cert, size_t g_cert_size)
 
 ATCA_STATUS tng_get_signer_cert_def(const atcacert_def_t** cert_def)
 {
-    ATCA_STATUS status;
-    tng_type_t type;
+    ATCA_STATUS status = tng_get_device_cert_def(cert_def);
 
-    if(cert_def == NULL)
+    if(ATCA_SUCCESS == status)
     {
-        return ATCA_BAD_PARAM;
+        *cert_def = (*cert_def)->ca_cert_def;
     }
 
-    if((status = tng_get_type(&type)) != ATCA_SUCCESS)
-    {
-        return status;
-    }
-
-    if(type == TNGTYPE_LORA)
-    {
-        *cert_def = &g_tnglora_cert_def_1_signer;
-    }
-    else
-    {
-        *cert_def = &g_tngtls_cert_def_1_signer;
-    }
-
-    return ATCA_SUCCESS;
+    return status;
 }
 
 ATCA_STATUS verify_chain_cert()
@@ -104,10 +87,10 @@ ATCA_STATUS verify_chain_cert()
 
     if((status = atcacert_verify_cert_hw(cert_def, g_signer_cert, g_signer_cert_size, public_key)) != ATCACERT_E_SUCCESS)
     {
-        printf("Signer certificate is not verified against Signer CA, failed with an error %d\r\n",status);
+        printf("Signer certificate is not verified against Root CA, failed with an error %d\r\n",status);
         return status;
     }
-    printf("Signer Certificate is validated against Signer CA certificate\r\n");
+    printf("Signer Certificate is validated against Root CA certificate\r\n");
 
     tng_atcacert_signer_public_key(public_key, g_signer_cert);
 

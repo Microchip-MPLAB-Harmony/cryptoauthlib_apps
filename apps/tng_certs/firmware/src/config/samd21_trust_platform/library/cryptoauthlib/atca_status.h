@@ -3,7 +3,7 @@
  *
  * \brief  Microchip Crypto Auth status codes
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -31,7 +31,6 @@
 
 #include <stdint.h>
 #include "atca_bool.h"
-#include "atca_config.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -77,7 +76,7 @@ typedef enum
     ATCA_NO_DEVICES             = 0xF9, //!< For protocols that support device discovery (kit protocol), no devices were found
     ATCA_HEALTH_TEST_ERROR      = 0xFA, //!< random number generator health test error
     ATCA_ALLOC_FAILURE          = 0xFB, //!< Couldn't allocate required memory
-	ATCA_USE_FLAGS_CONSUMED     = 0xFC, //!< Use flags on the device indicates its consumed fully
+    ATCA_USE_FLAGS_CONSUMED     = 0xFC, //!< Use flags on the device indicates its consumed fully
 } ATCA_STATUS;
 
 #ifdef __cplusplus

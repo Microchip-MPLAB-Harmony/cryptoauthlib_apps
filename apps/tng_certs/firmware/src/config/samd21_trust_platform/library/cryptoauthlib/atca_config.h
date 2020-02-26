@@ -12,7 +12,6 @@
 
 /** Include Device Support Options */
 #define ATCA_ATECC608A_SUPPORT
-#define ATCA_CRYPTOAUTHLIB_SUPPORT
 
 
 /* Polling Configuration Options  */
@@ -65,5 +64,10 @@ typedef struct atca_plib_api
 } atca_plib_api_t;
 
 extern atca_plib_api_t sercom2_plib_api;
+
+/** Define certificate templates to be supported. */
+#define ATCA_TNGTLS_SUPPORT
+#define ATCA_TNG_LEGACY_SUPPORT
+
 
 #endif // ATCA_CONFIG_H

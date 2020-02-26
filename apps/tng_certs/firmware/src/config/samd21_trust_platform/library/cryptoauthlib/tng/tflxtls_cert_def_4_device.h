@@ -1,6 +1,6 @@
 /**
  * \file
- * \brief Software implementation of the SHA1 algorithm.
+ * \brief TNG TLS device certificate definition
  *
  * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
@@ -25,70 +25,23 @@
  * THIS SOFTWARE.
  */
 
-#ifndef __SHA1_ROUTINES_DOT_H__
-#define __SHA1_ROUTINES_DOT_H__
+#ifndef TFLXTLS_CERT_DEF_4_DEVICE_H
+#define TFLXTLS_CERT_DEF_4_DEVICE_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stddef.h>
-
-#ifdef WIN32
-#include <windows.h>
-#include <assert.h>
-#endif
-
-#include <stdint.h>
-
-
-#ifndef U8
-#define U8 uint8_t
-#endif
-
-#ifndef U16
-#define U16 uint16_t
-#endif
-
-#ifndef U32
-#define U32 uint32_t
-#endif
-
-
-#ifndef memcpy_P
-#define memcpy_P memmove
-#endif
-
-#ifndef strcpy_P
-#define strcpy_P strcpy
-#endif
-
-#ifndef _WDRESET
-#define _WDRESET()
-#define _NOP()
-#endif
+#include "atcacert/atcacert_def.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef struct
-{
-    U32 h[20 / 4];      // Ensure it's word aligned
-    U32 buf[64 / 4];    // Ensure it's word aligned
-    U32 byteCount;
-    U32 byteCountHi;
-} CL_HashContext;
-
-#define leftRotate(x, n) (x) = (((x) << (n)) | ((x) >> (32 - (n))))
-
-void shaEngine(U32 *buf, U32 *h);
-void CL_hashInit(CL_HashContext *ctx);
-void CL_hashUpdate(CL_HashContext *ctx, const U8 *src, int nbytes);
-void CL_hashFinal(CL_HashContext *ctx, U8 *dest);
-void CL_hash(U8 *msg, int msgBytes, U8 *dest);
+/** \ingroup tng_
+ * @{
+ */
+extern const atcacert_def_t g_tflxtls_cert_def_4_device;
+/** @} */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // __SHA1_ROUTINES_DOT_H__
-
+#endif

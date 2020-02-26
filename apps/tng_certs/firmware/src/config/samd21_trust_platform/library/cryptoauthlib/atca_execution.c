@@ -8,7 +8,7 @@
  * however, by defining the ATCA_NO_POLL symbol the code will instead wait an
  * estimated max execution time before requesting the result.
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *

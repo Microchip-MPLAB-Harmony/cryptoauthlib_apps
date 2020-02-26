@@ -2,7 +2,7 @@
  * \file
  * \brief low-level HAL - methods used to setup indirection to physical layer interface
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *

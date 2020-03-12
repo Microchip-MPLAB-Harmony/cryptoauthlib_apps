@@ -29,7 +29,14 @@
 #include "definitions.h"                // SYS function prototypes
 #include "cryptoauthlib.h"
 
+#if defined ATCA_ATECC608A_SUPPORT
 extern ATCAIfaceCfg atecc608a_0_init_data;
+ATCAIfaceCfg* device_cfg = &atecc608a_0_init_data;
+#elif defined ATCA_ATECC508A_SUPPORT
+extern ATCAIfaceCfg atecc508a_0_init_data;
+ATCAIfaceCfg* device_cfg = &atecc508a_0_init_data;
+#endif
+
 uint8_t sernum[9];
 char displayStr[ATCA_SERIAL_NUM_SIZE * 3];
 size_t displen = sizeof(displayStr);
@@ -48,7 +55,7 @@ int main ( void )
     
     printf("Starting Cryptoauth Serial Number Example\r\n");
     
-    status = atcab_init(&atecc608a_0_init_data);
+    status = atcab_init(device_cfg);
     printf("atcab_init: %d\r\n", status);
     if (ATCA_SUCCESS == status)
     {

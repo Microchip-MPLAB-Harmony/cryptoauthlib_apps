@@ -29,10 +29,10 @@
 #include "definitions.h"                // SYS function prototypes
 #include "cryptoauthlib.h"
 
-#if defined ATCA_ATECC608A_SUPPORT
+#if defined (ATCA_ATECC608A_SUPPORT)
 extern ATCAIfaceCfg atecc608a_0_init_data;
 ATCAIfaceCfg* device_cfg = &atecc608a_0_init_data;
-#elif defined ATCA_ATECC508A_SUPPORT
+#elif defined (ATCA_ATECC508A_SUPPORT)
 extern ATCAIfaceCfg atecc508a_0_init_data;
 ATCAIfaceCfg* device_cfg = &atecc508a_0_init_data;
 #endif

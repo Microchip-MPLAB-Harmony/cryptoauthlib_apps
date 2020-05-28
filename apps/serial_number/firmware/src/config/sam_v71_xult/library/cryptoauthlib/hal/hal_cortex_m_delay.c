@@ -30,6 +30,7 @@
  * \asf_license_stop
  *
  */
+
 #include <stdint.h>
 
 #ifndef CONF_CPU_FREQUENCY
@@ -58,22 +59,22 @@
  */
 static inline uint32_t _get_cycles_for_us_internal(const uint32_t us, const uint32_t freq, const uint8_t power)
 {
-	switch (power) {
-	case 9:
-		return (us * (freq / 1000000) - 1) + 1;
-	case 8:
-		return (us * (freq / 100000) - 1) / 10 + 1;
-	case 7:
-		return (us * (freq / 10000) - 1) / 100 + 1;
-	case 6:
-		return (us * (freq / 1000) - 1) / 1000 + 1;
-	case 5:
-		return (us * (freq / 100) - 1) / 10000 + 1;
-	case 4:
-		return (us * (freq / 10) - 1) / 100000 + 1;
-	default:
-		return (us * freq - 1) / 1000000 + 1;
-	}
+    switch (power) {
+    case 9:
+        return (us * (freq / 1000000) - 1) + 1;
+    case 8:
+        return (us * (freq / 100000) - 1) / 10 + 1;
+    case 7:
+        return (us * (freq / 10000) - 1) / 100 + 1;
+    case 6:
+        return (us * (freq / 1000) - 1) / 1000 + 1;
+    case 5:
+        return (us * (freq / 100) - 1) / 10000 + 1;
+    case 4:
+        return (us * (freq / 10) - 1) / 100000 + 1;
+    default:
+        return (us * freq - 1) / 1000000 + 1;
+    }
 }
 
 /**
@@ -89,22 +90,22 @@ uint32_t _get_cycles_for_us(const uint32_t us)
  */
 static inline uint32_t _get_cycles_for_ms_internal(const uint32_t ms, const uint32_t freq, const uint8_t power)
 {
-	switch (power) {
-	case 9:
-		return (ms * (freq / 1000000)) * 1000;
-	case 8:
-		return (ms * (freq / 100000)) * 100;
-	case 7:
-		return (ms * (freq / 10000)) * 10;
-	case 6:
-		return (ms * (freq / 1000));
-	case 5:
-		return (ms * (freq / 100) - 1) / 10 + 1;
-	case 4:
-		return (ms * (freq / 10) - 1) / 100 + 1;
-	default:
-		return (ms * freq - 1) / 1000 + 1;
-	}
+    switch (power) {
+    case 9:
+        return (ms * (freq / 1000000)) * 1000;
+    case 8:
+        return (ms * (freq / 100000)) * 100;
+    case 7:
+        return (ms * (freq / 10000)) * 10;
+    case 6:
+        return (ms * (freq / 1000));
+    case 5:
+        return (ms * (freq / 100) - 1) / 10 + 1;
+    case 4:
+        return (ms * (freq / 10) - 1) / 100 + 1;
+    default:
+        return (ms * freq - 1) / 1000 + 1;
+    }
 }
 
 /**
@@ -120,23 +121,27 @@ uint32_t _get_cycles_for_ms(const uint32_t ms)
  */
 void _delay_cycles(void *const hw, uint32_t cycles)
 {
+    /*lint -esym(718, __asm) */
 #ifndef _UNIT_TEST_
-	(void)hw;
-	(void)cycles;
+    (void)hw;
+    (void)cycles;
 #if defined __GNUC__
-	__asm(".syntax unified\n"
-	      "__delay:\n"
-	      "subs r1, r1, #1\n"
-	      "bhi __delay\n"
-	      ".syntax divided");
+    /*lint -e{718} */
+    __asm(".syntax unified\n"
+          "__delay:\n"
+          "subs r1, r1, #1\n"
+          "bhi __delay\n"
+          ".syntax divided");
 #elif defined __CC_ARM
-	__asm("__delay:\n"
-	      "subs cycles, cycles, #1\n"
-	      "bhi __delay\n");
+    /*lint -e{718} */
+    __asm("__delay:\n"
+          "subs cycles, cycles, #1\n"
+          "bhi __delay\n");
 #elif defined __ICCARM__
-	__asm("__delay:\n"
-	      "subs r1, r1, #1\n"
-	      "bhi __delay\n");
+    /*lint -e{718} */
+    __asm("__delay:\n"
+          "subs r1, r1, #1\n"
+          "bhi __delay\n");
 #endif
 #endif
 }

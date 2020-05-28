@@ -4,58 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="f2" displayName="config" projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_v71_xult" projectFiles="true">
           <logicalFolder name="f2" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
-              <logicalFolder name="f1" displayName="atcacert" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_client.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_date.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_def.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_der.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_hw.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_sw.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_pem.h</itemPath>
-              </logicalFolder>
-              <logicalFolder name="f2" displayName="basic" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes_gcm.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_helpers.h</itemPath>
-              </logicalFolder>
-              <logicalFolder name="f3" displayName="crypto" projectFiles="true">
-                <logicalFolder name="f1" displayName="hashes" projectFiles="true">
-                  <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha1_routines.h</itemPath>
-                  <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha2_routines.h</itemPath>
-                </logicalFolder>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_rand.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.h</itemPath>
-              </logicalFolder>
-              <logicalFolder name="f4" displayName="hal" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_hal.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_start_config.h</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_start_iface.h</itemPath>
-              </logicalFolder>
-              <logicalFolder name="f5" displayName="host" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/host/atca_host.h</itemPath>
-              </logicalFolder>
-              <logicalFolder name="f6" displayName="jwt" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/jwt/atca_jwt.h</itemPath>
-              </logicalFolder>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_bool.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_cfgs.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_command.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_compiler.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_device.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_devtypes.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_execution.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_iface.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_status.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_version.h</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/cryptoauthlib.h</itemPath>
               <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_config.h</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -86,7 +38,7 @@
           <itemPath>../src/config/sam_v71_xult/definitions.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <logicalFolder name="f1" displayName="packs" projectFiles="true">
+      <logicalFolder name="f2" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAMV71Q21B_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAMV71Q21B_DFP/component/acc.h</itemPath>
@@ -137,23 +89,15 @@
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
             <logicalFolder name="f1" displayName="Core" projectFiles="true">
               <logicalFolder name="f1" displayName="Include" projectFiles="true">
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/tz_context.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-            <logicalFolder name="f2" displayName="DSP" projectFiles="true">
-              <logicalFolder name="f1" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_common_tables.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_const_structs.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_math.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -171,74 +115,116 @@
         <logicalFolder name="f1" displayName="sam_v71_xult" projectFiles="true">
           <logicalFolder name="f3" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
-              <logicalFolder name="f1" displayName="atcacert" projectFiles="true">
+              <logicalFolder name="f3" displayName="atcacert" projectFiles="true">
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_client.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_client.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_date.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_date.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_def.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_def.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_der.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_der.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_hw.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_hw.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_sw.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_host_sw.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_pem.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atcacert/atcacert_pem.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="f2" displayName="basic" projectFiles="true">
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes_cbc.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes_cmac.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes_ctr.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_aes_gcm.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_checkmac.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_counter.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_derivekey.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_ecdh.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_gendig.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_genkey.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_hmac.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_info.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_kdf.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_lock.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_mac.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_nonce.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_privwrite.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_random.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_read.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_secureboot.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_selftest.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_sha.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_sign.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_updateextra.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_verify.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_basic_write.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/basic/atca_helpers.c</itemPath>
+              <logicalFolder name="f4" displayName="calib" projectFiles="true">
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_aes.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_aes_gcm.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_aes_gcm.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_basic.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_basic.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_checkmac.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_command.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_command.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_counter.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_derivekey.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_ecdh.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_execution.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_execution.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_gendig.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_genkey.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_hmac.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_info.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_kdf.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_lock.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_mac.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_nonce.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_privwrite.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_random.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_read.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_secureboot.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_selftest.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_sha.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_sign.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_updateextra.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_verify.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/calib/calib_write.c</itemPath>
               </logicalFolder>
-              <logicalFolder name="f3" displayName="crypto" projectFiles="true">
+              <logicalFolder name="f1" displayName="crypto" projectFiles="true">
                 <logicalFolder name="f1" displayName="hashes" projectFiles="true">
                   <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha1_routines.c</itemPath>
+                  <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha1_routines.h</itemPath>
                   <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha2_routines.c</itemPath>
+                  <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/hashes/sha2_routines.h</itemPath>
                 </logicalFolder>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_hw_aes.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbc.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cmac.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ctr.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_rand.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_rand.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="f4" displayName="hal" projectFiles="true">
+              <logicalFolder name="f6" displayName="hal" projectFiles="true">
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_hal.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_hal.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_start_config.h</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/atca_start_iface.h</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/hal_i2c_harmony_init.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/hal_harmony_init.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/hal_cortex_m_delay.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/hal/ATECC608A_0.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f5" displayName="host" projectFiles="true">
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/host/atca_host.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/host/atca_host.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="f6" displayName="jwt" projectFiles="true">
+              <logicalFolder name="f2" displayName="jwt" projectFiles="true">
                 <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/jwt/atca_jwt.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/jwt/atca_jwt.h</itemPath>
               </logicalFolder>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_basic.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_basic.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_bool.h</itemPath>
               <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_cfgs.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_cfgs.h</itemPath>
               <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_command.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_command.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_compiler.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_debug.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_debug.h</itemPath>
               <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_device.c</itemPath>
-              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_execution.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_device.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_devtypes.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_execution.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_helpers.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_helpers.h</itemPath>
               <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_iface.c</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_iface.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_status.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/atca_version.h</itemPath>
+              <itemPath>../src/config/sam_v71_xult/library/cryptoauthlib/cryptoauthlib.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
@@ -277,6 +263,8 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sam_v71_xult/harmony.prj</itemPath>
+      <itemPath>../src/config/sam_v71_xult/sam_v71_xult.xml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -292,7 +280,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.30</languageToolchainVersion>
+        <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -356,7 +344,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_v71_xult;../src/packs/ATSAMV71Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/arm;../src/config/sam_v71_xult/library/cryptoauthlib;../src/config/sam_v71_xult/library/cryptoauthlib/config"/>
+                  value="../src;../src/config/sam_v71_xult;../src/packs/ATSAMV71Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_v71_xult/library/cryptoauthlib;../src/config/sam_v71_xult/library/cryptoauthlib/crypto"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -365,7 +353,7 @@
         <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
-        <property key="preprocessor-macros" value="ATCA_INCLUDE_CONFIG"/>
+        <property key="preprocessor-macros" value=""/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>
@@ -397,9 +385,6 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
-      <C32-CO>
-        <property key="coverage-enable" value=""/>
-      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>

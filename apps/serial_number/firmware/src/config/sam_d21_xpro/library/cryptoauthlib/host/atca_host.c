@@ -2,7 +2,7 @@
  * \file
  * \brief Host side methods to support CryptoAuth computations
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -28,6 +28,7 @@
 #include "atca_host.h"
 #include "crypto/atca_crypto_sw_sha2.h"
 
+#if ATCA_CA_SUPPORT
 
 /** \brief This function copies otp and sn data into a command buffer.
  *
@@ -1558,3 +1559,5 @@ ATCA_STATUS atcah_encode_counter_match(uint32_t counter_value, uint8_t * counter
 
     return ATCA_SUCCESS;
 }
+
+#endif

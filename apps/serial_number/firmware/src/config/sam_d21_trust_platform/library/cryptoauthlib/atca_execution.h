@@ -9,7 +9,7 @@
  *
  * This handler supports the ATSHA and ATECC device family.
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -36,30 +36,9 @@
 #ifndef ATCA_EXECUTION_H
 #define ATCA_EXECUTION_H
 
-#include "atca_status.h"
-#include "atca_command.h"
-#include "atca_device.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#define ATCA_UNSUPPORTED_CMD ((uint16_t)0xFFFF)
-
-#ifdef ATCA_NO_POLL
-/** \brief Structure to hold the device execution time and the opcode for the
- *         corresponding command
- */
-typedef struct
-{
-    uint8_t  opcode;
-    uint16_t execution_time_msec;
-}device_execution_time_t;
-
-ATCA_STATUS atGetExecTime(uint8_t opcode, ATCACommand ca_cmd);
-#endif
-
-ATCA_STATUS atca_execute_command(ATCAPacket* packet, ATCADevice device);
 
 #ifdef __cplusplus
 }

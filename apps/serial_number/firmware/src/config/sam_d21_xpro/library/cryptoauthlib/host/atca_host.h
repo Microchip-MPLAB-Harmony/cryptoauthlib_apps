@@ -2,7 +2,7 @@
  * \file
  * \brief  Definitions and Prototypes for ATCA Utility Functions
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -31,6 +31,7 @@
 
 #include <stdint.h>
 #include "cryptoauthlib.h"  // contains definitions used by chip and these routines
+#include "calib/calib_basic.h"
 
 /** \defgroup atcah Host side crypto methods (atcah_)
  *

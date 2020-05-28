@@ -2,7 +2,7 @@
  * \file
  * \brief Main certificate definition implementation.
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -31,7 +31,7 @@
 #include "atcacert_der.h"
 #include "atcacert_date.h"
 #include <string.h>
-#include "basic/atca_helpers.h"
+#include "atca_helpers.h"
 
 #define ATCACERT_MIN(x, y) ((x) < (y) ? (x) : (y))
 #define ATCACERT_MAX(x, y) ((x) >= (y) ? (x) : (y))

@@ -4,7 +4,7 @@
  *        of the authentication process. It is assumed the client has an ECC CryptoAuthentication device
  *        (e.g. ATECC508A) and the certificates are stored on that device.
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -143,6 +143,29 @@ int atcacert_create_csr_pem(const atcacert_def_t* csr_def, char* csr, size_t* cs
 int atcacert_get_response(uint8_t       device_private_key_slot,
                           const uint8_t challenge[32],
                           uint8_t       response[64]);
+
+/**
+ * \brief Reads the subject key ID based on a certificate definition.
+ *
+ * \param[in]  cert_def     Certificate definition
+ * \param[out] subj_key_id  Subject key ID is returned in this buffer. 20 bytes.
+ *
+ * \return ATCACERT_E_SUCCESS on success, otherwise an error code.
+ */
+int atcacert_read_subj_key_id(const atcacert_def_t * cert_def,
+                              uint8_t                subj_key_id[20]);
+
+/** \brief Return the actual certificate size in bytes for a given
+ *         cert def. Certificate can be variable size, so this gives the
+ *         absolute buffer size when reading the certificates.
+ *
+ * \param[in]  cert_def       Certificate definition to find a max size for.
+ * \param[out] cert_size      Certificate size will be returned here in bytes.
+ *
+ * \return ATCACERT_E_SUCCESS on success, otherwise an error code.
+ */
+int atcacert_read_cert_size(const atcacert_def_t* cert_def,
+                            size_t*               cert_size);
 
 /** @} */
 #ifdef __cplusplus

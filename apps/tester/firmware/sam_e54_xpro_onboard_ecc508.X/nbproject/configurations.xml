@@ -8,6 +8,12 @@
         <logicalFolder name="f1" displayName="sam_e54_xpro" projectFiles="true">
           <logicalFolder name="f2" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="f1" displayName="test" projectFiles="true">
+                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_crypto_sw_tests.h</itemPath>
+                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_test.h</itemPath>
+                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/cbuf.h</itemPath>
+                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/cmd-processor.h</itemPath>
+              </logicalFolder>
               <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atca_config.h</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -126,7 +132,7 @@
         <logicalFolder name="f1" displayName="sam_e54_xpro" projectFiles="true">
           <logicalFolder name="f3" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
-              <logicalFolder name="f2" displayName="atcacert" projectFiles="true">
+              <logicalFolder name="f3" displayName="atcacert" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atcacert/atcacert.h</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atcacert/atcacert_client.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atcacert/atcacert_client.h</itemPath>
@@ -143,7 +149,7 @@
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atcacert/atcacert_pem.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/atcacert/atcacert_pem.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="f3" displayName="calib" projectFiles="true">
+              <logicalFolder name="f4" displayName="calib" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/calib/calib_aes.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/calib/calib_aes_gcm.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/calib/calib_aes_gcm.h</itemPath>
@@ -207,11 +213,11 @@
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/hal/hal_cortex_m_delay.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/hal/ATECC508A_0.c</itemPath>
               </logicalFolder>
-              <logicalFolder name="f4" displayName="host" projectFiles="true">
+              <logicalFolder name="f5" displayName="host" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/host/atca_host.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/host/atca_host.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="f5" displayName="jwt" projectFiles="true">
+              <logicalFolder name="f2" displayName="jwt" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/jwt/atca_jwt.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/jwt/atca_jwt.h</itemPath>
               </logicalFolder>
@@ -311,16 +317,11 @@
                   <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/vectors/aes_gcm_nist_vectors.h</itemPath>
                 </logicalFolder>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_crypto_sw_tests.c</itemPath>
-                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_crypto_sw_tests.h</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_test.c</itemPath>
-                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_test.h</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_test_config.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_test_console.c</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_utils_atecc608a.c</itemPath>
-                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/atca_utils_sizes.c</itemPath>
-                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/cbuf.h</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/cmd-processor.c</itemPath>
-                <itemPath>../src/config/sam_e54_xpro/library/cryptoauthlib/test/cmd-processor.h</itemPath>
               </logicalFolder>
               <logicalFolder name="f8" displayName="third_party" projectFiles="true">
                 <logicalFolder name="f1" displayName="unity" projectFiles="true">
@@ -418,7 +419,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.10</languageToolchainVersion>
+        <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

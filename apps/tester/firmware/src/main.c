@@ -61,6 +61,8 @@ int main ( void )
     
 #ifdef ATCA_ATECC508A_SUPPORT
     atca_test_config_set_ifacecfg(&atecc508a_0_init_data);
+#elif defined(ATCA_TA100_SUPPORT)
+    atca_test_config_set_ifacecfg(&ta100_0_init_data);
 #endif
     atca_test_task();
     

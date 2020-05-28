@@ -26,10 +26,6 @@
  */
 #include <stdlib.h>
 #include "atca_test.h"
-#include "atca_basic.h"
-#include "host/atca_host.h"
-
-#include "cryptoauthlib.h"
 
 static const uint8_t nist_hash_msg1[] = "abc";
 static const uint8_t nist_hash_msg2[] = "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq";
@@ -38,7 +34,7 @@ TEST(atca_cmd_basic_test, sha)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
     uint8_t message[ATCA_SHA256_BLOCK_SIZE];
-    uint8_t digest[ATCA_SHA_DIGEST_SIZE];
+    uint8_t digest[ATCA_SHA256_DIGEST_SIZE];
     uint8_t rightAnswer[] = { 0x1A, 0x3A, 0xA5, 0x45, 0x04, 0x94, 0x53, 0xAF,
                               0xDF, 0x17, 0xE9, 0x89, 0xA4, 0x1F, 0xA0, 0x97,
                               0x94, 0xA5, 0x1B, 0xD5, 0xDB, 0x91, 0x36, 0x37,
@@ -50,7 +46,7 @@ TEST(atca_cmd_basic_test, sha)
     status = atcab_sha(sizeof(message), message, digest);
 
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
-    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA256_DIGEST_SIZE);
 
     memset(message, 0x5A, sizeof(message));
     status = atcab_sha_start();
@@ -76,19 +72,19 @@ TEST(atca_cmd_basic_test, sha_long)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
     uint8_t message[ATCA_SHA256_BLOCK_SIZE + 63];  // just short of two blocks
-    uint8_t digest[ATCA_SHA_DIGEST_SIZE];
+    uint8_t digest[ATCA_SHA256_DIGEST_SIZE];
     uint8_t rightAnswer[] = { 0xA9, 0x22, 0x18, 0x56, 0x43, 0x70, 0xA0, 0x57,
                               0x27, 0x3F, 0xF4, 0x85, 0xA8, 0x07, 0x3F, 0x32,
                               0xFC, 0x1F, 0x14, 0x12, 0xEC, 0xA2, 0xE3, 0x0B,
                               0x81, 0xA8, 0x87, 0x76, 0x0B, 0x61, 0x31, 0x72 };
 
     memset(message, 0xBC, sizeof(message));
-    memset(digest, 0x00, ATCA_SHA_DIGEST_SIZE);
+    memset(digest, 0x00, ATCA_SHA256_DIGEST_SIZE);
 
     status = atcab_sha(sizeof(message), message, digest);
 
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
-    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA256_DIGEST_SIZE);
 }
 
 
@@ -99,19 +95,19 @@ TEST(atca_cmd_basic_test, sha_short)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
     uint8_t message[10];  // a short message to sha
-    uint8_t digest[ATCA_SHA_DIGEST_SIZE];
+    uint8_t digest[ATCA_SHA256_DIGEST_SIZE];
     uint8_t rightAnswer[] = { 0x30, 0x3f, 0xf8, 0xba, 0x40, 0xa2, 0x06, 0xe7,
                               0xa9, 0x50, 0x02, 0x1e, 0xf5, 0x10, 0x66, 0xd4,
                               0xa0, 0x01, 0x54, 0x75, 0x32, 0x3e, 0xe9, 0xf2,
                               0x4a, 0xc8, 0xc9, 0x63, 0x29, 0x8f, 0x34, 0xce };
 
     memset(message, 0xBC, sizeof(message));
-    memset(digest, 0x00, ATCA_SHA_DIGEST_SIZE);
+    memset(digest, 0x00, ATCA_SHA256_DIGEST_SIZE);
 
     status = atcab_sha(sizeof(message), message, digest);
 
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
-    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(rightAnswer, digest, ATCA_SHA256_DIGEST_SIZE);
 }
 
 
@@ -359,15 +355,17 @@ TEST(atca_cmd_basic_test, sha2_256_nist_monte)
     #endif
 }
 
+#if ATCA_CA_SUPPORT
+
 TEST(atca_cmd_basic_test, sha_context)
 {
     ATCA_STATUS status;
     uint16_t data_out_size = 0;
     uint16_t context_size;
     uint8_t context[SHA_CONTEXT_MAX_SIZE];
-    uint8_t digest[ATCA_SHA_DIGEST_SIZE];
-    uint8_t digest1[ATCA_SHA_DIGEST_SIZE];
-    uint8_t digest2[ATCA_SHA_DIGEST_SIZE];
+    uint8_t digest[ATCA_SHA256_DIGEST_SIZE];
+    uint8_t digest1[ATCA_SHA256_DIGEST_SIZE];
+    uint8_t digest2[ATCA_SHA256_DIGEST_SIZE];
     uint8_t message[ATCA_SHA256_BLOCK_SIZE];
 
     uint8_t data_input[] = {
@@ -437,7 +435,7 @@ TEST(atca_cmd_basic_test, sha_context)
     status = atcab_sha_base(SHA_MODE_SHA256_END | SHA_MODE_TARGET_OUT_ONLY, 0, NULL, digest2, &data_out_size);
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
 
-    TEST_ASSERT_EQUAL_MEMORY(digest1, digest2, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(digest1, digest2, ATCA_SHA256_DIGEST_SIZE);
 
 }
 
@@ -447,9 +445,9 @@ TEST(atca_cmd_basic_test, sha_context_simple)
     uint16_t data_out_size = 0;
     uint16_t context_size;
     uint8_t context[SHA_CONTEXT_MAX_SIZE];
-    uint8_t digest[ATCA_SHA_DIGEST_SIZE];
-    uint8_t digest1[ATCA_SHA_DIGEST_SIZE];
-    uint8_t digest2[ATCA_SHA_DIGEST_SIZE];
+    uint8_t digest[ATCA_SHA256_DIGEST_SIZE];
+    uint8_t digest1[ATCA_SHA256_DIGEST_SIZE];
+    uint8_t digest2[ATCA_SHA256_DIGEST_SIZE];
     uint8_t message[ATCA_SHA256_BLOCK_SIZE];
 
     uint8_t data_input[] = {
@@ -523,14 +521,14 @@ TEST(atca_cmd_basic_test, sha_context_simple)
     status = atcab_sha_base(SHA_MODE_SHA256_END | SHA_MODE_TARGET_OUT_ONLY, 0, NULL, digest2, &data_out_size);
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
 
-    TEST_ASSERT_EQUAL_MEMORY(digest1, digest2, ATCA_SHA_DIGEST_SIZE);
-
+    TEST_ASSERT_EQUAL_MEMORY(digest1, digest2, ATCA_SHA256_DIGEST_SIZE);
 }
+#endif
 
 TEST(atca_cmd_basic_test, sha_hmac)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
-    uint8_t hmac[ATCA_SHA_DIGEST_SIZE];
+    uint8_t hmac[ATCA_SHA256_DIGEST_SIZE];
     uint8_t data_input[] = {
         0x6f, 0xb3, 0xec, 0x66, 0xf9, 0xeb, 0x07, 0x0a,
         0x71, 0x9b, 0xeb, 0xbe, 0x70, 0x8b, 0x93, 0xa6,
@@ -542,7 +540,7 @@ TEST(atca_cmd_basic_test, sha_hmac)
         0x03, 0xd7, 0x60, 0xe8, 0x57, 0xa6, 0xd6, 0x21,
         0x1c
     };
-    const uint8_t hmac_ref[ATCA_SHA_DIGEST_SIZE] = {
+    const uint8_t hmac_ref[ATCA_SHA256_DIGEST_SIZE] = {
         0x29, 0x7f, 0x22, 0xb8, 0xd2, 0x51, 0xb0, 0x63,
         0xa7, 0xc0, 0x8d, 0xcf, 0x4d, 0xba, 0x0d, 0x1f,
         0xb3, 0x5d, 0x32, 0xa3, 0xba, 0xab, 0x15, 0xac,
@@ -560,14 +558,14 @@ TEST(atca_cmd_basic_test, sha_hmac)
     status = atcab_sha_hmac(data_input, sizeof(data_input), key_id, hmac, SHA_MODE_TARGET_TEMPKEY);
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
 
-    TEST_ASSERT_EQUAL_MEMORY(hmac_ref, hmac, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(hmac_ref, hmac, ATCA_SHA256_DIGEST_SIZE);
 }
 
 #ifdef ATCA_ATECC608A_SUPPORT
 TEST(atca_cmd_basic_test, sha_hmac_tempkey)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
-    uint8_t hmac[ATCA_SHA_DIGEST_SIZE];
+    uint8_t hmac[ATCA_SHA256_DIGEST_SIZE];
     uint8_t data_input[] = {
         0x6f, 0xb3, 0xec, 0x66, 0xf9, 0xeb, 0x07, 0x0a,
         0x71, 0x9b, 0xeb, 0xbe, 0x70, 0x8b, 0x93, 0xa6,
@@ -579,7 +577,7 @@ TEST(atca_cmd_basic_test, sha_hmac_tempkey)
         0x03, 0xd7, 0x60, 0xe8, 0x57, 0xa6, 0xd6, 0x21,
         0x1c
     };
-    const uint8_t hmac_ref[ATCA_SHA_DIGEST_SIZE] = {
+    const uint8_t hmac_ref[ATCA_SHA256_DIGEST_SIZE] = {
         0x29, 0x7f, 0x22, 0xb8, 0xd2, 0x51, 0xb0, 0x63,
         0xa7, 0xc0, 0x8d, 0xcf, 0x4d, 0xba, 0x0d, 0x1f,
         0xb3, 0x5d, 0x32, 0xa3, 0xba, 0xab, 0x15, 0xac,
@@ -597,7 +595,7 @@ TEST(atca_cmd_basic_test, sha_hmac_tempkey)
     //Calculating HMAC using the key in TempKey
     status = atcab_sha_hmac(data_input, sizeof(data_input), key_id, hmac, NONCE_MODE_TARGET_TEMPKEY);
 
-    TEST_ASSERT_EQUAL_MEMORY(hmac_ref, hmac, ATCA_SHA_DIGEST_SIZE);
+    TEST_ASSERT_EQUAL_MEMORY(hmac_ref, hmac, ATCA_SHA256_DIGEST_SIZE);
 }
 #endif
 
@@ -612,8 +610,10 @@ t_test_case_info sha_basic_test_info[] =
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha2_256_nist_short), DEVICE_MASK(ATSHA204A) | DEVICE_MASK_ECC | DEVICE_MASK(TA100) },
     //{ REGISTER_TEST_CASE(atca_cmd_basic_test, sha2_256_nist_long),  DEVICE_MASK(ATSHA204A) | DEVICE_MASK_ECC                      },
     //{ REGISTER_TEST_CASE(atca_cmd_basic_test, sha2_256_nist_monte), DEVICE_MASK(ATSHA204A) | DEVICE_MASK_ECC                      },
+#if ATCA_CA_SUPPORT
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_context),                                                           DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_context_simple),                                                    DEVICE_MASK(TA100)     },
+#endif
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_hmac),                                                DEVICE_MASK_ECC | DEVICE_MASK(TA100) },
 #ifdef ATCA_ATECC608A_SUPPORT
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_hmac_tempkey),                                                             DEVICE_MASK_ECC },

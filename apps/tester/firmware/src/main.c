@@ -57,7 +57,7 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
 
-    printf("Starting Cryptoauth Tester Example: Type help <Return> for menu\n");
+    printf("Starting Cryptoauth Tester Example: Type help <Return> for menu\r\n");
     
 #ifdef ATCA_ATECC508A_SUPPORT
     atca_test_config_set_ifacecfg(&atecc508a_0_init_data);

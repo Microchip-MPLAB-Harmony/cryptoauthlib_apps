@@ -35,10 +35,13 @@ ATCAIfaceCfg* device_cfg = &atecc608a_0_init_data;
 #elif defined (ATCA_ATECC508A_SUPPORT)
 extern ATCAIfaceCfg atecc508a_0_init_data;
 ATCAIfaceCfg* device_cfg = &atecc508a_0_init_data;
+#elif defined (ATCA_TA100_SUPPORT)
+extern ATCAIfaceCfg ta100_0_init_data;
+ATCAIfaceCfg* device_cfg = &ta100_0_init_data;
 #endif
 
 uint8_t sernum[9];
-char displayStr[ATCA_SERIAL_NUM_SIZE * 3];
+char displayStr[30];
 size_t displen = sizeof(displayStr);
 // *****************************************************************************
 // *****************************************************************************

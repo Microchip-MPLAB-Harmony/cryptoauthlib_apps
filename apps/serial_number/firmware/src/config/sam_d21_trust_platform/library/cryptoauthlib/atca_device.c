@@ -111,7 +111,7 @@ void deleteATCADevice(ATCADevice *ca_dev)
 
 /** \brief Initializer for an Microchip CryptoAuth device
  * \param[in]    cfg     pointer to an interface configuration object
- * \param[inout] ca_dev  As input, pre-allocated structure to be initialized.
+ * \param[in,out] ca_dev  As input, pre-allocated structure to be initialized.
  *                       mCommands and mIface members should point to existing
  *                       structures to be initialized.
  * \return ATCA_SUCCESS on success, otherwise an error code.

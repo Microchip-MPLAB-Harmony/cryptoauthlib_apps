@@ -217,7 +217,6 @@
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_device.c</itemPath>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_device.h</itemPath>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_devtypes.h</itemPath>
-              <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_execution.h</itemPath>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_helpers.h</itemPath>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_iface.c</itemPath>

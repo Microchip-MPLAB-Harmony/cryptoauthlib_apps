@@ -33,13 +33,13 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Issues a HMAC command, which computes an HMAC/SHA-256 digest of a
  *          key stored in the device, a challenge, and other information on the
  *          device.
  *
+ * \param[in]  device  Device context pointer
  * \param[in]  mode    Controls which fields within the device are used in the
  *                     message.
  * \param[in]  key_id  Which key is to be used to generate the response.

@@ -4,7 +4,7 @@
 
 
 project: serial_number
-creation_date: 2020-05-28T17:42:37.879-06:00[America/Denver]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2020-06-03T11:00:38.979-06:00[America/Denver]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mplabx_version: v5.20        # if MPLAB X plugin only
@@ -12,6 +12,7 @@ plugin_version: v3.5.0        # if MPLAB X plugin only
 
 modules:
     - {name: "amazon-freertos", version: "v1.4.9"}
+    - {name: "aws_cloud", version: "v3.0.0"}
     - {name: "bsp", version: "v3.7.0"}
     - {name: "CMSIS-FreeRTOS", version: "v10.2.0"}
     - {name: "contentmanager", version: "v1.3.1"}
@@ -22,7 +23,7 @@ modules:
     - {name: "cryptoauthlib_orig", version: "unknown"}
     - {name: "csp", version: "v3.7.1"}
     - {name: "dev_packs", version: "v3.7.0"}
-    - {name: "mhc", version: "v3.4.0"}
+    - {name: "mhc", version: "v3.4.1"}
     - {name: "net", version: "unknown"}
     - {name: "wireless", version: "v3.1.1"}
     - {name: "wolfMQTT", version: "v1.1.0"}

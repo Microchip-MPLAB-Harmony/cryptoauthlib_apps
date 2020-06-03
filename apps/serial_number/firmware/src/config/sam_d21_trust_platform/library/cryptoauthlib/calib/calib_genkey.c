@@ -32,12 +32,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Issues GenKey command, which can generate a private key, compute a
  *          public key, nd/or compute a digest of a public key.
  *
+ * \param[in]  device      Device context pointer
  * \param[in]  mode        Mode determines what operations the GenKey
  *                         command performs.
  * \param[in]  key_id      Slot to perform the GenKey command on.
@@ -97,6 +97,7 @@ ATCA_STATUS calib_genkey_base(ATCADevice device, uint8_t mode, uint16_t key_id, 
 /** \brief Issues GenKey command, which generates a new random private key in
  *          slot and returns the public key.
  *
+ * \param[in]  device      Device context pointer
  * \param[in]  key_id      Slot number where an ECC private key is configured.
  *                         Can also be ATCA_TEMPKEY_KEYID to generate a private
  *                         key in TempKey.
@@ -115,6 +116,7 @@ ATCA_STATUS calib_genkey(ATCADevice device, uint16_t key_id, uint8_t *public_key
 /** \brief Uses GenKey command to calculate the public key from an existing
  *          private key in a slot.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in]  key_id      Slot number of the private key.
  *  \param[out] public_key  Public key will be returned here. Format will be
  *                          the X and Y integers in big-endian format.

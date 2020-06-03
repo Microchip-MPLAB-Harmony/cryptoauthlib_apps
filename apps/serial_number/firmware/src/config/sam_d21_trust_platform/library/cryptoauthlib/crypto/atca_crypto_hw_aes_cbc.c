@@ -41,6 +41,34 @@
 
 /** \brief Initialize context for AES CBC operation.
  *
+ * \param[in] device     Device context pointer
+ * \param[in] ctx        AES CBC context to be initialized
+ * \param[in] key_id     Key location. Can either be a slot/handles or
+ *                       in TempKey.
+ * \param[in] key_block  Index of the 16-byte block to use within the key
+ *                       location for the actual key.
+ * \param[in] iv         Initialization vector (16 bytes).
+ *
+ * \return ATCA_SUCCESS on success, otherwise an error code.
+ */
+ATCA_STATUS atcab_aes_cbc_init_ext(ATCADevice device, atca_aes_cbc_ctx_t* ctx, uint16_t key_id, uint8_t key_block, const uint8_t* iv)
+{
+    if (ctx == NULL || iv == NULL)
+    {
+        return ATCA_BAD_PARAM;
+    }
+
+    memset(ctx, 0, sizeof(*ctx));
+    ctx->device = device;
+    ctx->key_id = key_id;
+    ctx->key_block = key_block;
+    memcpy(ctx->ciphertext, iv, sizeof(ctx->ciphertext));
+
+    return ATCA_SUCCESS;
+}
+
+/** \brief Initialize context for AES CBC operation.
+ *
  * \param[in] ctx        AES CBC context to be initialized
  * \param[in] key_id     Key location. Can either be a slot/handles or
  *                       in TempKey.
@@ -52,17 +80,7 @@
  */
 ATCA_STATUS atcab_aes_cbc_init(atca_aes_cbc_ctx_t* ctx, uint16_t key_id, uint8_t key_block, const uint8_t* iv)
 {
-    if (ctx == NULL || iv == NULL)
-    {
-        return ATCA_BAD_PARAM;
-    }
-
-    memset(ctx, 0, sizeof(*ctx));
-    ctx->key_id = key_id;
-    ctx->key_block = key_block;
-    memcpy(ctx->ciphertext, iv, sizeof(ctx->ciphertext));
-
-    return ATCA_SUCCESS;
+    return atcab_aes_cbc_init_ext(atcab_get_device(), ctx, key_id, key_block, iv);
 }
 
 /** \brief Encrypt a block of data using CBC mode and a key within the
@@ -93,7 +111,7 @@ ATCA_STATUS atcab_aes_cbc_encrypt_block(atca_aes_cbc_ctx_t* ctx, const uint8_t* 
     }
 
     // Block encrypt of input data
-    if(ATCA_SUCCESS != (status = atcab_aes_encrypt(ctx->key_id, ctx->key_block, input, ciphertext)))
+    if(ATCA_SUCCESS != (status = atcab_aes_encrypt_ext(ctx->device, ctx->key_id, ctx->key_block, input, ciphertext)))
     {
         return status;
     }
@@ -126,7 +144,7 @@ ATCA_STATUS atcab_aes_cbc_decrypt_block(atca_aes_cbc_ctx_t* ctx, const uint8_t* 
     }
 
     // Block decrypt of ciphertext
-    if (ATCA_SUCCESS != (status = atcab_aes_decrypt(ctx->key_id, ctx->key_block, ciphertext, output)))
+    if (ATCA_SUCCESS != (status = atcab_aes_decrypt_ext(ctx->device, ctx->key_id, ctx->key_block, ciphertext, output)))
     {
         return status;
     }
@@ -142,3 +160,4 @@ ATCA_STATUS atcab_aes_cbc_decrypt_block(atca_aes_cbc_ctx_t* ctx, const uint8_t* 
 
     return status;
 }
+

@@ -32,8 +32,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes UpdateExtra command to update the values of the two
  *          extra bytes within the Configuration zone (bytes 84 and 85).
@@ -41,6 +40,7 @@
  * Can also be used to decrement the limited use counter associated with the
  * key in slot NewValue.
  *
+ * \param[in] device     Device context pointer
  * \param[in] mode       Mode determines what operations the UpdateExtra
  *                      command performs.
  * \param[in] new_value  Value to be written.

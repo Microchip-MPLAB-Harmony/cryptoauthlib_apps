@@ -29,7 +29,9 @@
 #define _ATCA_LIB_H
 
 #include <stdio.h>
+#include <stdint.h>
 #include <stddef.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
 
@@ -37,6 +39,7 @@
     atca_config.h */
 #include "atca_config.h"
 #include "atca_compiler.h"
+#include "atca_version.h"
 
 /* Configuration Macros to detect device classes */
 #if defined(ATCA_ATSHA204A_SUPPORT) || defined(ATCA_ATSHA206A_SUPPORT)
@@ -96,11 +99,12 @@
 /** Place resulting digest both in Output buffer ONLY */
 #define SHA_MODE_TARGET_OUT_ONLY            ((uint8_t)0xC0)
 
-#if ATCA_CA_SUPPORT
+#if ATCA_CA_SUPPORT || defined(ATCA_USE_ATCAB_FUNCTIONS)
 #include "atca_cfgs.h"
 #include "atca_device.h"
 #include "calib/calib_basic.h"
 #include "calib/calib_command.h"
+#include "calib/calib_aes_gcm.h"
 #endif
 
 #if ATCA_TA_SUPPORT
@@ -110,16 +114,13 @@
 
 #include "atca_basic.h"
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
+#define ATCA_STRINGIFY(x) #x
+#define ATCA_TOSTRING(x) ATCA_STRINGIFY(x)
 
 #ifdef ATCA_PRINTF
-    #define TRACE(s, m)         atca_trace_msg(s, __FILE__ ":" TOSTRING(__LINE__) ":%x:" m "\n")
+    #define ATCA_TRACE(s, m)         atca_trace_msg(s, __FILE__ ":" ATCA_TOSTRING(__LINE__) ":%x:" m "\n")
 #else
-    #define TRACE(s, m)         atca_trace(s)
+    #define ATCA_TRACE(s, m)         atca_trace(s)
 #endif
-
-/* Compatibility define */
-#define RETURN  return TRACE
 
 #endif

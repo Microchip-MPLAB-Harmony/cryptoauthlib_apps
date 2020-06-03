@@ -31,12 +31,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes the SelfTest command, which performs a test of one or more
  *          of the cryptographic engines within the ATECC608A chip.
  *
+ *  \param[in]  device  Device context pointer
  *  \param[in]  mode    Functions to test. Can be a bit field combining any
  *                      of the following: SELFTEST_MODE_RNG,
  *                      SELFTEST_MODE_ECDSA_VERIFY, SELFTEST_MODE_ECDSA_SIGN,

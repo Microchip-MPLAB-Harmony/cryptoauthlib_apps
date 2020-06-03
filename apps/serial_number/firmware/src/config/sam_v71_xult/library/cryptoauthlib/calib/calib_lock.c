@@ -33,14 +33,14 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief The Lock command prevents future modifications of the Configuration
  *         and/or Data and OTP zones. If the device is so configured, then
  *         this command can be used to lock individual data slots. This
  *         command fails if the designated area is already locked.
- *
+ * 
+ * \param[in]  device         Device context pointer
  * \param[in]  mode           Zone, and/or slot, and summary check (bit 7).
  * \param[in]  summary_crc    CRC of the config or data zones. Ignored for
  *                            slot locks or when mode bit 7 is set.
@@ -78,6 +78,7 @@ ATCA_STATUS calib_lock(ATCADevice device, uint8_t mode, uint16_t summary_crc)
 
 /** \brief Unconditionally (no CRC required) lock the config zone.
  *
+ *  \param[in]  device      Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_lock_config_zone(ATCADevice device)
@@ -91,6 +92,7 @@ ATCA_STATUS calib_lock_config_zone(ATCADevice device)
  *  ATSHA devices, 128 bytes for ATECC devices. Lock will fail if the provided
  *  CRC doesn't match the internally calculated one.
  *
+ *  \param[in] device       Device context pointer
  *  \param[in] summary_crc  Expected CRC over the config zone.
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
@@ -104,6 +106,7 @@ ATCA_STATUS calib_lock_config_zone_crc(ATCADevice device, uint16_t summary_crc)
  *
  *	ConfigZone must be locked and DataZone must be unlocked for the zone to be successfully locked.
  *
+ *  \param[in]  device      Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_lock_data_zone(ATCADevice device)
@@ -117,6 +120,7 @@ ATCA_STATUS calib_lock_data_zone(ATCADevice device)
  *  OTP at the end. Private keys (KeyConfig.Private=1) are skipped. Lock will
  *  fail if the provided CRC doesn't match the internally calculated one.
  *
+ *  \param[in] device       Device context pointer
  *  \param[in] summary_crc  Expected CRC over the data zone.
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
@@ -130,7 +134,8 @@ ATCA_STATUS calib_lock_data_zone_crc(ATCADevice device, uint16_t summary_crc)
  *         available for ATSHA devices. Slot must be configured to be slot
  *         lockable (KeyConfig.Lockable=1).
  *
- *  \param[in] slot  Slot to be locked in data zone.
+ *  \param[in] device   Device context pointer
+ *  \param[in] slot     Slot to be locked in data zone.
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */

@@ -1,7 +1,6 @@
 #ifndef _CALIB_H
 #define _CALIB_H
 
-#include "cryptoauthlib.h"
 #include "calib_command.h"
 #include "calib_execution.h"
 

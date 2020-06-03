@@ -26,8 +26,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-
+#include "cryptoauthlib.h"
 
 /** \brief basic API methods are all prefixed with atcab_  (CryptoAuthLib Basic)
  *  the fundamental premise of the basic API is it is based on a single interface
@@ -36,6 +35,7 @@
  */
 
 /** \brief wakeup the CryptoAuth device
+ *  \param[in] device     Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_wakeup(ATCADevice device)
@@ -49,6 +49,7 @@ ATCA_STATUS calib_wakeup(ATCADevice device)
 }
 
 /** \brief idle the CryptoAuth device
+ *  \param[in] device     Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_idle(ATCADevice device)
@@ -62,6 +63,7 @@ ATCA_STATUS calib_idle(ATCADevice device)
 }
 
 /** \brief invoke sleep on the CryptoAuth device
+ *  \param[in] device     Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_sleep(ATCADevice device)
@@ -169,6 +171,7 @@ ATCA_STATUS calib_cfg_discover(ATCAIfaceCfg cfg_array[], int max_ifaces)
 }
 
 /** \brief common cleanup code which idles the device after any operation
+ *  \param[in] device     Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS _calib_exit(ATCADevice device)
@@ -224,10 +227,11 @@ ATCA_STATUS calib_get_addr(uint8_t zone, uint16_t slot, uint8_t block, uint8_t o
 
 /** \brief Gets the size of the specified zone in bytes.
  *
- * \param[in]  zone  Zone to get size information from. Config(0), OTP(1), or
- *                   Data(2) which requires a slot.
- * \param[in]  slot  If zone is Data(2), the slot to query for size.
- * \param[out] size  Zone size is returned here.
+ * \param[in]  device  Device context pointer
+ * \param[in]  zone    Zone to get size information from. Config(0), OTP(1), or
+ *                     Data(2) which requires a slot.
+ * \param[in]  slot    If zone is Data(2), the slot to query for size.
+ * \param[out] size    Zone size is returned here.
  *
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */

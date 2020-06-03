@@ -5,7 +5,7 @@
 /* MPLAB Harmony Common Include */
 #include "definitions.h"
 
-/* Enable HAL I2C */
+
 #ifndef ATCA_HAL_I2C
 #define ATCA_HAL_I2C
 #endif
@@ -43,17 +43,8 @@
 #endif
 
 
-/* Configuration Macros */
-#define ATCA_SHA_SUPPORT    (defined(ATCA_ATSHA204A_SUPPORT) \
-                             || defined(ATCA_ATSHA206A_SUPPORT))
-#define ATCA_ECC_SUPPORT    (defined(ATCA_ATECC108A_SUPPORT) \
-                             || defined(ATCA_ATECC508A_SUPPORT) \
-                             || defined(ATCA_ATECC608A_SUPPORT))
-
-#define ATCA_CA_SUPPORT     (ATCA_SHA_SUPPORT || ATCA_ECC_SUPPORT)
-#define ATCA_TA_SUPPORT     defined(ATCA_TA100_SUPPORT)
-
 /* Define generic interfaces to the processor libraries */
+
 #define PLIB_I2C_ERROR          I2C_ERROR
 #define PLIB_I2C_ERROR_NONE     I2C_ERROR_NONE
 #define PLIB_I2C_TRANSFER_SETUP I2C_TRANSFER_SETUP
@@ -71,8 +62,11 @@ typedef struct atca_plib_api
     atca_i2c_plib_is_busy           is_busy;
     atca_i2c_error_get              error_get;
     atca_i2c_plib_transfer_setup    transfer_setup;
-} atca_plib_api_t;
+} atca_plib_i2c_api_t;
 
-extern atca_plib_api_t i2c1_plib_api;
+extern atca_plib_i2c_api_t i2c1_plib_i2c_api;
+
+
+
 
 #endif // ATCA_CONFIG_H

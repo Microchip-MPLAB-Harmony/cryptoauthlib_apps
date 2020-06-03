@@ -2,7 +2,7 @@
  * \file
  * \brief a set of default configurations for various ATCA devices and interfaces
  *
- * \copyright (c) 2015-2018 Microchip Technology Inc. and its subsidiaries.
+ * \copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
  *
  * \page License
  *
@@ -50,7 +50,7 @@ extern ATCAIfaceCfg cfg_ateccx08a_kithid_default;
 
 
 /** \brief default configuration for a SHA204A device on the first logical I2C bus */
-extern ATCAIfaceCfg cfg_atsha204a_i2c_default;
+extern ATCAIfaceCfg cfg_atsha20xa_i2c_default;
 
 /** \brief default configuration for an SHA20xA device on the logical SWI bus over UART*/
 extern ATCAIfaceCfg cfg_atsha20xa_swi_default;

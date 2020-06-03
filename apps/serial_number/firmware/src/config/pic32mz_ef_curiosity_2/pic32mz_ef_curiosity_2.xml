@@ -5,16 +5,21 @@
       <Instances dnOrder="0">
         <InstanceComponent dnOrder="0" id="atecc608a" instance="0">
           <Symbols dnOrder="0">
-            <String dnOrder="0" id="DRV_I2C_PLIB">
+            <String dnOrder="0" id="HAL_INTERFACE">
               <Values dnOrder="0">
                 <Dynamic dnOrder="0" id="atecc608a_0" value="I2C1"/>
               </Values>
             </String>
-            <String dnOrder="1" id="INTERFACE">
-              <Values dnOrder="0">
-                <Dynamic dnOrder="0" id="atecc608a_0" value="ATCA_I2C_IFACE"/>
+            <KeyValueSet dnOrder="1" id="INTERFACE">
+              <Attributes dnOrder="0">
+                <Boolean dnOrder="0" id="readOnly">
+                  <Value dnOrder="0">true</Value>
+                </Boolean>
+              </Attributes>
+              <Values dnOrder="1">
+                <Dynamic dnOrder="0" id="atecc608a_0" value="0"/>
               </Values>
-            </String>
+            </KeyValueSet>
           </Symbols>
           <Attachments dnOrder="1">
             <MultiCapability dnOrder="0" id="ATECC608A_DEP_PLIB_I2C">
@@ -593,32 +598,37 @@
             <Dynamic dnOrder="0" id="core" value="true"/>
           </Values>
         </Boolean>
-        <Hex dnOrder="113" id="PMD5_REG_VALUE">
+        <String dnOrder="113" id="KEIL_STACK_HEAP_SIZE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="0x1200"/>
+          </Values>
+        </String>
+        <Hex dnOrder="114" id="PMD5_REG_VALUE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="807288607"/>
           </Values>
         </Hex>
-        <Hex dnOrder="114" id="PMD6_REG_VALUE">
+        <Hex dnOrder="115" id="PMD6_REG_VALUE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="277020673"/>
           </Values>
         </Hex>
-        <Hex dnOrder="115" id="PMD7_REG_VALUE">
+        <Hex dnOrder="116" id="PMD7_REG_VALUE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="5242880"/>
           </Values>
         </Hex>
-        <Hex dnOrder="116" id="SYS_PORT_A_CNPU">
+        <Hex dnOrder="117" id="SYS_PORT_A_CNPU">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="49152"/>
           </Values>
         </Hex>
-        <Hex dnOrder="117" id="SYS_PORT_A_ODC">
+        <Hex dnOrder="118" id="SYS_PORT_A_ODC">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="0"/>
           </Values>
         </Hex>
-        <Combo dnOrder="118" id="SYS_PORT_PPS_INPUT_FUNCTION_0">
+        <Combo dnOrder="119" id="SYS_PORT_PPS_INPUT_FUNCTION_0">
           <Attributes dnOrder="0">
             <Boolean dnOrder="0" id="visible">
               <Value dnOrder="0">true</Value>
@@ -628,7 +638,7 @@
             <User dnOrder="0" value="U6RX"/>
           </Values>
         </Combo>
-        <KeyValueSet dnOrder="119" id="SYS_PORT_PPS_INPUT_PIN_0">
+        <KeyValueSet dnOrder="120" id="SYS_PORT_PPS_INPUT_PIN_0">
           <Attributes dnOrder="0">
             <Boolean dnOrder="0" id="visible">
               <Value dnOrder="0">true</Value>
@@ -638,7 +648,7 @@
             <User dnOrder="0" value="37"/>
           </Values>
         </KeyValueSet>
-        <KeyValueSet dnOrder="120" id="SYS_PORT_PPS_OUTPUT_FUNCTION_0">
+        <KeyValueSet dnOrder="121" id="SYS_PORT_PPS_OUTPUT_FUNCTION_0">
           <Attributes dnOrder="0">
             <Boolean dnOrder="0" id="visible">
               <Value dnOrder="0">true</Value>
@@ -648,7 +658,7 @@
             <User dnOrder="0" value="16"/>
           </Values>
         </KeyValueSet>
-        <Combo dnOrder="121" id="SYS_PORT_PPS_OUTPUT_PIN_0">
+        <Combo dnOrder="122" id="SYS_PORT_PPS_OUTPUT_PIN_0">
           <Attributes dnOrder="0">
             <Boolean dnOrder="0" id="visible">
               <Value dnOrder="0">true</Value>
@@ -658,87 +668,87 @@
             <User dnOrder="0" value="RPF2"/>
           </Values>
         </Combo>
-        <Boolean dnOrder="122" id="UART6_CLOCK_ENABLE">
+        <Boolean dnOrder="123" id="UART6_CLOCK_ENABLE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="true"/>
           </Values>
         </Boolean>
-        <Integer dnOrder="123" id="UART6_CLOCK_FREQUENCY">
+        <Integer dnOrder="124" id="UART6_CLOCK_FREQUENCY">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="100000000"/>
           </Values>
         </Integer>
-        <Boolean dnOrder="124" id="UART6_FAULT_INTERRUPT_ENABLE">
+        <Boolean dnOrder="125" id="UART6_FAULT_INTERRUPT_ENABLE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="125" id="UART6_FAULT_INTERRUPT_ENABLE_UPDATE">
+        <Boolean dnOrder="126" id="UART6_FAULT_INTERRUPT_ENABLE_UPDATE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="true"/>
           </Values>
         </Boolean>
-        <String dnOrder="126" id="UART6_FAULT_INTERRUPT_HANDLER">
+        <String dnOrder="127" id="UART6_FAULT_INTERRUPT_HANDLER">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="UART6_FAULT_Handler"/>
           </Values>
         </String>
-        <Boolean dnOrder="127" id="UART6_FAULT_INTERRUPT_HANDLER_LOCK">
+        <Boolean dnOrder="128" id="UART6_FAULT_INTERRUPT_HANDLER_LOCK">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="128" id="UART6_RX_INTERRUPT_ENABLE">
+        <Boolean dnOrder="129" id="UART6_RX_INTERRUPT_ENABLE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="129" id="UART6_RX_INTERRUPT_ENABLE_UPDATE">
+        <Boolean dnOrder="130" id="UART6_RX_INTERRUPT_ENABLE_UPDATE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="true"/>
           </Values>
         </Boolean>
-        <String dnOrder="130" id="UART6_RX_INTERRUPT_HANDLER">
+        <String dnOrder="131" id="UART6_RX_INTERRUPT_HANDLER">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="UART6_RX_Handler"/>
           </Values>
         </String>
-        <Boolean dnOrder="131" id="UART6_RX_INTERRUPT_HANDLER_LOCK">
+        <Boolean dnOrder="132" id="UART6_RX_INTERRUPT_HANDLER_LOCK">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="132" id="UART6_TX_INTERRUPT_ENABLE">
+        <Boolean dnOrder="133" id="UART6_TX_INTERRUPT_ENABLE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="133" id="UART6_TX_INTERRUPT_ENABLE_UPDATE">
+        <Boolean dnOrder="134" id="UART6_TX_INTERRUPT_ENABLE_UPDATE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="true"/>
           </Values>
         </Boolean>
-        <String dnOrder="134" id="UART6_TX_INTERRUPT_HANDLER">
+        <String dnOrder="135" id="UART6_TX_INTERRUPT_HANDLER">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="UART6_TX_Handler"/>
           </Values>
         </String>
-        <Boolean dnOrder="135" id="UART6_TX_INTERRUPT_HANDLER_LOCK">
+        <Boolean dnOrder="136" id="UART6_TX_INTERRUPT_HANDLER_LOCK">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="uart6" value="false"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="136" id="USE_PPS_INPUT_0">
+        <Boolean dnOrder="137" id="USE_PPS_INPUT_0">
           <Values dnOrder="0">
             <User dnOrder="0" value="true"/>
           </Values>
         </Boolean>
-        <Boolean dnOrder="137" id="USE_PPS_OUTPUT_0">
+        <Boolean dnOrder="138" id="USE_PPS_OUTPUT_0">
           <Values dnOrder="0">
             <User dnOrder="0" value="true"/>
           </Values>
         </Boolean>
-        <KeyValueSet dnOrder="138" id="clkSvcMode">
+        <KeyValueSet dnOrder="139" id="clkSvcMode">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="core" value="0"/>
           </Values>
@@ -766,11 +776,354 @@
             <Dynamic dnOrder="0" id="cryptoauthlib" value="false"/>
           </Values>
         </Boolean>
-        <ListEntry dnOrder="3" id="CAL_PLIB_LIST_ENTRIES">
+        <File dnOrder="3" id="CAL_FILE_SRC_39">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="4" id="CAL_FILE_SRC_40">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="5" id="CAL_FILE_SRC_41">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="6" id="CAL_FILE_SRC_42">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="7" id="CAL_FILE_SRC_43">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="8" id="CAL_FILE_SRC_44">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="9" id="CAL_FILE_SRC_45">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="10" id="CAL_FILE_SRC_46">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="11" id="CAL_FILE_SRC_47">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="12" id="CAL_FILE_SRC_48">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="13" id="CAL_FILE_SRC_49">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="14" id="CAL_FILE_SRC_50">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="15" id="CAL_FILE_SRC_51">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="16" id="CAL_FILE_SRC_52">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="17" id="CAL_FILE_SRC_53">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="18" id="CAL_FILE_SRC_54">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="19" id="CAL_FILE_SRC_55">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="20" id="CAL_FILE_SRC_56">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="21" id="CAL_FILE_SRC_57">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="22" id="CAL_FILE_SRC_58">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="23" id="CAL_FILE_SRC_59">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="24" id="CAL_FILE_SRC_60">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="25" id="CAL_FILE_SRC_61">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="26" id="CAL_FILE_SRC_62">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="27" id="CAL_FILE_SRC_63">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="28" id="CAL_FILE_SRC_64">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="29" id="CAL_FILE_SRC_65">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="30" id="CAL_FILE_SRC_66">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="31" id="CAL_FILE_SRC_67">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="32" id="CAL_FILE_SRC_68">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="33" id="CAL_FILE_SRC_69">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="34" id="CAL_FILE_SRC_70">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="35" id="CAL_FILE_SRC_71">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="36" id="CAL_FILE_SRC_72">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="37" id="CAL_FILE_SRC_73">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="38" id="CAL_FILE_SRC_74">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="39" id="CAL_FILE_SRC_75">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="40" id="CAL_FILE_SRC_76">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="41" id="CAL_FILE_SRC_77">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="42" id="CAL_FILE_SRC_78">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="43" id="CAL_FILE_SRC_79">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="44" id="CAL_FILE_SRC_80">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="45" id="CAL_FILE_SRC_81">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="46" id="CAL_FILE_SRC_82">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="47" id="CAL_FILE_SRC_83">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="48" id="CAL_FILE_SRC_84">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="49" id="CAL_FILE_SRC_85">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="50" id="CAL_FILE_SRC_86">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <File dnOrder="51" id="CAL_FILE_SRC_HAL_I2C">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="enabled">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </File>
+        <ListEntry dnOrder="52" id="CAL_PLIB_LIST_ENTRIES">
           <Attributes dnOrder="0">
             <StringArray dnOrder="0" id="values">
               <Values dnOrder="0">
-                <Value dnOrder="0">i2c1</Value>
+                <Value dnOrder="0">i2c1_i2c</Value>
               </Values>
             </StringArray>
           </Attributes>
@@ -782,7 +1135,7 @@
       <Symbols dnOrder="0">
         <Integer dnOrder="0" id="BRG_VALUE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="i2c1" value="118"/>
+            <Dynamic dnOrder="0" id="i2c1" value="117"/>
           </Values>
         </Integer>
         <Integer dnOrder="1" id="I2C_CLOCK_FREQ">
@@ -834,12 +1187,12 @@
       <Symbols dnOrder="0">
         <Integer dnOrder="0" id="BRG_VALUE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="uart6" value="216"/>
+            <Dynamic dnOrder="0" id="uart6" value="53"/>
           </Values>
         </Integer>
         <KeyValueSet dnOrder="1" id="UART_BRGH">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="uart6" value="0"/>
+            <Dynamic dnOrder="0" id="uart6" value="1"/>
           </Values>
         </KeyValueSet>
         <Integer dnOrder="2" id="UART_CLOCK_FREQ">
@@ -847,12 +1200,19 @@
             <Dynamic dnOrder="0" id="uart6" value="100000000"/>
           </Values>
         </Integer>
-        <Hex dnOrder="3" id="UMODE_VALUE">
+        <Boolean dnOrder="3" id="UART_RING_BUFFER_ENABLE">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </Boolean>
+        <Hex dnOrder="4" id="UMODE_VALUE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="uart6" value="8"/>
+            <Dynamic dnOrder="0" id="uart6" value="0"/>
           </Values>
         </Hex>
-        <Boolean dnOrder="4" id="USART_INTERRUPT_MODE">
+        <Boolean dnOrder="5" id="USART_INTERRUPT_MODE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0" id="stdio" value="false"/>
           </Values>
@@ -875,13 +1235,13 @@
   <UserData>
     <ComponentGraph dnOrder="0" id="__ROOTVIEW">
       <ElementPositions dnOrder="0">
-        <ElementPosition dnOrder="0" id="atecc608a" x="560" y="20"/>
+        <ElementPosition dnOrder="0" id="atecc608a" x="246" y="72"/>
         <ElementPosition dnOrder="1" id="core" x="240" y="20"/>
-        <ElementPosition dnOrder="2" id="cryptoauthlib" x="340" y="20"/>
+        <ElementPosition dnOrder="2" id="cryptoauthlib" x="448" y="73"/>
         <ElementPosition dnOrder="3" id="dfp" x="20" y="20"/>
-        <ElementPosition dnOrder="4" id="i2c1" x="880" y="20"/>
-        <ElementPosition dnOrder="5" id="stdio" x="471" y="211"/>
-        <ElementPosition dnOrder="6" id="uart6" x="223" y="188"/>
+        <ElementPosition dnOrder="4" id="i2c1" x="29" y="122"/>
+        <ElementPosition dnOrder="5" id="stdio" x="265" y="240"/>
+        <ElementPosition dnOrder="6" id="uart6" x="30" y="225"/>
       </ElementPositions>
     </ComponentGraph>
     <GraphSettings canvasHeight="400" canvasWidth="400" dnOrder="1"/>

@@ -50,7 +50,7 @@
 
 /** \brief discover i2c buses available for this hardware
  * this maintains a list of logical to physical bus mappings freeing the application
- * of the a-priori knowledge
+ * of the a-prior knowledge
  * \param[in] i2c_buses - an array of logical bus numbers
  * \param[in] max_buses - maximum number of buses the app wants to attempt to discover
  * \return ATCA_SUCCESS
@@ -109,7 +109,7 @@ ATCA_STATUS hal_i2c_post_init(ATCAIface iface)
 
 /** \brief HAL implementation of I2C send over START
  * \param[in] iface         instance
- * \param[in] word_address  device word address
+ * \param[in] word_address  device transaction type
  * \param[in] txdata        pointer to space to bytes to send
  * \param[in] txlength      number of bytes to send
  * \return ATCA_SUCCESS on success, otherwise an error code.
@@ -160,10 +160,11 @@ ATCA_STATUS hal_i2c_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata,
 }
 
 /** \brief HAL implementation of I2C receive function for START I2C
- * \param[in]    iface     Device to interact with.
- * \param[out]   rxdata    Data received will be returned here.
- * \param[inout] rxlength  As input, the size of the rxdata buffer.
- *                         As output, the number of bytes received.
+ * \param[in]    iface         Device to interact with.
+ * \param[in]    word_address  device transaction type
+ * \param[out]   rxdata        Data received will be returned here.
+ * \param[in,out] rxlength     As input, the size of the rxdata buffer.
+ *                             As output, the number of bytes received.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength)
@@ -178,12 +179,12 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
 
     if ((NULL == cfg) || (NULL == rxlength) || (NULL == rxdata))
     {
-        RETURN(ATCA_INVALID_POINTER, "NULL pointer encountered");
+        return ATCA_TRACE(ATCA_INVALID_POINTER, "NULL pointer encountered");
     }
 
     if(NULL == (plib = (atca_plib_i2c_api_t*)cfg->cfg_data))
     {
-        RETURN(ATCA_INVALID_POINTER, "NULL pointer encountered");
+        return ATCA_TRACE(ATCA_INVALID_POINTER, "NULL pointer encountered");
     }
 
     rxdata_max_size = *rxlength;
@@ -199,7 +200,7 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if(ATCA_SUCCESS != status)
         {
-            TRACE(status, "hal_i2c_send - failed");
+            ATCA_TRACE(status, "hal_i2c_send - failed");
             break;
         }
 
@@ -226,13 +227,13 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if(ATCA_SUCCESS != status)
         {
-            TRACE(status, "plib->read - failed");
+            ATCA_TRACE(status, "plib->read - failed");
             break;
         }
 
         if(1 == read_length)
         {
-            TRACE(status, "1 byte read completed");
+            ATCA_TRACE(status, "1 byte read completed");
             break;
         }
 
@@ -249,13 +250,13 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
 
         if (read_length > rxdata_max_size)
         {
-            status = TRACE(ATCA_SMALL_BUFFER, "rxdata is small buffer");
+            status = ATCA_TRACE(ATCA_SMALL_BUFFER, "rxdata is small buffer");
             break;
         }
 
         if (read_length < min_resp_size)
         {
-            status = TRACE(ATCA_RX_FAIL, "packet size is invalid");
+            status = ATCA_TRACE(ATCA_RX_FAIL, "packet size is invalid");
             break;
         }
         
@@ -273,7 +274,7 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if(ATCA_SUCCESS != status)
         {
-            status = TRACE(status, "plib->read - failed");
+            status = ATCA_TRACE(status, "plib->read - failed");
             break;
         }
     }

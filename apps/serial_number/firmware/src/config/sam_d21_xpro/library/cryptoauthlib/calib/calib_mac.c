@@ -33,13 +33,13 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes MAC command, which computes a SHA-256 digest of a key
  *          stored in the device, a challenge, and other information on the
  *          device.
  *
+ *  \param[in]  device     Device context pointer
  *	\param[in]  mode       Controls which fields within the device are used in
  *                         the message
  *	\param[in]  key_id     Key in the CryptoAuth device to use for the MAC

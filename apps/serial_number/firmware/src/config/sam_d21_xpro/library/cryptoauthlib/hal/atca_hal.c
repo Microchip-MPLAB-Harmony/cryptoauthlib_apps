@@ -189,7 +189,7 @@ static ATCA_STATUS hal_iface_set_registered(ATCAIfaceType iface_type, ATCAHAL_t*
 /** \brief Register/Replace a HAL with a
  * \param[in] iface_type - the type of physical interface to register
  * \param[in] hal pointer to the new ATCAHAL_t structure to register
- * \param[out] hal pointer to the existing ATCAHAL_t structure
+ * \param[out] old pointer to the existing ATCAHAL_t structure
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS hal_iface_register_hal(ATCAIfaceType iface_type, ATCAHAL_t *hal, ATCAHAL_t **old)

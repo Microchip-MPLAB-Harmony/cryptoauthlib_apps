@@ -379,10 +379,8 @@ ATCA_STATUS atSHA(ATCACommand ca_cmd, ATCAPacket *packet, uint16_t write_context
     case SHA_MODE_WRITE_CONTEXT:
         packet->txsize = ATCA_CMD_SIZE_MIN + write_context_size;
         break;
-
-    default:
-        return ATCA_BAD_PARAM;
     }
+
     atCalcCrc(packet);
     return ATCA_SUCCESS;
 }
@@ -702,5 +700,3 @@ ATCA_STATUS isATCAError(uint8_t *data)
         return ATCA_SUCCESS;
     }
 }
-
-/** @} */

@@ -34,8 +34,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /**
@@ -46,6 +45,7 @@
  *        device. This command cannot be used to write slots configured as ECC
  *        private keys.
  *
+ * \param[in] device   Device context pointer
  * \param[in] zone     Zone/Param1 for the write command.
  * \param[in] address  Address/Param2 for the write command.
  * \param[in] value    Plain-text data to be written or cipher-text for
@@ -107,6 +107,7 @@ ATCA_STATUS calib_write(ATCADevice device, uint8_t zone, uint16_t address, const
 /** \brief Executes the Write command, which writes either 4 or 32 bytes of
  *          data into a device zone.
  *
+ *  \param[in] device  Device context pointer
  *  \param[in] zone    Device zone to write to (0=config, 1=OTP, 2=data).
  *  \param[in] slot    If writing to the data zone, it is the slot to write to,
  *                     otherwise it should be 0.
@@ -164,6 +165,7 @@ ATCA_STATUS calib_write_zone(ATCADevice device, uint8_t zone, uint16_t slot, uin
  * wire. Data zone must be locked and the slot configuration must be set to
  * encrypted write for the block to be successfully written.
  *
+ *  \param[in] device      Device context pointer
  *  \param[in] key_id      Slot ID to write to.
  *  \param[in] block       Index of the 32 byte block to write in the slot.
  *  \param[in] data        32 bytes of clear text data to be written to the slot
@@ -219,21 +221,21 @@ ATCA_STATUS calib_write_enc(ATCADevice device, uint16_t key_id, uint8_t block, c
         memset(&nonce_params, 0, sizeof(nonce_params));
         nonce_params.mode = NONCE_MODE_SEED_UPDATE;
         nonce_params.zero = 0;
-        nonce_params.num_in = (uint8_t*)&num_in[0];
+        nonce_params.num_in = &num_in[0];
         nonce_params.rand_out = rand_out;
         nonce_params.temp_key = &temp_key;
 
         // Send the random Nonce command
         if ((status = calib_nonce_rand(device, num_in, rand_out)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Nonce failed");
+            ATCA_TRACE(status, "Nonce failed");
             break;
         }
 
         // Calculate Tempkey
         if ((status = atcah_nonce(&nonce_params)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Calc TempKey failed");
+            ATCA_TRACE(status, "Calc TempKey failed");
             break;
         }
 
@@ -246,7 +248,7 @@ ATCA_STATUS calib_write_enc(ATCADevice device, uint16_t key_id, uint8_t block, c
         // Send the GenDig command
         if ((status = calib_gendig(device, GENDIG_ZONE_DATA, enc_key_id, other_data, sizeof(other_data))) != ATCA_SUCCESS)
         {
-            TRACE(status, "GenDig failed");
+            ATCA_TRACE(status, "GenDig failed");
             break;
         }
 
@@ -263,14 +265,14 @@ ATCA_STATUS calib_write_enc(ATCADevice device, uint16_t key_id, uint8_t block, c
         gen_dig_param.temp_key = &temp_key;
         if ((status = atcah_gen_dig(&gen_dig_param)) != ATCA_SUCCESS)
         {
-            TRACE(status, "atcah_gen_dig() failed");
+            ATCA_TRACE(status, "atcah_gen_dig() failed");
             break;
         }
 
         // The get address function checks the remaining variables
         if ((status = calib_get_addr(ATCA_ZONE_DATA, key_id, block, 0, &addr)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Get address failed");
+            ATCA_TRACE(status, "Get address failed");
             break;
         }
 
@@ -285,7 +287,7 @@ ATCA_STATUS calib_write_enc(ATCADevice device, uint16_t key_id, uint8_t block, c
 
         if ((status = atcah_write_auth_mac(&write_mac_param)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Calculate Auth MAC failed");
+            ATCA_TRACE(status, "Calculate Auth MAC failed");
             break;
         }
 
@@ -306,6 +308,7 @@ ATCA_STATUS calib_write_enc(ATCADevice device, uint16_t key_id, uint8_t block, c
  *  This command may fail if UserExtra and/or Selector bytes have
  *  already been set to non-zero values.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in] config_data  Data to the config zone data. This should be 88
  *                          bytes for SHA devices and 128 bytes for ECC
  *                          devices.
@@ -354,7 +357,8 @@ ATCA_STATUS calib_write_config_zone(ATCADevice device, const uint8_t* config_dat
 
 /** \brief Uses the write command to write a public key to a slot in the
  *         proper format.
- *
+ * 
+ *  \param[in] device     Device context pointer
  *  \param[in] slot        Slot number to write. Only slots 8 to 15 are large
  *                         enough to store a public key.
  *  \param[in] public_key  Public key to write into the slot specified. X and Y
@@ -404,6 +408,7 @@ ATCA_STATUS calib_write_pubkey(ATCADevice device, uint16_t slot, const uint8_t *
  * unlocked, only 32-byte writes are allowed to slots and OTP and the offset
  * and length must be multiples of 32 or the write will fail.
  *
+ *  \param[in] device        Device context pointer
  *  \param[in] zone          Zone to write data to: ATCA_ZONE_CONFIG(0),
  *                           ATCA_ZONE_OTP(1), or ATCA_ZONE_DATA(2).
  *  \param[in] slot          If zone is ATCA_ZONE_DATA(2), the slot number to
@@ -503,6 +508,7 @@ ATCA_STATUS calib_write_bytes_zone(ATCADevice device, uint8_t zone, uint16_t slo
  * format. This encodes a binary count value into the 8 byte encoded value
  * required. Can only be set while the configuration zone is unlocked.
  *
+ * \param[in]  device         Device context pointer
  * \param[in]  counter_id     Counter to be written.
  * \param[in]  counter_value  Counter value to set.
  *

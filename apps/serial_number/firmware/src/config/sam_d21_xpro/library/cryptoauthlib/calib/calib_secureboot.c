@@ -31,13 +31,13 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /** \brief Executes Secure Boot command, which provides support for secure
  *          boot of an external MCU or MPU.
  *
+ * \param[in]  device     Device context pointer
  * \param[in]  mode       Mode determines what operations the SecureBoot
  *                        command performs.
  * \param[in]  param2     Not used, must be 0.
@@ -96,6 +96,7 @@ ATCA_STATUS calib_secureboot(ATCADevice device, uint8_t mode, uint16_t param2, c
 /** \brief Executes Secure Boot command with encrypted digest and validated
  *          MAC response using the IO protection key.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  mode         Mode determines what operations the SecureBoot
  *                          command performs.
  * \param[in]  digest       Digest of the code to be verified (32 bytes).

@@ -32,8 +32,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /** \brief Executes the Verify command, which takes an ECDSA [R,S] signature
@@ -44,6 +43,7 @@
  * TempKey (or Message Digest Buffer in some cases for the ATECC608A) should
  * contain the 32 byte message.
  *
+ * \param[in] device      Device context pointer
  * \param[in] mode        Verify command mode and options
  * \param[in] key_id      Stored mode, the slot containing the public key to
  *                        be used for the verification.
@@ -127,6 +127,7 @@ ATCA_STATUS calib_verify(ATCADevice device, uint8_t mode, uint16_t key_id, const
  *          or Stored Verify modes.. This function is only available on the
  *          ATECC608A.
  *
+ * \param[in]  device       Device context pointer
  * \param[in] mode          Verify command mode. Can be VERIFY_MODE_EXTERNAL or
  *                          VERIFY_MODE_STORED.
  * \param[in] key_id        For VERIFY_MODE_STORED mode, the slot containing the
@@ -222,6 +223,7 @@ static ATCA_STATUS calib_verify_extern_stored_mac(ATCADevice device, uint8_t mod
  *          the Message Digest Buffer to the ATECC608A device or TempKey for
  *          other devices.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  message      32 byte message to be verified. Typically
  *                          the SHA256 hash of the full message.
  * \param[in]  signature    Signature to be verified. R and S integers in
@@ -285,6 +287,7 @@ ATCA_STATUS calib_verify_extern(ATCADevice device, const uint8_t *message, const
  *          signature, and public key) supplied. This function is only available
  *          on the ATECC608A.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  message      32 byte message to be verified. Typically
  *                          the SHA256 hash of the full message.
  * \param[in]  signature    Signature to be verified. R and S integers in
@@ -311,6 +314,7 @@ ATCA_STATUS calib_verify_extern_mac(ATCADevice device, const uint8_t *message, c
  *          message to be signed will be loaded into the Message Digest Buffer
  *          to the ATECC608A device or TempKey for other devices.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  message      32 byte message to be verified. Typically
  *                          the SHA256 hash of the full message.
  * \param[in]  signature    Signature to be verified. R and S integers in
@@ -372,6 +376,7 @@ ATCA_STATUS calib_verify_stored(ATCADevice device, const uint8_t *message, const
  *          signature (ECDSA verify operation) with a public key stored in the
  *          device. This function is only available on the ATECC608A.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  message      32 byte message to be verified. Typically
  *                          the SHA256 hash of the full message.
  * \param[in]  signature    Signature to be verified. R and S integers in
@@ -398,6 +403,7 @@ ATCA_STATUS calib_verify_stored_mac(ATCADevice device, const uint8_t *message, c
  * This command can only be run after GenKey has been used to create a PubKey
  * digest of the public key to be validated in TempKey (mode=0x10).
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  key_id       Slot containing the public key to be validated.
  * \param[in]  signature    Signature to be verified. R and S integers in
  *                          big-endian format. 64 bytes for P256 curve.
@@ -435,6 +441,7 @@ ATCA_STATUS calib_verify_validate(ATCADevice device, uint16_t key_id, const uint
  * This command can only be run after GenKey has been used to create a PubKey
  * digest of the public key to be invalidated in TempKey (mode=0x10).
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  key_id       Slot containing the public key to be invalidated.
  * \param[in]  signature    Signature to be verified. R and S integers in
  *                          big-endian format. 64 bytes for P256 curve.

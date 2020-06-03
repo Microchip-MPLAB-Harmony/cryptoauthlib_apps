@@ -42,6 +42,42 @@
  * (right-field). The counter_size field sets the size of the counter and the
  * remaining bytes are assumed to be the nonce.
  *
+ * \param[in] device        Device context pointer
+ * \param[in] ctx           AES CTR context to be initialized.
+ * \param[in] key_id        Key location. Can either be a slot/handles or
+ *                          in TempKey.
+ * \param[in] key_block     Index of the 16-byte block to use within the key
+ *                          location for the actual key.
+ * \param[in] counter_size  Size of counter in IV in bytes. 4 bytes is a
+ *                          common size.
+ * \param[in] iv            Initialization vector (concatenation of nonce and
+ *                          counter) 16 bytes.
+ *
+ * \return ATCA_SUCCESS on success, otherwise an error code.
+ */
+ATCA_STATUS atcab_aes_ctr_init_ext(ATCADevice device, atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, const uint8_t* iv)
+{
+    if (ctx == NULL || iv == NULL || counter_size > ATCA_AES128_BLOCK_SIZE)
+    {
+        return ATCA_BAD_PARAM;
+    }
+    memset(ctx, 0, sizeof(*ctx));
+    ctx->device = device;
+    ctx->key_id = key_id;
+    ctx->key_block = key_block;
+    ctx->counter_size = counter_size;
+    memcpy(ctx->cb, iv, ATCA_AES128_BLOCK_SIZE);
+
+    return ATCA_SUCCESS;
+}
+
+/** \brief Initialize context for AES CTR operation with an existing IV, which
+ *         is common when start a decrypt operation.
+ *
+ * The IV is a combination of nonce (left-field) and big-endian counter
+ * (right-field). The counter_size field sets the size of the counter and the
+ * remaining bytes are assumed to be the nonce.
+ *
  * \param[in] ctx           AES CTR context to be initialized.
  * \param[in] key_id        Key location. Can either be a slot/handles or
  *                          in TempKey.
@@ -56,14 +92,56 @@
  */
 ATCA_STATUS atcab_aes_ctr_init(atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, const uint8_t* iv)
 {
+    return atcab_aes_ctr_init_ext(atcab_get_device(), ctx, key_id, key_block, counter_size, iv);
+}
+
+/** \brief Initialize context for AES CTR operation with a random nonce and
+ *         counter set to 0 as the IV, which is common when starting an
+ *         encrypt operation.
+ *
+ * The IV is a combination of nonce (left-field) and big-endian counter
+ * (right-field). The counter_size field sets the size of the counter and the
+ * remaining bytes are assumed to be the nonce.
+ *
+ * \param[in]  device        Device context pointer
+ * \param[in]  ctx           AES CTR context to be initialized.
+ * \param[in]  key_id        Key location. Can either be a slot number or
+ *                           ATCA_TEMPKEY_KEYID for TempKey.
+ * \param[in]  key_block     Index of the 16-byte block to use within the key
+ *                           location for the actual key.
+ * \param[in]  counter_size  Size of counter in IV in bytes. 4 bytes is a
+ *                           common size.
+ * \param[out] iv            Initialization vector (concatenation of nonce and
+ *                           counter) is returned here (16 bytes).
+ *
+ * \return ATCA_SUCCESS on success, otherwise an error code.
+ */
+ATCA_STATUS atcab_aes_ctr_init_rand_ext(ATCADevice device, atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, uint8_t* iv)
+{
+    ATCA_STATUS status = ATCA_SUCCESS;
+    uint8_t nonce_size;
+
     if (ctx == NULL || iv == NULL || counter_size > ATCA_AES128_BLOCK_SIZE)
     {
         return ATCA_BAD_PARAM;
     }
     memset(ctx, 0, sizeof(*ctx));
+    ctx->device = device;
     ctx->key_id = key_id;
     ctx->key_block = key_block;
     ctx->counter_size = counter_size;
+
+    // Generate random nonce
+    nonce_size = ATCA_AES128_BLOCK_SIZE - ctx->counter_size;
+    if (nonce_size != 0)
+    {
+        uint8_t random_nonce[32];
+        if (ATCA_SUCCESS != (status = atcab_random_ext(device, random_nonce)))
+        {
+            return status;
+        }
+        memcpy(iv, random_nonce, nonce_size);
+    }
     memcpy(ctx->cb, iv, ATCA_AES128_BLOCK_SIZE);
 
     return ATCA_SUCCESS;
@@ -91,32 +169,7 @@ ATCA_STATUS atcab_aes_ctr_init(atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t
  */
 ATCA_STATUS atcab_aes_ctr_init_rand(atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, uint8_t* iv)
 {
-    ATCA_STATUS status = ATCA_SUCCESS;
-    uint8_t nonce_size;
-
-    if (ctx == NULL || iv == NULL || counter_size > ATCA_AES128_BLOCK_SIZE)
-    {
-        return ATCA_BAD_PARAM;
-    }
-    memset(ctx, 0, sizeof(*ctx));
-    ctx->key_id = key_id;
-    ctx->key_block = key_block;
-    ctx->counter_size = counter_size;
-
-    // Generate random nonce
-    nonce_size = ATCA_AES128_BLOCK_SIZE - ctx->counter_size;
-    if (nonce_size != 0)
-    {
-        uint8_t random_nonce[32];
-        if (ATCA_SUCCESS != (status = atcab_random(random_nonce)))
-        {
-            return status;
-        }
-        memcpy(iv, random_nonce, nonce_size);
-    }
-    memcpy(ctx->cb, iv, ATCA_AES128_BLOCK_SIZE);
-
-    return ATCA_SUCCESS;
+    return atcab_aes_ctr_init_rand_ext(atcab_get_device(), ctx, key_id, key_block, counter_size, iv);
 }
 
 /** \brief Increments AES CTR counter value.
@@ -175,7 +228,7 @@ ATCA_STATUS atcab_aes_ctr_block(atca_aes_ctr_ctx_t* ctx, const uint8_t* input, u
     }
 
     // Block encrypt of counter block (128 bits)
-    if (ATCA_SUCCESS != (status = atcab_aes_encrypt(ctx->key_id, ctx->key_block, ctx->cb, encrypted_counter)))
+    if (ATCA_SUCCESS != (status = atcab_aes_encrypt_ext(ctx->device, ctx->key_id, ctx->key_block, ctx->cb, encrypted_counter)))
     {
         return status;
     }

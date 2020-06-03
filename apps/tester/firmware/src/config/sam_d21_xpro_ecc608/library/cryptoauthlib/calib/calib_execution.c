@@ -280,7 +280,7 @@ ATCA_STATUS calib_get_execution_time(uint8_t opcode, ATCACommand ca_cmd)
 /** \brief Wakes up device, sends the packet, waits for command completion,
  *         receives response, and puts the device into the idle state.
  *
- * \param[inout] packet  As input, the packet to be sent. As output, the
+ * \param[in,out] packet  As input, the packet to be sent. As output, the
  *                       data buffer in the packet structure will contain the
  *                       response.
  * \param[in]    device  CryptoAuthentication device to send the command to.
@@ -378,5 +378,3 @@ ATCA_STATUS calib_execute_command(ATCAPacket* packet, ATCADevice device)
     atidle(device->mIface);
     return status;
 }
-
-/** @} */

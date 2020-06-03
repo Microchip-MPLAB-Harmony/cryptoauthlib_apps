@@ -35,7 +35,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "atca_command.h"
-#include "atca_config.h"
+#include "cryptoauthlib.h"
 
 
 /** \brief Initializer for ATCACommand
@@ -96,4 +96,3 @@ void deleteATCACommand(ATCACommand *ca_cmd)
     *ca_cmd = NULL;
 }
 #endif
-/** @} */

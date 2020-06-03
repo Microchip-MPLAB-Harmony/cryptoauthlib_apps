@@ -38,7 +38,7 @@
 #define RANDOM_RSP_SIZE             (32)
 #endif
 
-void run_basic_tests(int argc, char* argv[])
+int run_basic_tests(int argc, char* argv[])
 {
 #ifdef ATCA_ATECC608A_SUPPORT
     if (gCfg->devtype == ATECC608A)
@@ -46,10 +46,10 @@ void run_basic_tests(int argc, char* argv[])
         check_clock_divider(argc, argv);
     }
 #endif
-    run_test(argc, argv, RunAllBasicTests);
+    return run_test(argc, argv, RunAllBasicTests);
 }
 
-void run_unit_tests(int argc, char* argv[])
+int run_unit_tests(int argc, char* argv[])
 {
 #ifdef ATCA_ATECC608A_SUPPORT
     if (gCfg->devtype == ATECC608A)
@@ -57,18 +57,20 @@ void run_unit_tests(int argc, char* argv[])
         check_clock_divider(argc, argv);
     }
 #endif
-    run_test(argc, argv, RunAllFeatureTests);
-}
-void run_otpzero_tests(int argc, char* argv[])
-{
-    run_test(argc, argv, RunBasicOtpZero);
-}
-void run_helper_tests(int argc, char* argv[])
-{
-    run_test(argc, argv, RunAllHelperTests);
+    return run_test(argc, argv, RunAllFeatureTests);
 }
 
-void read_config(int argc, char* argv[])
+int run_otpzero_tests(int argc, char* argv[])
+{
+    return run_test(argc, argv, RunBasicOtpZero);
+}
+
+int run_helper_tests(int argc, char* argv[])
+{
+    return run_test(argc, argv, RunAllHelperTests);
+}
+
+int read_config(int argc, char* argv[])
 {
     ATCA_STATUS status;
     uint8_t config[200];
@@ -79,7 +81,7 @@ void read_config(int argc, char* argv[])
     if (status != ATCA_SUCCESS)
     {
         printf("atcab_init() failed: %02x\r\n", status);
-        return;
+        return 0;
     }
 
     do
@@ -118,6 +120,8 @@ void read_config(int argc, char* argv[])
     } while (0);
 
     atcab_release();
+
+    return 0;
 }
 
 int lock_status(int argc, char* argv[])
@@ -142,23 +146,25 @@ int lock_status(int argc, char* argv[])
     return (int)status;
 }
 
-void lock_config(int argc, char* argv[])
+int lock_config(int argc, char* argv[])
 {
-    lock_config_zone(argc, argv);
+    int ret = lock_config_zone(argc, argv);
     lock_status(argc, argv);
+    return ret;
 }
 
-void lock_data(int argc, char* argv[])
+int lock_data(int argc, char* argv[])
 {
-    lock_data_zone(argc, argv);
+    int ret = lock_data_zone(argc, argv);
     lock_status(argc, argv);
+    return ret;
 }
 
 int do_randoms(int argc, char* argv[])
 {
     ATCA_STATUS status;
     uint8_t randout[RANDOM_RSP_SIZE];
-    char displayStr[RANDOM_RSP_SIZE * 3];
+    char displayStr[100];
     size_t displen = sizeof(displayStr);
     int i;
 
@@ -233,7 +239,7 @@ int discover(int argc, char* argv[])
 }
 #endif
 
-void info(int argc, char* argv[])
+int info(int argc, char* argv[])
 {
     ATCA_STATUS status;
     uint8_t revision[4];
@@ -247,6 +253,7 @@ void info(int argc, char* argv[])
         atcab_bin2hex(revision, 4, displaystr, &displaylen);
         printf("revision:\r\n%s\r\n", displaystr);
     }
+    return status;
 }
 
 int read_sernum(int argc, char* argv[])
@@ -263,7 +270,7 @@ int read_sernum(int argc, char* argv[])
         atcab_bin2hex(serialnum, ATCA_SERIAL_NUM_SIZE, displaystr, &displaylen);
         printf("serial number:\r\n%s\r\n", displaystr);
     }
-    return 0;
+    return status;
 }
 
 #if defined(ATCA_ECC_SUPPORT) && !defined(DO_NOT_TEST_CERT)
@@ -326,16 +333,19 @@ int lock_config_zone(int argc, char* argv[])
         return ATCA_GEN_FAIL;
     }
 
-    printf("Locking with test configuration, which is suitable only for unit tests... \r\nConfirm by typing Y\r\n");
-    do
+    if (!g_atca_test_quiet_mode)
     {
-        scanf("%c", &ch);
-    } while (ch == '\n' || ch == '\r');
+        printf("Locking with test configuration, which is suitable only for unit tests... \r\nConfirm by typing Y\r\n");
+        do
+        {
+            scanf("%c", &ch);
+        } while (ch == '\n' || ch == '\r');
 
-    if (!((ch == 'Y') || (ch == 'y')))
-    {
-        printf("Skipping Config Lock on request.\r\n");
-        return ATCA_GEN_FAIL;
+        if (!((ch == 'Y') || (ch == 'y')))
+        {
+            printf("Skipping Config Lock on request.\r\n");
+            return ATCA_GEN_FAIL;
+        }
     }
 
     status = atcab_init(gCfg);
@@ -360,16 +370,19 @@ int lock_data_zone(int argc, char* argv[])
     ATCA_STATUS status;
     uint8_t ch = 0;
 
-    printf("Locking Data zone... \r\nConfirm by typing Y\r\n");
-    do
+    if (!g_atca_test_quiet_mode)
     {
-        scanf("%c", &ch);
-    } while (ch == '\n' || ch == '\r');
+        printf("Locking Data zone... \r\nConfirm by typing Y\r\n");
+        do
+        {
+            scanf("%c", &ch);
+        } while (ch == '\n' || ch == '\r');
 
-    if (!((ch == 'Y') || (ch == 'y')))
-    {
-        printf("Skipping Data Zone Lock on request.\r\n");
-        return ATCA_GEN_FAIL;
+        if (!((ch == 'Y') || (ch == 'y')))
+        {
+            printf("Skipping Data Zone Lock on request.\r\n");
+            return ATCA_GEN_FAIL;
+        }
     }
 
     if (gCfg->devtype == ATSHA206A)
@@ -455,7 +468,7 @@ int run_test(int argc, char* argv[], void* fptest)
     }
 }
 
-void run_all_tests(int argc, char* argv[])
+int run_all_tests(int argc, char* argv[])
 {
     ATCA_STATUS status;
     bool config_locked = false;
@@ -477,21 +490,28 @@ void run_all_tests(int argc, char* argv[])
     if (status != ATCA_SUCCESS)
     {
         printf("is_config_locked() failed with ret=0x%08X\r\n", status);
-        return;
+        return status;
     }
     status = is_data_locked(&data_locked);
     if (status != ATCA_SUCCESS)
     {
         printf("is_data_locked() failed with ret=0x%08X\r\n", status);
-        return;
+        return status;
     }
 
     status = lock_status(argc, argv);
     if (status != ATCA_SUCCESS)
     {
         printf("lock_status() failed with ret=0x%08X\r\n", status);
-        return;
+        return status;
     }
+
+#ifdef ATCA_TA100_SUPPORT
+    if (TA100 == gCfg->devtype)
+    {
+        (void)talib_configure_device(0, NULL);
+    }
+#endif
 
 #ifndef DO_NOT_TEST_BASIC_UNIT
     if (!config_locked)
@@ -500,27 +520,27 @@ void run_all_tests(int argc, char* argv[])
         if (fails > 0)
         {
             printf("unit tests with config zone unlocked failed.\r\n");
-            return;
+            return status;
         }
 
         fails += run_test(argc, argv, RunAllBasicTests);
         if (fails > 0)
         {
             printf("basic tests with config zone unlocked failed.\r\n");
-            return;
+            return status;
         }
 
         status = lock_config_zone(argc, argv);
         if (status != ATCA_SUCCESS)
         {
             printf("lock_config_zone() failed with ret=0x%08X\r\n", status);
-            return;
+            return status;
         }
         status = lock_status(argc, argv);
         if (status != ATCA_SUCCESS)
         {
             printf("lock_status() failed with ret=0x%08X\r\n", status);
-            return;
+            return status;
         }
     }
 
@@ -530,27 +550,27 @@ void run_all_tests(int argc, char* argv[])
         if (fails > 0)
         {
             printf("unit tests with data zone unlocked failed.\r\n");
-            return;
+            return status;
         }
 
         fails += run_test(argc, argv, RunAllBasicTests);
         if (fails > 0)
         {
             printf("basic tests with data zone unlocked failed.\r\n");
-            return;
+            return status;
         }
 
         status = lock_data_zone(argc, argv);
         if (status != ATCA_SUCCESS)
         {
             printf("lock_data_zone() failed with ret=0x%08X\r\n", status);
-            return;
+            return status;
         }
         status = lock_status(argc, argv);
         if (status != ATCA_SUCCESS)
         {
             printf("lock_status() failed with ret=0x%08X\r\n", status);
-            return;
+            return status;
         }
     }
 
@@ -558,21 +578,21 @@ void run_all_tests(int argc, char* argv[])
     if (fails > 0)
     {
         printf("unit tests with data zone locked failed.\r\n");
-        return;
+        return status;
     }
 
     fails += run_test(argc, argv, RunAllBasicTests);
     if (fails > 0)
     {
         printf("basic tests with data zone locked failed.\r\n");
-        return;
+        return status;
     }
 
     fails = run_test(argc, argv, RunAllHelperTests);
     if (fails > 0)
     {
         printf("util tests failed.\r\n");
-        return;
+        return status;
     }
 #endif
 
@@ -581,7 +601,7 @@ void run_all_tests(int argc, char* argv[])
     if (fails > 0)
     {
         printf("crypto tests failed.\r\n");
-        return;
+        return status;
     }
 #endif
 
@@ -592,7 +612,7 @@ void run_all_tests(int argc, char* argv[])
         if (fails > 0)
         {
             printf("cio tests failed.\r\n");
-            return;
+            return 0;
         }
     }
     else
@@ -604,14 +624,15 @@ void run_all_tests(int argc, char* argv[])
     if (fails > 0)
     {
         printf("cd tests failed.\r\n");
-        return;
+        return 0;
     }
 #endif
 
     printf("All unit tests passed.\r\n");
+    return 0;
 }
 
-void run_tng_tests(int argc, char* argv[])
+int run_tng_tests(int argc, char* argv[])
 {
     ATCA_STATUS status;
 
@@ -622,10 +643,11 @@ void run_tng_tests(int argc, char* argv[])
     if (status != ATCA_SUCCESS)
     {
         printf("atcab_init() failed with ret=0x%08X\r\n", status);
-        return;
+        return status;
     }
 
     run_test(argc, argv, RunTNGTests);
 
     atcab_release();
+    return 0;
 }

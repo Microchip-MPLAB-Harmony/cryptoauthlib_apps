@@ -62,6 +62,12 @@ typedef struct
 #include "host/atca_host.h"
 #endif
 
+#if ATCA_TA_SUPPORT
+#include "api_talib/test_talib.h"
+#endif
+
+extern bool g_atca_test_quiet_mode;
+
 void RunAllTests(t_test_case_info** tests_list);
 int run_test(int argc, char* argv[], void* fptest);
 void run_all_talib_tests(void);
@@ -194,24 +200,24 @@ int lock_data_zone(int argc, char* argv[]);
 ATCA_STATUS get_info(uint8_t* revision);
 ATCA_STATUS get_serial_no(uint8_t* sernum);
 int do_randoms(int argc, char* argv[]);
-void read_config(int argc, char* argv[]);
-void lock_config(int argc, char* argv[]);
-void lock_data(int argc, char* argv[]);
-void info(int argc, char* argv[]);
+int read_config(int argc, char* argv[]);
+int lock_config(int argc, char* argv[]);
+int lock_data(int argc, char* argv[]);
+int info(int argc, char* argv[]);
 int read_sernum(int argc, char* argv[]);
 int discover(int argc, char* argv[]);
 
-void run_basic_tests(int argc, char* argv[]);
-void run_unit_tests(int argc, char* argv[]);
-void run_otpzero_tests(int argc, char* argv[]);
-void run_helper_tests(int argc, char* argv[]);
-void run_all_tests(int argc, char* argv[]);
+int run_basic_tests(int argc, char* argv[]);
+int run_unit_tests(int argc, char* argv[]);
+int run_otpzero_tests(int argc, char* argv[]);
+int run_helper_tests(int argc, char* argv[]);
+int run_all_tests(int argc, char* argv[]);
 ATCA_STATUS set_chip_mode(uint8_t i2c_user_extra_add, uint8_t ttl_enable, uint8_t watchdog, uint8_t clock_divider);
 void update_chip_mode(uint8_t* chip_mode, uint8_t i2c_user_extra_add, uint8_t ttl_enable, uint8_t watchdog, uint8_t clock_divider);
-void set_clock_divider_m0(int argc, char* argv[]);
-void set_clock_divider_m1(int argc, char* argv[]);
-void set_clock_divider_m2(int argc, char* argv[]);
-void run_tng_tests(int argc, char* argv[]);
+int set_clock_divider_m0(int argc, char* argv[]);
+int set_clock_divider_m1(int argc, char* argv[]);
+int set_clock_divider_m2(int argc, char* argv[]);
+int run_tng_tests(int argc, char* argv[]);
 ATCA_STATUS check_clock_divider(int argc, char* argv[]);
 
 #ifdef _WIN32

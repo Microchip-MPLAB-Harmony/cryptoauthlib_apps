@@ -67,4 +67,6 @@ typedef struct atca_plib_api
 extern atca_plib_i2c_api_t sercom7_plib_i2c_api;
 
 
+
+
 #endif // ATCA_CONFIG_H

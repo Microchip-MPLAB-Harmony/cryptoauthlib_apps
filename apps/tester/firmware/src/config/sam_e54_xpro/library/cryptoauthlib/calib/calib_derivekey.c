@@ -32,12 +32,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes the DeviveKey command for deriving a new key from a
  *          nonce (TempKey) and an existing key.
  *
+ *  \param[in] device      Device context pointer
  *  \param[in] mode        Bit 2 must match the value in TempKey.SourceFlag
  *  \param[in] target_key  Key slot to be written
  *  \param[in] mac         Optional 32 byte MAC used to validate operation. NULL

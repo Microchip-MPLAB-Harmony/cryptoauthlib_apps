@@ -32,12 +32,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes the Sign command, which generates a signature using the
  *          ECDSA algorithm.
  *
+ * \param[in]  device     Device context pointer
  * \param[in]  mode       Mode determines what the source of the message to be
  *                        signed.
  * \param[in]  key_id     Private key slot used to sign the message.
@@ -96,6 +96,7 @@ ATCA_STATUS calib_sign_base(ATCADevice device, uint8_t mode, uint16_t key_id, ui
  *                   will be loaded into the Message Digest Buffer to the
  *                   ATECC608A device or TempKey for other devices.
  *
+ *  \param[in]  device     Device context pointer
  *  \param[in]  key_id     Slot of the private key to be used to sign the
  *                         message.
  *  \param[in]  msg        32-byte message to be signed. Typically the SHA256
@@ -145,6 +146,7 @@ ATCA_STATUS calib_sign(ATCADevice device, uint16_t key_id, const uint8_t *msg, u
 
 /** \brief Executes Sign command to sign an internally generated message.
  *
+ *  \param[in]  device         Device context pointer
  *  \param[in]  key_id         Slot of the private key to be used to sign the
  *                             message.
  *  \param[in]  is_invalidate  Set to true if the signature will be used with

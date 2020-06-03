@@ -33,11 +33,11 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /** \brief Base function for generating premaster secret key using ECDH.
+ *  \param[in]  device      Device context pointer
  *  \param[in]  mode        Mode to be used for ECDH computation
  *  \param[in]  key_id      Slot of key for ECDH computation
  *  \param[in]  public_key  Public key input to ECDH calculation. X and Y
@@ -89,7 +89,8 @@ ATCA_STATUS calib_ecdh_base(ATCADevice device, uint8_t mode, uint16_t key_id, co
 
 /** \brief ECDH command with a private key in a slot and the premaster secret
  *         is returned in the clear.
- *
+ *  
+ *  \param[in] device     Device context pointer
  *  \param[in] key_id     Slot of key for ECDH computation
  *  \param[in] public_key Public key input to ECDH calculation. X and Y
  *                        integers in big-endian format. 64 bytes for P256
@@ -114,6 +115,7 @@ ATCA_STATUS calib_ecdh(ATCADevice device, uint16_t key_id, const uint8_t* public
  * This function only works for even numbered slots with the proper
  * configuration.
  *
+ *  \param[in]  device       Device context pointer
  *  \param[in]  key_id       Slot of key for ECDH computation
  *  \param[in]  public_key   Public key input to ECDH calculation. X and Y
  *                           integers in big-endian format. 64 bytes for P256
@@ -140,13 +142,13 @@ ATCA_STATUS calib_ecdh_enc(ATCADevice device, uint16_t key_id, const uint8_t* pu
         if (public_key == NULL || pms == NULL || read_key == NULL)
         {
             status = ATCA_BAD_PARAM;
-            TRACE(status, "Bad input parameters"); break;
+            ATCA_TRACE(status, "Bad input parameters"); break;
         }
 
         // Send the ECDH command with the public key provided
         if ((status = calib_ecdh(device, key_id, public_key, NULL)) != ATCA_SUCCESS)
         {
-            TRACE(status, "ECDH Failed"); break;
+            ATCA_TRACE(status, "ECDH Failed"); break;
         }
 #if defined(ATCA_USE_CONSTANT_HOST_NONCE)
         if ((status = calib_read_enc(device, key_id | 0x0001, 0, pms, read_key, read_key_id)) != ATCA_SUCCESS)
@@ -154,7 +156,7 @@ ATCA_STATUS calib_ecdh_enc(ATCADevice device, uint16_t key_id, const uint8_t* pu
         if ((status = atcab_read_enc(key_id | 0x0001, 0, pms, read_key, read_key_id, num_in)) != ATCA_SUCCESS)
 #endif
         {
-            TRACE(status, "Encrypted read failed"); break;
+            ATCA_TRACE(status, "Encrypted read failed"); break;
         }
     }
     while (0);
@@ -165,6 +167,7 @@ ATCA_STATUS calib_ecdh_enc(ATCADevice device, uint16_t key_id, const uint8_t* pu
 /** \brief ECDH command with a private key in a slot and the premaster secret
  *         is returned encrypted using the IO protection key.
  *
+ *  \param[in]  device       Device context pointer
  *  \param[in]  key_id       Slot of key for ECDH computation
  *  \param[in]  public_key   Public key input to ECDH calculation. X and Y
  *                           integers in big-endian format. 64 bytes for P256
@@ -205,6 +208,7 @@ ATCA_STATUS calib_ecdh_ioenc(ATCADevice device, uint16_t key_id, const uint8_t* 
 /** \brief ECDH command with a private key in TempKey and the premaster secret
  *         is returned in the clear.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in]  public_key  Public key input to ECDH calculation. X and Y
  *                          integers in big-endian format. 64 bytes for P256
  *                          key.
@@ -224,6 +228,7 @@ ATCA_STATUS calib_ecdh_tempkey(ATCADevice device, const uint8_t* public_key, uin
 /** \brief ECDH command with a private key in TempKey and the premaster secret
  *         is returned encrypted using the IO protection key.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in]  public_key  Public key input to ECDH calculation. X and Y
  *                          integers in big-endian format. 64 bytes for P256
  *                          key.

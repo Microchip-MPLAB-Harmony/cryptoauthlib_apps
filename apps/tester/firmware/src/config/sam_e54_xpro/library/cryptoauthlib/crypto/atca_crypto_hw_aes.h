@@ -32,9 +32,10 @@
 
 typedef struct atca_aes_cbc_ctx
 {
-   uint16_t key_id;                     //!< Key location. Can either be a slot number or ATCA_TEMPKEY_KEYID for TempKey.
-   uint8_t  key_block;                  //!< Index of the 16-byte block to use within the key location for the actual key.
-   uint8_t  ciphertext[ATCA_AES128_BLOCK_SIZE];  //!< Ciphertext from last operation.
+    ATCADevice  device;                     //!< Device Context Pointer
+    uint16_t    key_id;                     //!< Key location. Can either be a slot number or ATCA_TEMPKEY_KEYID for TempKey.
+    uint8_t     key_block;                  //!< Index of the 16-byte block to use within the key location for the actual key.
+    uint8_t     ciphertext[ATCA_AES128_BLOCK_SIZE];  //!< Ciphertext from last operation.
 } atca_aes_cbc_ctx_t;
 
 
@@ -48,10 +49,11 @@ typedef struct atca_aes_cmac_ctx
 
 typedef struct atca_aes_ctr_ctx
 {
-   uint16_t key_id;             //!< Key location. Can either be a slot number or ATCA_TEMPKEY_KEYID for TempKey.
-   uint8_t  key_block;          //!< Index of the 16-byte block to use within the key location for the actual key.
-   uint8_t  cb[ATCA_AES128_BLOCK_SIZE];  //!< Counter block, comprises of nonce + count value (16 bytes).
-   uint8_t  counter_size;       //!< Size of counter in the initialization vector.
+    ATCADevice  device;                     //!< Device Context Pointer
+    uint16_t    key_id;             //!< Key location. Can either be a slot number or ATCA_TEMPKEY_KEYID for TempKey.
+    uint8_t     key_block;          //!< Index of the 16-byte block to use within the key location for the actual key.
+    uint8_t     cb[ATCA_AES128_BLOCK_SIZE];  //!< Counter block, comprises of nonce + count value (16 bytes).
+    uint8_t     counter_size;       //!< Size of counter in the initialization vector.
 }atca_aes_ctr_ctx_t;
 
 

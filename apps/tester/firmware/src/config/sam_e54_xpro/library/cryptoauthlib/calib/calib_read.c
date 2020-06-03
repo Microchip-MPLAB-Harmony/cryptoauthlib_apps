@@ -33,8 +33,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /** \brief Executes Read command, which reads either 4 or 32 bytes of data from
@@ -43,14 +42,15 @@
  *   When reading a slot or OTP, data zone must be locked and the slot
  *   configuration must not be secret for a slot to be successfully read.
  *
- *  \param[in]  zone    Zone to be read from device. Options are
- *                      ATCA_ZONE_CONFIG, ATCA_ZONE_OTP, or ATCA_ZONE_DATA.
- *  \param[in]  slot    Slot number for data zone and ignored for other zones.
- *  \param[in]  block   32 byte block index within the zone.
- *  \param[in]  offset  4 byte work index within the block. Ignored for 32 byte
- *                      reads.
- *  \param[out] data    Read data is returned here.
- *  \param[in]  len     Length of the data to be read. Must be either 4 or 32.
+ *  \param[in]  device   Device context pointer
+ *  \param[in]  zone     Zone to be read from device. Options are
+ *                       ATCA_ZONE_CONFIG, ATCA_ZONE_OTP, or ATCA_ZONE_DATA.
+ *  \param[in]  slot     Slot number for data zone and ignored for other zones.
+ *  \param[in]  block    32 byte block index within the zone.
+ *  \param[in]  offset   4 byte work index within the block. Ignored for 32 byte
+ *                       reads.
+ *  \param[out] data     Read data is returned here.
+ *  \param[in]  len      Length of the data to be read. Must be either 4 or 32.
  *
  *  returns ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -109,6 +109,7 @@ ATCA_STATUS calib_read_zone(ATCADevice device, uint8_t zone, uint16_t slot, uint
 /** \brief Executes Read command, which reads the 9 byte serial number of the
  *          device from the config zone.
  *
+ *  \param[in]  device         Device context pointer
  *  \param[out] serial_number  9 byte serial number is returned here.
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
@@ -139,6 +140,7 @@ ATCA_STATUS calib_read_serial_number(ATCADevice device, uint8_t* serial_number)
 /** \brief Executes Read command, which reads the configuration zone to see if
  *          the specified slot is locked.
  *
+ *  \param[in]  device     Device context pointer
  *  \param[in]  slot       Slot to query for locked (slot 0-15)
  *  \param[out] is_locked  Lock state returned here. True if locked.
  *
@@ -178,6 +180,7 @@ ATCA_STATUS calib_is_slot_locked(ATCADevice device, uint16_t slot, bool *is_lock
 /** \brief Executes Read command, which reads the configuration zone to see if
  *          the specified zone is locked.
  *
+ *  \param[in]  device     Device context pointer
  *  \param[in]  zone       The zone to query for locked (use LOCK_ZONE_CONFIG or
  *                         LOCK_ZONE_DATA).
  *  \param[out] is_locked  Lock state returned here. True if locked.
@@ -220,6 +223,7 @@ ATCA_STATUS calib_is_locked(ATCADevice device, uint8_t zone, bool *is_locked)
  * Data zone must be locked for this command to succeed. Can only read 32 byte
  * blocks.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in]  key_id      The slot ID to read from.
  *  \param[in]  block       Index of the 32 byte block within the slot to read.
  *  \param[out] data        Decrypted (plaintext) data from the read is returned
@@ -269,7 +273,7 @@ ATCA_STATUS calib_read_enc(ATCADevice device, uint16_t key_id, uint8_t block, ui
         // Send the random Nonce command
         if ((status = calib_nonce_rand(device, num_in, rand_out)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Nonce failed"); break;
+            ATCA_TRACE(status, "Nonce failed"); break;
         }
 
         // Calculate Tempkey
@@ -282,7 +286,7 @@ ATCA_STATUS calib_read_enc(ATCADevice device, uint16_t key_id, uint8_t block, ui
         nonce_params.temp_key = &temp_key;
         if ((status = atcah_nonce(&nonce_params)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Calc TempKey failed"); break;
+            ATCA_TRACE(status, "Calc TempKey failed"); break;
         }
 
         // Supply OtherData so GenDig behavior is the same for keys with SlotConfig.NoMac set
@@ -294,7 +298,7 @@ ATCA_STATUS calib_read_enc(ATCADevice device, uint16_t key_id, uint8_t block, ui
         // Send the GenDig command
         if ((status = calib_gendig(device, GENDIG_ZONE_DATA, enc_key_id, other_data, sizeof(other_data))) != ATCA_SUCCESS)
         {
-            TRACE(status, "GenDig failed"); break;
+            ATCA_TRACE(status, "GenDig failed"); break;
         }
 
         // Calculate Tempkey
@@ -310,13 +314,13 @@ ATCA_STATUS calib_read_enc(ATCADevice device, uint16_t key_id, uint8_t block, ui
         gen_dig_param.temp_key = &temp_key;
         if ((status = atcah_gen_dig(&gen_dig_param)) != ATCA_SUCCESS)
         {
-            TRACE(status, ""); break;
+            ATCA_TRACE(status, ""); break;
         }
 
         // Read Encrypted
         if ((status = calib_read_zone(device, zone, key_id, block, 0, data, ATCA_BLOCK_SIZE)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Read encrypted failed"); break;
+            ATCA_TRACE(status, "Read encrypted failed"); break;
         }
 
         // Decrypt
@@ -337,6 +341,7 @@ ATCA_STATUS calib_read_enc(ATCADevice device, uint16_t key_id, uint8_t block, ui
 /** \brief Executes Read command to read the complete device configuration
  *          zone.
  *
+ *  \param[in]  device       Device context pointer
  *  \param[out] config_data  Configuration zone data is returned here. 88 bytes
  *                           for ATSHA devices, 128 bytes for ATECC devices.
  *
@@ -383,6 +388,7 @@ ATCA_STATUS calib_read_config_zone(ATCADevice device, uint8_t* config_data)
  * those that are unique per device (first 16 bytes) and areas that can change
  * after the configuration zone has been locked (e.g. LastKeyUse).
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  config_data  Full configuration data to compare the device
  *                          against.
  * \param[out] same_config  Result is returned here. True if the static portions
@@ -402,7 +408,7 @@ ATCA_STATUS calib_cmp_config_zone(ATCADevice device, uint8_t* config_data, bool*
         if ((config_data == NULL) || (same_config == NULL))
         {
             status = ATCA_BAD_PARAM;
-            TRACE(status, "Invalid Parameters"); break;
+            ATCA_TRACE(status, "Invalid Parameters"); break;
         }
         // Set the boolean to false
         *same_config = false;
@@ -410,13 +416,13 @@ ATCA_STATUS calib_cmp_config_zone(ATCADevice device, uint8_t* config_data, bool*
         // Read all of the configuration bytes from the device
         if ((status = calib_read_config_zone(device, device_config_data)) != ATCA_SUCCESS)
         {
-            TRACE(status, "Read config zone failed"); break;
+            ATCA_TRACE(status, "Read config zone failed"); break;
         }
 
         /* Get the config size of the device being tested */
         if (ATCA_SUCCESS != (status = calib_get_zone_size(device, ATCA_ZONE_CONFIG, 0, &config_size)))
         {
-            TRACE(status, "Failed to get config zone size"); break;
+            ATCA_TRACE(status, "Failed to get config zone size"); break;
         }
 
         /* Compare the lower writable bytes (16-51) */
@@ -469,10 +475,11 @@ ATCA_STATUS calib_cmp_config_zone(ATCADevice device, uint8_t* config_data, bool*
 /** \brief Executes Read command to read a 64 byte ECDSA P256 signature from a
  *          slot configured for clear reads.
  *
- *  \param[in]  slot  Slot number to read from. Only slots 8 to 15 are large
- *                    enough for a signature.
- *  \param[out] sig   Signature will be returned here (64 bytes). Format will be
- *                    the 32 byte R and S big-endian integers concatenated.
+ *  \param[in]  device  Device context pointer
+ *  \param[in]  slot    Slot number to read from. Only slots 8 to 15 are large
+ *                      enough for a signature.
+ *  \param[out] sig     Signature will be returned here (64 bytes). Format will be
+ *                      the 32 byte R and S big-endian integers concatenated.
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -511,6 +518,7 @@ ATCA_STATUS calib_read_sig(ATCADevice device, uint16_t slot, uint8_t* sig)
  * This function assumes the public key is stored using the ECC public key
  * format specified in the datasheet.
  *
+ *  \param[in]  device      Device context pointer
  *  \param[in]  slot        Slot number to read from. Only slots 8 to 15 are
  *                          large enough for a public key.
  *  \param[out] public_key  Public key is returned here (64 bytes). Format will
@@ -601,6 +609,7 @@ ATCA_STATUS calib_read_pubkey(ATCADevice device, uint16_t slot, uint8_t *public_
  * This function will issue the Read command as many times as is required to
  * read the requested data.
  *
+ *  \param[in]  device  Device context pointer
  *  \param[in]  zone    Zone to read data from. Option are ATCA_ZONE_CONFIG(0),
  *                      ATCA_ZONE_OTP(1), or ATCA_ZONE_DATA(2).
  *  \param[in]  slot    Slot number to read from if zone is ATCA_ZONE_DATA(2).

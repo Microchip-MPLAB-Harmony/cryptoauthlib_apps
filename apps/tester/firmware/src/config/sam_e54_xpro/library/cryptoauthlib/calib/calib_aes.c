@@ -32,11 +32,12 @@
  * THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR
  * THIS SOFTWARE.
  */
-#include "calib_basic.h"
-#include "calib_execution.h"
 
+#include "cryptoauthlib.h"
 
 /** \brief Compute the AES-128 encrypt, decrypt, or GFM calculation.
+ * 
+ *  \param[in]  device   Device context pointer
  *  \param[in]  mode     The mode for the AES command.
  *  \param[in]  key_id   Key location. Can either be a slot number or
  *                       ATCA_TEMPKEY_KEYID for TempKey.
@@ -95,6 +96,7 @@ ATCA_STATUS calib_aes(ATCADevice device, uint8_t mode, uint16_t key_id, const ui
 
 /** \brief Perform an AES-128 encrypt operation with a key in the device.
  *
+ * \param[in]  device      Device context pointer
  * \param[in]  key_id      Key location. Can either be a slot number or
  *                         ATCA_TEMPKEY_KEYID for TempKey.
  * \param[in]  key_block   Index of the 16-byte block to use within the key
@@ -114,6 +116,7 @@ ATCA_STATUS calib_aes_encrypt(ATCADevice device, uint16_t key_id, uint8_t key_bl
 
 /** \brief Perform an AES-128 decrypt operation with a key in the device.
  *
+ * \param[in]   device     Device context pointer
  * \param[in]   key_id     Key location. Can either be a slot number or
  *                         ATCA_TEMPKEY_KEYID for TempKey.
  * \param[in]   key_block  Index of the 16-byte block to use within the key
@@ -133,6 +136,7 @@ ATCA_STATUS calib_aes_decrypt(ATCADevice device, uint16_t key_id, uint8_t key_bl
 
 /** \brief Perform a Galois Field Multiply (GFM) operation.
  *
+ * \param[in]   device  Device context pointer
  * \param[in]   h       First input value (16 bytes).
  * \param[in]   input   Second input value (16 bytes).
  * \param[out]  output  GFM result is returned here (16 bytes).

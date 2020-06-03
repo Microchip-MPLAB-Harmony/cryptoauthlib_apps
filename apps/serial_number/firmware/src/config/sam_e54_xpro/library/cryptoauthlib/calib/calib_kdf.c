@@ -33,8 +33,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes the KDF command, which derives a new key in PRF, AES, or
  *          HKDF modes.
@@ -42,6 +41,7 @@
  * Generally this function combines a source key with an input string and
  * creates a result key/digest/array.
  *
+ * \param[in]  device     Device context pointer
  * \param[in]  mode       Mode determines KDF algorithm (PRF,AES,HKDF), source
  *                        key location, and target key locations.
  * \param[in]  key_id     Source and target key slots if locations are in the

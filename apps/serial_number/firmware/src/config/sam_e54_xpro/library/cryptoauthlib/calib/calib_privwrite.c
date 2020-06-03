@@ -32,13 +32,13 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 #include "host/atca_host.h"
 
 /** \brief Executes PrivWrite command, to write externally generated ECC
  *          private keys into the device.
  *
+ *  \param[in] device        Device context pointer
  *  \param[in] key_id        Slot to write the external private key into.
  *  \param[in] priv_key      External private key (36 bytes) to be written.
  *                           The first 4 bytes should be zero for P256 curve.

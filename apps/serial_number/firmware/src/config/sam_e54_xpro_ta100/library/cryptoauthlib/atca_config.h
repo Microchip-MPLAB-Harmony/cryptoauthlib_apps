@@ -61,4 +61,6 @@ typedef struct atca_plib_spi_api
 extern atca_plib_spi_api_t sercom4_plib_spi_api;
 
 
+
+
 #endif // ATCA_CONFIG_H

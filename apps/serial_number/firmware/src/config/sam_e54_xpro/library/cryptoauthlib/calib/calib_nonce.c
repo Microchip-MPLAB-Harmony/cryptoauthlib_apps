@@ -33,12 +33,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes Nonce command, which loads a random or fixed nonce/data
  *          into the device for use by subsequent commands.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  mode         Controls the mechanism of the internal RNG or fixed
  *                          write.
  * \param[in]  zero         Param2, normally 0, but can be used to indicate a
@@ -113,7 +113,8 @@ ATCA_STATUS calib_nonce_base(ATCADevice device, uint8_t mode, uint16_t zero, con
 /** \brief Execute a Nonce command in pass-through mode to initialize TempKey
  *         to a specified value.
  *
- *  \param[in] num_in  Data to be loaded into TempKey (32 bytes).
+ *  \param[in] device      Device context pointer
+ *  \param[in] num_in      Data to be loaded into TempKey (32 bytes).
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -130,6 +131,7 @@ ATCA_STATUS calib_nonce(ATCADevice device, const uint8_t *num_in)
  * Digest Buffer (32 or 64 bytes), or the Alternate Key Buffer (32 bytes). For
  * all other devices, only TempKey (32 bytes) is available.
  *
+ *  \param[in] device       Device context pointer
  *  \param[in] target       Target device buffer to load. Can be
  *                          NONCE_MODE_TARGET_TEMPKEY,
  *                          NONCE_MODE_TARGET_MSGDIGBUF, or
@@ -163,6 +165,7 @@ ATCA_STATUS calib_nonce_load(ATCADevice device, uint8_t target, const uint8_t *n
 /** \brief Execute a Nonce command to generate a random nonce combining a host
  *          nonce (num_in) and a device random number.
  *
+ *  \param[in]  device    Device context pointer
  *  \param[in]  num_in    Host nonce to be combined with the device random
  *                        number (20 bytes).
  *  \param[out] rand_out  Internally generated 32-byte random number that was
@@ -179,7 +182,8 @@ ATCA_STATUS calib_nonce_rand(ATCADevice device, const uint8_t *num_in, uint8_t* 
 /** \brief Execute a Nonce command in pass-through mode to initialize TempKey
  *          to a specified value.
  *
- *  \param[in] num_in  Data to be loaded into TempKey (32 bytes).
+ *  \param[in] device      Device context pointer
+ *  \param[in] num_in      Data to be loaded into TempKey (32 bytes).
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -191,6 +195,7 @@ ATCA_STATUS calib_challenge(ATCADevice device, const uint8_t *num_in)
 /** \brief Execute a Nonce command to generate a random challenge combining
  *         a host nonce (num_in) and a device random number.
  *
+ *  \param[in]  device    Device context pointer
  *  \param[in]  num_in    Host nonce to be combined with the device random
  *                        number (20 bytes).
  *  \param[out] rand_out  Internally generated 32-byte random number that was

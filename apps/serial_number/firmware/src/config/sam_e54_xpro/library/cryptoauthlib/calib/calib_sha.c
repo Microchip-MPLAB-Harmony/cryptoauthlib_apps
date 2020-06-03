@@ -32,8 +32,7 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 typedef struct
 {
@@ -47,6 +46,7 @@ typedef struct
  *
  * Only the Start(0) and Compute(1) modes are available for ATSHA devices.
  *
+ * \param[in]    device         Device context pointer
  * \param[in]    mode           SHA command mode Start(0), Update/Compute(1),
  *                              End(2), Public(3), HMACstart(4), HMACend(5),
  *                              Read_Context(6), or Write_Context(7). Also
@@ -60,7 +60,7 @@ typedef struct
  *                              NULL if not required by the mode.
  * \param[out]   data_out       Data returned by the command (digest or
  *                              context).
- * \param[inout] data_out_size  As input, the size of the data_out buffer. As
+ * \param[in,out] data_out_size  As input, the size of the data_out buffer. As
  *                              output, the number of bytes returned in
  *                              data_out.
  *
@@ -120,6 +120,7 @@ ATCA_STATUS calib_sha_base(ATCADevice device, uint8_t mode, uint16_t length, con
 }
 
 /** \brief Executes SHA command to initialize SHA-256 calculation engine
+ *  \param[in]  device      Device context pointer
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS calib_sha_start(ATCADevice device)
@@ -130,6 +131,7 @@ ATCA_STATUS calib_sha_start(ATCADevice device)
 /** \brief Executes SHA command to add 64 bytes of message data to the current
  *          context.
  *
+ * \param[in] device   Device context pointer
  * \param[in] message  64 bytes of message data to add to add to operation.
  *
  * \return ATCA_SUCCESS on success, otherwise an error code.
@@ -141,6 +143,7 @@ ATCA_STATUS calib_sha_update(ATCADevice device, const uint8_t *message)
 
 /** \brief Executes SHA command to complete SHA-256 or HMAC/SHA-256 operation.
  *
+ *  \param[in]  device   Device context pointer
  *  \param[out] digest   Digest from SHA-256 or HMAC/SHA-256 will be returned
  *                       here (32 bytes).
  *  \param[in]  length   Length of any remaining data to include in hash. Max 64
@@ -159,8 +162,9 @@ ATCA_STATUS calib_sha_end(ATCADevice device, uint8_t *digest, uint16_t length, c
 /** \brief Executes SHA command to read the SHA-256 context back. Only for
  *          ATECC608A with SHA-256 contexts. HMAC not supported.
  *
+ *  \param[in]  device          Device context pointer
  *  \param[out]   context       Context data is returned here.
- *  \param[inout] context_size  As input, the size of the context buffer in
+ *  \param[in,out] context_size  As input, the size of the context buffer in
  *                              bytes. As output, the size of the returned
  *                              context data.
  *
@@ -174,6 +178,7 @@ ATCA_STATUS calib_sha_read_context(ATCADevice device, uint8_t* context, uint16_t
 /** \brief Executes SHA command to write (restore) a SHA-256 context into the
  *          the device. Only supported for ATECC608A with SHA-256 contexts.
  *
+ *  \param[in] device        Device context pointer
  *  \param[in] context       Context data to be restored.
  *  \param[in] context_size  Size of the context data in bytes.
  *
@@ -186,6 +191,7 @@ ATCA_STATUS calib_sha_write_context(ATCADevice device, const uint8_t* context, u
 
 /** \brief Use the SHA command to compute a SHA-256 digest.
  *
+ * \param[in]  device   Device context pointer
  * \param[in]  length   Size of message parameter in bytes.
  * \param[in]  message  Message data to be hashed.
  * \param[out] digest   Digest is returned here (32 bytes).
@@ -200,7 +206,8 @@ ATCA_STATUS calib_sha(ATCADevice device, uint16_t length, const uint8_t *message
 /** \brief Initialize a SHA context for performing a hardware SHA-256 operation
  *          on a device. Note that only one SHA operation can be run at a time.
  *
- * \param[in] ctx  SHA256 context
+ * \param[in] device   Device context pointer
+ * \param[in] ctx      SHA256 context
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -213,6 +220,7 @@ ATCA_STATUS calib_hw_sha2_256_init(ATCADevice device, atca_sha256_ctx_t* ctx)
 /** \brief Add message data to a SHA context for performing a hardware SHA-256
  *          operation on a device.
  *
+ * \param[in] device     Device context pointer
  * \param[in] ctx        SHA256 context
  * \param[in] data       Message data to be added to hash.
  * \param[in] data_size  Size of data in bytes.
@@ -265,6 +273,7 @@ ATCA_STATUS calib_hw_sha2_256_update(ATCADevice device, atca_sha256_ctx_t* ctx, 
 /** \brief Finish SHA-256 digest for a SHA context for performing a hardware
  *          SHA-256 operation on a device.
  *
+ * \param[in]  device  Device context pointer
  * \param[in]  ctx     SHA256 context
  * \param[out] digest  SHA256 digest is returned here (32 bytes)
  *
@@ -332,6 +341,7 @@ ATCA_STATUS calib_hw_sha2_256_finish(ATCADevice device, atca_sha256_ctx_t* ctx, 
 
 /** \brief Use the SHA command to compute a SHA-256 digest.
  *
+ * \param[in]  device     Device context pointer
  * \param[in]  data       Message data to be hashed.
  * \param[in]  data_size  Size of data in bytes.
  * \param[out] digest     Digest is returned here (32 bytes).
@@ -363,6 +373,7 @@ ATCA_STATUS calib_hw_sha2_256(ATCADevice device, const uint8_t * data, size_t da
 
 /** \brief Executes SHA command to start an HMAC/SHA-256 operation
  *
+ * \param[in]  device   Device context pointer
  * \param[in] ctx       HMAC/SHA-256 context
  * \param[in] key_slot  Slot key id to use for the HMAC calculation
  *
@@ -377,6 +388,7 @@ ATCA_STATUS calib_sha_hmac_init(ATCADevice device, atca_hmac_sha256_ctx_t* ctx, 
 /** \brief Executes SHA command to add an arbitrary amount of message data to
  *          a HMAC/SHA-256 operation.
  *
+ * \param[in]  device    Device context pointer
  * \param[in] ctx        HMAC/SHA-256 context
  * \param[in] data       Message data to add
  * \param[in] data_size  Size of message data in bytes
@@ -428,6 +440,7 @@ ATCA_STATUS calib_sha_hmac_update(ATCADevice device, atca_hmac_sha256_ctx_t* ctx
 
 /** \brief Executes SHA command to complete a HMAC/SHA-256 operation.
  *
+ * \param[in]  device  Device context pointer
  * \param[in]  ctx     HMAC/SHA-256 context
  * \param[out] digest  HMAC/SHA-256 result is returned here (32 bytes).
  * \param[in]  target  Where to save the digest internal to the device.
@@ -459,6 +472,7 @@ ATCA_STATUS calib_sha_hmac_finish(ATCADevice device, atca_hmac_sha256_ctx_t *ctx
 
 /** \brief Use the SHA command to compute an HMAC/SHA-256 operation.
  *
+ * \param[in]  device     Device context pointer
  * \param[in]  data       Message data to be hashed.
  * \param[in]  data_size  Size of data in bytes.
  * \param[in]  key_slot   Slot key id to use for the HMAC calculation

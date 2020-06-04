@@ -10,10 +10,6 @@
                        projectFiles="true">
           <logicalFolder name="f2" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
-              <logicalFolder name="f4" displayName="hal" projectFiles="true">
-                <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/hal/hal_core_m_base.h</itemPath>
-                <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/hal/hal_delay.h</itemPath>
-              </logicalFolder>
               <itemPath>../src/config/sam_d21_trust_platform/library/cryptoauthlib/atca_config.h</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -80,7 +76,6 @@
             <itemPath>../src/packs/ATSAMD21E18A_DFP/pio/samd21e18a.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/ATSAMD21E18A_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAMD21E18A_DFP/atsamd21e18a_compat.h</itemPath>
           <itemPath>../src/packs/ATSAMD21E18A_DFP/atsamd21e18a.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
@@ -284,7 +279,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.20</languageToolchainVersion>
+        <languageToolchainVersion>2.30</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -348,7 +343,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d21_trust_platform;../src/packs/ATSAMD21E18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_d21_trust_platform/library/cryptoauthlib;../src/config/sam_d21_trust_platform/library/cryptoauthlib/crypto"/>
+                  value="../src;../src/config/sam_d21_trust_platform;../src/packs/ATSAMD21E18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/arm;../src/config/sam_d21_trust_platform/library/cryptoauthlib;../src/config/sam_d21_trust_platform/library/cryptoauthlib/crypto"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -389,6 +384,9 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>

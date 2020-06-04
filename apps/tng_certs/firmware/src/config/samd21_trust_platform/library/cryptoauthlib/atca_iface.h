@@ -40,7 +40,9 @@
 extern "C" {
 #endif
 
-#include "atca_command.h"
+#include "atca_devtypes.h"
+#include <stdint.h>
+#include "atca_status.h"
 
 typedef enum
 {
@@ -60,6 +62,7 @@ typedef enum
 {   ATCA_KIT_AUTO_IFACE,        //Selects the first device if the Kit interface is not defined
     ATCA_KIT_I2C_IFACE,
     ATCA_KIT_SWI_IFACE,
+    ATCA_KIT_SPI_IFACE,
     ATCA_KIT_UNKNOWN_IFACE
 } ATCAKitType;
 
@@ -94,8 +97,16 @@ typedef struct
         {
             uint8_t bus;        // logical SWI bus - HAL will map this to a pin	or uart port
         } atcaswi;
-
-        struct
+		
+		struct
+        {
+            
+            uint8_t  bus;           // logical i2c bus number, 0-based - HAL will map this to a spi pheripheral
+            uint32_t baud;          // typically 16000000
+			uint8_t  select_pin;    // CS pin line typically 0
+        } atcaspi;
+        
+		struct
         {
             int      port;      // logic port number
             uint32_t baud;      // typically 115200
@@ -118,8 +129,8 @@ typedef struct
         {
             ATCA_STATUS (*halinit)(void *hal, void *cfg);
             ATCA_STATUS (*halpostinit)(void *iface);
-            ATCA_STATUS (*halsend)(void *iface, uint8_t *txdata, int txlength);
-            ATCA_STATUS (*halreceive)(void *iface, uint8_t* rxdata, uint16_t* rxlength);
+            ATCA_STATUS (*halsend)(void *iface, uint8_t word_address, uint8_t *txdata, int txlength);
+            ATCA_STATUS (*halreceive)(void *iface, uint8_t word_address, uint8_t* rxdata, uint16_t* rxlength);
             ATCA_STATUS (*halwake)(void *iface);
             ATCA_STATUS (*halidle)(void *iface);
             ATCA_STATUS (*halsleep)(void *iface);
@@ -146,8 +157,8 @@ struct atca_iface
 
     ATCA_STATUS (*atinit)(void *hal, ATCAIfaceCfg *);
     ATCA_STATUS (*atpostinit)(ATCAIface hal);
-    ATCA_STATUS (*atsend)(ATCAIface hal, uint8_t *txdata, int txlength);
-    ATCA_STATUS (*atreceive)(ATCAIface hal, uint8_t *rxdata, uint16_t *rxlength);
+    ATCA_STATUS (*atsend)(ATCAIface hal, uint8_t word_address, uint8_t *txdata, int txlength);
+    ATCA_STATUS (*atreceive)(ATCAIface hal, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength);
     ATCA_STATUS (*atwake)(ATCAIface hal);
     ATCA_STATUS (*atidle)(ATCAIface hal);
     ATCA_STATUS (*atsleep)(ATCAIface hal);
@@ -165,8 +176,8 @@ void deleteATCAIface(ATCAIface *ca_iface);
 // IFace methods
 ATCA_STATUS atinit(ATCAIface ca_iface);
 ATCA_STATUS atpostinit(ATCAIface ca_iface);
-ATCA_STATUS atsend(ATCAIface ca_iface, uint8_t *txdata, int txlength);
-ATCA_STATUS atreceive(ATCAIface ca_iface, uint8_t *rxdata, uint16_t *rxlength);
+ATCA_STATUS atsend(ATCAIface ca_iface, uint8_t word_address, uint8_t *txdata, int txlength);
+ATCA_STATUS atreceive(ATCAIface ca_iface, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength);
 ATCA_STATUS atwake(ATCAIface ca_iface);
 ATCA_STATUS atidle(ATCAIface ca_iface);
 ATCA_STATUS atsleep(ATCAIface ca_iface);

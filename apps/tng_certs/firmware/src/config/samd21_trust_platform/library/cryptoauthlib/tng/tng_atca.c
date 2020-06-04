@@ -66,7 +66,7 @@ static const size_t g_tng_cert_def_cnt = sizeof(g_tng_cert_def_map) / sizeof(tng
 
 const atcacert_def_t* tng_map_get_device_cert_def(int index)
 {
-    if (index < g_tng_cert_def_cnt)
+    if (index < (int)g_tng_cert_def_cnt)
     {
         return g_tng_cert_def_map[index].cert_def;
     }
@@ -111,7 +111,7 @@ ATCA_STATUS tng_get_device_cert_def(const atcacert_def_t **cert_def)
 ATCA_STATUS tng_get_device_pubkey(uint8_t *public_key)
 {
     ATCA_STATUS status;
-    const atcacert_def_t* cert_def;
+    const atcacert_def_t* cert_def = NULL;
 
     status = tng_get_device_cert_def(&cert_def);
 

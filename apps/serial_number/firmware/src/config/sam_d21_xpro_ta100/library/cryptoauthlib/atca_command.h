@@ -46,7 +46,8 @@ extern "C" {
 
 /** \defgroup command ATCACommand (atca_)
    \brief CryptoAuthLib command builder object, ATCACommand.  Member functions for the ATCACommand object.
-   @{ */
+   @{ 
+*/
 
 /** \brief atca_command is the C object backing ATCACommand.
  */
@@ -68,5 +69,7 @@ void deleteATCACommand(ATCACommand *ca_cmd);
 #ifdef __cplusplus
 }
 #endif
+
+/** @} */
 #endif
 

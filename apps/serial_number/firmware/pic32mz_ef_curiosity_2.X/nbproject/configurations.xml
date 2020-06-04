@@ -255,7 +255,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_ef_curiosity_2;../src/packs/PIC32MZ2048EFM144_DFP;../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib;../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto"/>
+                  value="../src;../src/config/pic32mz_ef_curiosity_2;../src/packs/PIC32MZ2048EFM144_DFP;;../src/mips;../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib;../src/config/pic32mz_ef_curiosity_2/library/cryptoauthlib/crypto"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -296,6 +296,9 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>

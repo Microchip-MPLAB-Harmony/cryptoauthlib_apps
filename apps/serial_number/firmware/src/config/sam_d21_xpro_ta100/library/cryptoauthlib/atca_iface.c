@@ -138,9 +138,10 @@ ATCA_STATUS atinit(ATCAIface ca_iface)
 
 /** \brief Sends the data to the device by calling intermediate HAL wrapper
  *         function.
- * \param[in] ca_iface  Device to interact with.
- * \param[in] txdata    Data to be transmitted to the device.
- * \param[in] txlength  Number of bytes to be transmitted to the device.
+ * \param[in] ca_iface       Device to interact with.
+ * \param[in] word_address   device transaction type
+ * \param[in] txdata         Data to be transmitted to the device.
+ * \param[in] txlength       Number of bytes to be transmitted to the device.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS atsend(ATCAIface ca_iface, uint8_t word_address, uint8_t *txdata, int txlength)
@@ -160,12 +161,13 @@ ATCA_STATUS atsend(ATCAIface ca_iface, uint8_t word_address, uint8_t *txdata, in
     }
 }
 
-/**\brief Receives data from the device by calling intermediate HAL wrapper
+/** \brief Receives data from the device by calling intermediate HAL wrapper
  *        function.
- * \param[in]    ca_iface  Device to interact with.
- * \param[out]   rxdata    Data received will be returned here.
- * \param[inout] rxlength  As input, the size of the rxdata buffer.
- *                         As output, the number of bytes received.
+ * \param[in]     ca_iface       Device to interact with.
+ * \param[in]     word_address   device transaction type
+ * \param[out]    rxdata         Data received will be returned here.
+ * \param[in,out] rxlength       As input, the size of the rxdata buffer.
+ *                               As output, the number of bytes received.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS atreceive(ATCAIface ca_iface, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength)

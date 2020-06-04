@@ -105,7 +105,6 @@ ATCA_STATUS atcac_sha256_hmac_init(
         if (ATCA_SUCCESS == status)
         {
             int i;
-
             if (klen < ATCA_SHA2_256_BLOCK_SIZE)
             {
                 memset(&ctx->ipad[klen], 0, ATCA_SHA2_256_BLOCK_SIZE - klen);

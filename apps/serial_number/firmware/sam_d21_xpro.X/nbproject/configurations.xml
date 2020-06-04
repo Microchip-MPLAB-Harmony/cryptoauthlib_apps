@@ -74,7 +74,6 @@
             <itemPath>../src/packs/ATSAMD21J18A_DFP/pio/samd21j18a.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/ATSAMD21J18A_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAMD21J18A_DFP/atsamd21j18a_compat.h</itemPath>
           <itemPath>../src/packs/ATSAMD21J18A_DFP/atsamd21j18a.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
@@ -340,7 +339,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_d21_xpro/library/cryptoauthlib;../src/config/sam_d21_xpro/library/cryptoauthlib/crypto"/>
+                  value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/arm;../src/config/sam_d21_xpro/library/cryptoauthlib;../src/config/sam_d21_xpro/library/cryptoauthlib/crypto"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -381,6 +380,9 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>

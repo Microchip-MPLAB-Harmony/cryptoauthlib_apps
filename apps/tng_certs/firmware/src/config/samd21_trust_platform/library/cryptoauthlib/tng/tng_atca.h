@@ -28,7 +28,7 @@
 #ifndef TNG_ATCA_H
 #define TNG_ATCA_H
 
-#include "basic/atca_basic.h"
+#include "atca_basic.h"
 #include "atcacert/atcacert_def.h"
 
 #ifdef __cplusplus

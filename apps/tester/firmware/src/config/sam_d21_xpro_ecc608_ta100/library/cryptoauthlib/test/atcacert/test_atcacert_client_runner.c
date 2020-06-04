@@ -43,6 +43,7 @@ TEST_GROUP_RUNNER(atcacert_client)
 
     RUN_TEST_CASE(atcacert_client, atcacert_read_cert_signer);
     RUN_TEST_CASE(atcacert_client, atcacert_read_cert_device);
+    RUN_TEST_CASE(atcacert_client, atcacert_read_subj_key_id);
     RUN_TEST_CASE(atcacert_client, atcacert_read_cert_small_buf);
     RUN_TEST_CASE(atcacert_client, atcacert_read_cert_bad_params);
     RUN_TEST_CASE(atcacert_client, atcacert_generate_device_csr);

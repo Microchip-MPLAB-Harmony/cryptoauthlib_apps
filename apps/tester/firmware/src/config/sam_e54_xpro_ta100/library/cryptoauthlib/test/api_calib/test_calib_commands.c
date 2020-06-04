@@ -715,6 +715,7 @@ TEST(atca_cmd_unit_test, read)
     TEST_ASSERT_EQUAL(0x07, packet.data[ATCA_COUNT_IDX]);
 }
 
+#ifdef ATCA_ATECC608A_SUPPORT
 extern const uint8_t sboot_dummy_image[];
 
 TEST(atca_cmd_unit_test, sboot)
@@ -911,6 +912,7 @@ TEST(atca_cmd_unit_test, selftest)
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
     TEST_ASSERT_EQUAL(SELFTEST_RSP_SIZE, packet.data[ATCA_COUNT_IDX]);
 }
+#endif
 
 TEST(atca_cmd_unit_test, sha)
 {
@@ -1137,8 +1139,10 @@ t_test_case_info calib_commands_info[] =
     { REGISTER_TEST_CASE(atca_cmd_unit_test, privwrite),                             DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_unit_test, random),       DEVICE_MASK(ATSHA204A) | DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_unit_test, read),         DEVICE_MASK(ATSHA204A) | DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },
+#ifdef ATCA_ATECC608A_SUPPORT
     { REGISTER_TEST_CASE(atca_cmd_unit_test, sboot),                                                                                   DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_unit_test, selftest),                                                                                DEVICE_MASK(ATECC608A) },
+#endif
     { REGISTER_TEST_CASE(atca_cmd_unit_test, sha),          DEVICE_MASK(ATSHA204A) | DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_unit_test, sign),                                  DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },
     { REGISTER_TEST_CASE(atca_cmd_unit_test, updateextra),  DEVICE_MASK(ATSHA204A) | DEVICE_MASK(ATECC108A) | DEVICE_MASK(ATECC508A) | DEVICE_MASK(ATECC608A) },

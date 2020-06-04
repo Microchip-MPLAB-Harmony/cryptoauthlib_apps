@@ -70,6 +70,11 @@ TEST(atca_cmd_basic_test, read_config_zone)
     ATCA_STATUS status = ATCA_SUCCESS;
     uint8_t config_data[ATCA_ECC_CONFIG_SIZE];
 
+    if (TA100 == gCfg->devtype)
+    {
+        test_assert_data_is_locked();
+    }
+
     status = atcab_read_config_zone(config_data);
     TEST_ASSERT_EQUAL(ATCA_SUCCESS, status);
 

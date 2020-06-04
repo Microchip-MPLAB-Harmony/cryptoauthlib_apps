@@ -29,6 +29,14 @@
 #include "cryptoauthlib.h"
 #include "cmd-processor.h"
 
+#ifdef ATCA_HAL_CUSTOM
+extern int select_204_custom(int argc, char* argv[]);
+extern int select_108_custom(int argc, char* argv[]);
+extern int select_508_custom(int argc, char* argv[]);
+extern int select_608_custom(int argc, char* argv[]);
+extern int select_ta100_custom(int argc, char* argv[]);
+#endif
+
 /** gCfg must point to one of the cfg_ structures for any unit test to work.  this allows
  the command console to switch device types at runtime. */
 ATCAIfaceCfg g_iface_config = {
@@ -70,41 +78,68 @@ void atca_test_config_set_ifacecfg(ATCAIfaceCfg * ifacecfg)
     (void)memmove(gCfg, ifacecfg, sizeof(ATCAIfaceCfg));
 }
 
-static int select_device(ATCADeviceType device_type)
+static int select_device(ATCADeviceType device_type, bool interative)
 {
     gCfg->devtype = device_type;
-    printf("Device Selected.\r\n");
+    if (interative)
+    {
+        printf("Device Selected.\r\n");
+    }
     return 0;
 }
 
 int select_204(int argc, char* argv[])
 {
-    return select_device(ATSHA204A);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_ATSHA204A_SUPPORT)
+    return select_204_custom(argc, argv);
+#else
+    return select_device(ATSHA204A, NULL != argv);
+#endif
 }
 
 int select_206(int argc, char* argv[])
 {
-    return select_device(ATSHA206A);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_ATSHA206A_SUPPORT)
+    return select_206_custom(argc, argv);
+#else
+    return select_device(ATSHA206A, NULL != argv);
+#endif
 }
 
 int select_108(int argc, char* argv[])
 {
-    return select_device(ATECC108A);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_ATECC108A_SUPPORT)
+    return select_108_custom(argc, argv);
+#else
+    return select_device(ATECC108A, NULL != argv);
+#endif
 }
 
 int select_508(int argc, char* argv[])
 {
-    return select_device(ATECC508A);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_ATECC508A_SUPPORT)
+    return select_508_custom(argc, argv);
+#else
+    return select_device(ATECC508A, NULL != argv);
+#endif
 }
 
 int select_608(int argc, char* argv[])
 {
-    return select_device(ATECC608A);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_ATECC608A_SUPPORT)
+    return select_608_custom(argc, argv);
+#else
+    return select_device(ATECC608A, NULL != argv);
+#endif
 }
 
 int select_ta100(int argc, char* argv[])
 {
-    return select_device(TA100);
+#if defined(ATCA_HAL_CUSTOM) && defined(ATCA_TA100_SUPPORT)
+    return select_ta100_custom(argc, argv);
+#else
+    return select_device(TA100, NULL != argv);
+#endif
 }
 
 /** \brief Sets the device the command or test suite will use
@@ -121,27 +156,27 @@ static int opt_device_type(int argc, char* argv[])
     {
         if (0 == strcmp("sha204", argv[1]))
         {
-            gCfg->devtype = ATSHA204A;
+            select_204(0, NULL);
         }
         else if (0 == strcmp("sha206", argv[1]))
         {
-            gCfg->devtype = ATSHA206A;
+            select_206(0, NULL);
         }
         else if (0 == strcmp("ecc108", argv[1]))
         {
-            gCfg->devtype = ATECC108A;
+            select_108(0, NULL);
         }
         else if (0 == strcmp("ecc508", argv[1]))
         {
-            gCfg->devtype = ATECC508A;
+            select_508(0, NULL);
         }
         else if (0 == strcmp("ecc608", argv[1]))
         {
-            gCfg->devtype = ATECC608A;
+            select_608(0, NULL);
         }
         else if (0 == strcmp("ta100", argv[1]))
         {
-            gCfg->devtype = TA100;
+            select_ta100(0, NULL);
         }
         ret = 2;
     }
@@ -259,12 +294,19 @@ static int opt_address(int argc, char* argv[])
     return ret;
 }
 
+static int opt_quiet(int argc, char* argv[])
+{
+    g_atca_test_quiet_mode = true;
+    return 1;
+}
+
 // *INDENT-OFF*  - Preserve formatting
 static t_menu_info cmd_options[] =
 {
     { "-d",       "device type",       opt_device_type                      },
     { "-i",       "interface",         opt_iface_type                       },
     { "-a",       "address",           opt_address                          },
+    { "-y",       "silence prompts (implicit agreement)",   opt_quiet       },
     { NULL,       NULL,                NULL                                 },
 };
 // *INDENT-ON*

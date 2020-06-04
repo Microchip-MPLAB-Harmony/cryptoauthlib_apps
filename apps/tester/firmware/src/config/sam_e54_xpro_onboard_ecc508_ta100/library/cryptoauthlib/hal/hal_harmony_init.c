@@ -32,6 +32,14 @@
 
 #include "cryptoauthlib.h"
 
+atca_plib_i2c_api_t sercom7_plib_i2c_api = {
+    .read = SERCOM7_I2C_Read,
+    .write = SERCOM7_I2C_Write,
+    .is_busy = SERCOM7_I2C_IsBusy,
+    .error_get = SERCOM7_I2C_ErrorGet,
+    .transfer_setup = SERCOM7_I2C_TransferSetup
+};
+
 static void sercom4_select_pin(uint32_t pin, bool value)
 {
     PORT_PinWrite(pin, value);
@@ -44,12 +52,5 @@ atca_plib_spi_api_t sercom4_plib_spi_api = {
     .select = &sercom4_select_pin
 };
 
-atca_plib_i2c_api_t sercom7_plib_i2c_api = {
-    .read = SERCOM7_I2C_Read,
-    .write = SERCOM7_I2C_Write,
-    .is_busy = SERCOM7_I2C_IsBusy,
-    .error_get = SERCOM7_I2C_ErrorGet,
-    .transfer_setup = SERCOM7_I2C_TransferSetup
-};
 
 

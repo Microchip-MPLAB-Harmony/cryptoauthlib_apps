@@ -75,7 +75,7 @@ int atcacert_read_device_loc(const atcacert_device_loc_t* device_loc,
  *                              template, or stored on the device as specifed in the
  *                              cert_def cert_elements.
  * \param[out]   cert           Buffer to received the certificate.
- * \param[inout] cert_size      As input, the size of the cert buffer in bytes.
+ * \param[in,out] cert_size      As input, the size of the cert buffer in bytes.
  *                              As output, the size of the certificate returned in cert in bytes.
  *
  * \return ATCACERT_E_SUCCESS on success, otherwise an error code.
@@ -107,7 +107,7 @@ int atcacert_write_cert(const atcacert_def_t* cert_def,
  * \param[in]    csr_def   CSR definition describing where to find the dynamic CSR information
  *                         on the device and how to incorporate it into the template.
  * \param[out]   csr       Buffer to receive the CSR.
- * \param[inout] csr_size  As input, the size of the CSR buffer in bytes.
+ * \param[in,out] csr_size  As input, the size of the CSR buffer in bytes.
  *                         As output, the size of the CSR returned in cert in bytes.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -120,7 +120,7 @@ int atcacert_create_csr(const atcacert_def_t* csr_def, uint8_t* csr, size_t* csr
  * \param[in]    csr_def   CSR definition describing where to find the dynamic CSR information
  *                         on the device and how to incorporate it into the template.
  * \param[out]   csr       Buffer to received the CSR formatted as PEM.
- * \param[inout] csr_size  As input, the size of the CSR buffer in bytes.
+ * \param[in,out] csr_size  As input, the size of the CSR buffer in bytes.
  *                         As output, the size of the CSR as PEM returned in cert in bytes.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */

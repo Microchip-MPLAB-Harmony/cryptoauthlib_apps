@@ -137,7 +137,7 @@ ATCA_STATUS hal_spi_post_init(ATCAIface iface)
 
 /** \brief HAL implementation of SPI send over Harmony
  * \param[in] iface         instance
- * \param[in] word_address  device word address
+ * \param[in] word_address  device transaction type
  * \param[in] txdata        pointer to space to bytes to send
  * \param[in] txlength      number of bytes to send
  * \return ATCA_SUCCESS on success, otherwise an error code.
@@ -151,7 +151,7 @@ ATCA_STATUS hal_spi_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata,
 
     if (!cfg)
     {
-        status = TRACE(ATCA_BAD_PARAM, "");
+        status = ATCA_TRACE(ATCA_BAD_PARAM, "");
         return status;
     }
 
@@ -159,7 +159,7 @@ ATCA_STATUS hal_spi_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata,
 
     if (!plib)
     {
-        status = TRACE(ATCA_BAD_PARAM, "");
+        status = ATCA_TRACE(ATCA_BAD_PARAM, "");
         return status;
     }
 
@@ -196,10 +196,11 @@ ATCA_STATUS hal_spi_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata,
 }
 
 /** \brief HAL implementation of SPI receive function for HARMONY SPI
- * \param[in]    iface     Device to interact with.
- * \param[out]   rxdata    Data received will be returned here.
- * \param[inout] rxlength  As input, the size of the rxdata buffer.
- *                         As output, the number of bytes received.
+ * \param[in]    iface          Device to interact with.
+ * \param[in]    word_address   device transaction type
+ * \param[out]   rxdata         Data received will be returned here.
+ * \param[in,out] rxlength      As input, the size of the rxdata buffer.
+ *                              As output, the number of bytes received.
  * \return ATCA_SUCCESS on success, otherwise an error code.
  */
 ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength)
@@ -212,12 +213,12 @@ ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
 
     if ((NULL == cfg) || (NULL == rxlength) || (NULL == rxdata))
     {
-        RETURN(ATCA_INVALID_POINTER, "NULL pointer encountered");
+        return ATCA_TRACE(ATCA_INVALID_POINTER, "NULL pointer encountered");
     }
 
     if (NULL == (plib = (atca_plib_spi_api_t*)cfg->cfg_data))
     {
-        RETURN(ATCA_INVALID_POINTER, "NULL pointer encountered");
+        return ATCA_TRACE(ATCA_INVALID_POINTER, "NULL pointer encountered");
     }
 
     rxdata_max_size = *rxlength;
@@ -244,7 +245,7 @@ ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if (ATCA_SUCCESS != status)
         {
-            TRACE(status, "plib->write - failed");
+            ATCA_TRACE(status, "plib->write - failed");
             break;
         }
 
@@ -258,13 +259,13 @@ ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if (ATCA_SUCCESS != status)
         {
-            TRACE(status, "plib->read - failed");
+            ATCA_TRACE(status, "plib->read - failed");
             break;
         }
 
         if (1 == read_length)
         {
-            TRACE(status, "1 byte read completed");
+            ATCA_TRACE(status, "1 byte read completed");
             break;
         }
 
@@ -273,13 +274,13 @@ ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
 
         if (read_length > rxdata_max_size)
         {
-            status = TRACE(ATCA_SMALL_BUFFER, "rxdata is small buffer");
+            status = ATCA_TRACE(ATCA_SMALL_BUFFER, "rxdata is small buffer");
             break;
         }
 
         if (read_length < 5)
         {
-            status = TRACE(ATCA_RX_FAIL, "packet size is invalid");
+            status = ATCA_TRACE(ATCA_RX_FAIL, "packet size is invalid");
             break;
         }
 
@@ -293,7 +294,7 @@ ATCA_STATUS hal_spi_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxda
         }
         if (ATCA_SUCCESS != status)
         {
-            TRACE(status, "plib->read - failed");
+            ATCA_TRACE(status, "plib->read - failed");
             break;
         }
 

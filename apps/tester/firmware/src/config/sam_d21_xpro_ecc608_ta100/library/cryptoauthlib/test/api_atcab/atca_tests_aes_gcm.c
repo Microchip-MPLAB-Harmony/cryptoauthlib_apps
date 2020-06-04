@@ -33,7 +33,7 @@
 
 #ifdef ATCA_ATECC608A_SUPPORT
 
-#include "calib/calib_aes_gcm.h"
+//#include "calib/calib_aes_gcm.h"
 #include "vectors/aes_gcm_nist_vectors.h"
 
 typedef struct
@@ -531,7 +531,9 @@ TEST(atca_cmd_basic_test, aes_gcm_encrypt_cavp_vectors)
 
     fclose(req_file);
     fclose(rsp_file);
+#ifdef ATCA_PRINTF
     printf("\n");
+#endif
 #endif
 }
 
@@ -648,7 +650,9 @@ TEST(atca_cmd_basic_test, aes_gcm_decrypt_cavp_vectors)
 
     fclose(req_file);
     fclose(rsp_file);
+#ifdef ATCA_PRINTF
     printf("\n");
+#endif
 #endif
 }
 

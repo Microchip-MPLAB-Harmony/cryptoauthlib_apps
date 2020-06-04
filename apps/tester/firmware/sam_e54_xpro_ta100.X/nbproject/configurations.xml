@@ -99,7 +99,6 @@
             <itemPath>../src/packs/ATSAME54P20A_DFP/pio/same54p20a.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/ATSAME54P20A_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAME54P20A_DFP/atsame54p20a_compat.h</itemPath>
           <itemPath>../src/packs/ATSAME54P20A_DFP/atsame54p20a.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
@@ -329,7 +328,6 @@
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_device.c</itemPath>
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_device.h</itemPath>
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_devtypes.h</itemPath>
-              <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_execution.h</itemPath>
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_helpers.h</itemPath>
               <itemPath>../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/atca_iface.c</itemPath>
@@ -464,7 +462,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e54_xpro_ta100;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/crypto;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/test"/>
+                  value="../src;../src/config/sam_e54_xpro_ta100;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/arm;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/crypto;../src/config/sam_e54_xpro_ta100/library/cryptoauthlib/test"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -505,6 +503,9 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>

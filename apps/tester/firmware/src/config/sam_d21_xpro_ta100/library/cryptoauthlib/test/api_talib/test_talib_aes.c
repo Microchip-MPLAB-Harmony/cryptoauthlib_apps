@@ -11,7 +11,7 @@
 /** \brief  This test cases load an AES key and perform AES-GCM encryption & decryption on Nist Vectors.
  *          .
  */
-TEST(atca_cmd_basic_test, aes_gcm_nist_vectors)
+TEST(atca_cmd_basic_test, talib_aes_gcm_nist_vectors)
 {
     ATCA_STATUS status;
     uint8_t test_index;
@@ -220,9 +220,9 @@ TEST(atca_cmd_basic_test, aes_gcm_test_random_iv)
 
 t_test_case_info talib_aes_info[] =
 {
-    { REGISTER_TEST_CASE(atca_cmd_basic_test, aes_gcm_nist_vectors),      DEVICE_MASK(TA100) },
-    { REGISTER_TEST_CASE(atca_cmd_basic_test, aes_gcm_test_implicit_iv),  DEVICE_MASK(TA100) },
-    { REGISTER_TEST_CASE(atca_cmd_basic_test, aes_gcm_test_random_iv),    DEVICE_MASK(TA100) },
+    { REGISTER_TEST_CASE(atca_cmd_basic_test, talib_aes_gcm_nist_vectors),      DEVICE_MASK(TA100) },
+    { REGISTER_TEST_CASE(atca_cmd_basic_test, aes_gcm_test_implicit_iv),        DEVICE_MASK(TA100) },
+    { REGISTER_TEST_CASE(atca_cmd_basic_test, aes_gcm_test_random_iv),          DEVICE_MASK(TA100) },
     /* Array Termination element*/
     { (fp_test_case)NULL,                    (uint8_t)0 },
 };

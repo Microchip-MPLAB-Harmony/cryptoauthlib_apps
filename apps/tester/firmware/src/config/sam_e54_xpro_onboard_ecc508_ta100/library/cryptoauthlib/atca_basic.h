@@ -27,15 +27,12 @@
  * THIS SOFTWARE.
  */
 
-
-
-#include "cryptoauthlib.h"
-
 #ifndef ATCA_BASIC_H_
 #define ATCA_BASIC_H_
+/*lint +flb */
 
+#include "cryptoauthlib.h"
 #include "crypto/atca_crypto_sw_sha2.h"
-
 
 /** \defgroup atcab_ Basic Crypto API methods (atcab_)
  *
@@ -48,17 +45,17 @@
 extern "C" {
 #endif
 
-#include <stdint.h>
-#include <stddef.h>
-
 ATCA_DLL ATCADevice _gDevice;
 
 // Basic global methods
 ATCA_STATUS atcab_version(char *ver_str);
+ATCA_STATUS atcab_init_ext(ATCADevice* device, ATCAIfaceCfg* cfg);
 ATCA_STATUS atcab_init(ATCAIfaceCfg *cfg);
 ATCA_STATUS atcab_init_device(ATCADevice ca_device);
+ATCA_STATUS atcab_release_ext(ATCADevice* device);
 ATCA_STATUS atcab_release(void);
 ATCADevice atcab_get_device(void);
+ATCADeviceType atcab_get_device_type_ext(ATCADevice device);
 ATCADeviceType atcab_get_device_type(void);
 
 bool atcab_is_ca_device(ATCADeviceType dev_type);
@@ -71,22 +68,27 @@ bool atcab_is_ta_device(ATCADeviceType dev_type);
 
 // AES Mode functions
 #include "crypto/atca_crypto_hw_aes.h"
+ATCA_STATUS atcab_aes_cbc_init_ext(ATCADevice device, atca_aes_cbc_ctx_t* ctx, uint16_t key_id, uint8_t key_block, const uint8_t* iv);
 ATCA_STATUS atcab_aes_cbc_init(atca_aes_cbc_ctx_t* ctx, uint16_t key_id, uint8_t key_block,   const uint8_t* iv);
+ATCA_STATUS atcab_aes_cbc_encrypt_block_ext(atca_aes_cbc_ctx_t* ctx, const uint8_t* plaintext, uint8_t* ciphertext);
 ATCA_STATUS atcab_aes_cbc_encrypt_block(atca_aes_cbc_ctx_t* ctx, const uint8_t* plaintext, uint8_t* ciphertext);
 ATCA_STATUS atcab_aes_cbc_decrypt_block(atca_aes_cbc_ctx_t* ctx, const uint8_t* ciphertext, uint8_t* plaintext);
 
+ATCA_STATUS atcab_aes_cmac_init_ext(ATCADevice device, atca_aes_cmac_ctx_t* ctx, uint16_t key_id, uint8_t key_block);
 ATCA_STATUS atcab_aes_cmac_init(atca_aes_cmac_ctx_t* ctx, uint16_t key_id, uint8_t key_block);
 ATCA_STATUS atcab_aes_cmac_update(atca_aes_cmac_ctx_t* ctx, const uint8_t* data, uint32_t data_size);
 ATCA_STATUS atcab_aes_cmac_finish(atca_aes_cmac_ctx_t* ctx, uint8_t* cmac, uint32_t cmac_size);
 
+ATCA_STATUS atcab_aes_ctr_init_ext(ATCADevice device, atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, const uint8_t* iv);
 ATCA_STATUS atcab_aes_ctr_init(atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, const uint8_t* iv);
+ATCA_STATUS atcab_aes_ctr_init_rand_ext(ATCADevice device, atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, uint8_t* iv);
 ATCA_STATUS atcab_aes_ctr_init_rand(atca_aes_ctr_ctx_t* ctx, uint16_t key_id, uint8_t key_block, uint8_t counter_size, uint8_t* iv);
 ATCA_STATUS atcab_aes_ctr_block(atca_aes_ctr_ctx_t* ctx, const uint8_t* input, uint8_t* output);
 ATCA_STATUS atcab_aes_ctr_encrypt_block(atca_aes_ctr_ctx_t* ctx, const uint8_t* plaintext, uint8_t* ciphertext);
 ATCA_STATUS atcab_aes_ctr_decrypt_block(atca_aes_ctr_ctx_t* ctx, const uint8_t* ciphertext, uint8_t* plaintext);
 ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 
-#if ATCA_CA_SUPPORT && !ATCA_TA_SUPPORT
+#if ATCA_CA_SUPPORT && !ATCA_TA_SUPPORT && !defined(ATCA_USE_ATCAB_FUNCTIONS)
 #define atcab_wakeup()                          calib_wakeup(_gDevice)
 #define atcab_idle()                            calib_idle(_gDevice)
 #define atcab_sleep()                           calib_sleep(_gDevice)
@@ -97,7 +99,9 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 // AES command functions
 #define atcab_aes(...)                          calib_aes(_gDevice, __VA_ARGS__)
 #define atcab_aes_encrypt(...)                  calib_aes_encrypt(_gDevice, __VA_ARGS__)
+#define atcab_aes_encrypt_ext                   calib_aes_encrypt
 #define atcab_aes_decrypt(...)                  calib_aes_decrypt(_gDevice, __VA_ARGS__)
+#define atcab_aes_decrypt_ext                   calib_aes_decrypt
 #define atcab_aes_gfm(...)                      calib_aes_gfm(_gDevice, __VA_ARGS__)
 
 #define atcab_aes_gcm_init(...)                 calib_aes_gcm_init(_gDevice, __VA_ARGS__)
@@ -172,6 +176,7 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 
 // Random command functions
 #define atcab_random(...)                       calib_random(_gDevice, __VA_ARGS__)
+#define atcab_random_ext                        calib_random
 
 // Read command functions
 #define atcab_read_zone(...)                    calib_read_zone(_gDevice, __VA_ARGS__)
@@ -239,7 +244,7 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 #define atcab_write_enc(...)                    calib_write_enc(_gDevice, __VA_ARGS__)
 #define atcab_write_config_counter(...)         calib_write_config_counter(_gDevice, __VA_ARGS__)
 
-#elif ATCA_TA_SUPPORT && !ATCA_CA_SUPPORT
+#elif ATCA_TA_SUPPORT && !ATCA_CA_SUPPORT && !defined(ATCA_USE_ATCAB_FUNCTIONS)
 
 #define atcab_wakeup(...)                       (0)
 #define atcab_idle(...)                         (0)
@@ -252,7 +257,9 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 // AES command functions
 #define atcab_aes(...)                          (1)
 #define atcab_aes_encrypt(...)                  talib_aes_encrypt(_gDevice, __VA_ARGS__)
+#define atcab_aes_encrypt_ext                   talib_aes_encrypt
 #define atcab_aes_decrypt(...)                  talib_aes_decrypt(_gDevice, __VA_ARGS__)
+#define atcab_aes_decrypt_ext                   talib_aes_decrypt
 #define atcab_aes_gfm(...)                      (1)
 
 #define atcab_aes_gcm_init(...)                 (1)
@@ -328,6 +335,7 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 
 // Random command functions
 #define atcab_random(...)                       talib_random_compat(_gDevice, __VA_ARGS__)
+#define atcab_random_ext                        talib_random_compat
 
 // Read command functions
 #define atcab_read_zone(...)                    (ATCA_UNIMPLEMENTED)
@@ -395,10 +403,11 @@ ATCA_STATUS atcab_aes_ctr_increment(atca_aes_ctr_ctx_t* ctx);
 #define atcab_write_enc(...)                    (ATCA_UNIMPLEMENTED)
 #define atcab_write_config_counter(...)         (ATCA_UNIMPLEMENTED)
 
-#else /* ATCA_TA_SUPPORT && ATCA_CA_SUPPORT */
+#endif
+
+#if (ATCA_TA_SUPPORT && ATCA_CA_SUPPORT) || defined(ATCA_USE_ATCAB_FUNCTIONS)
 
 /* Basic global methods */
-
 ATCA_STATUS _atcab_exit(void);
 ATCA_STATUS atcab_wakeup(void);
 ATCA_STATUS atcab_idle(void);
@@ -410,10 +419,12 @@ ATCA_STATUS atcab_get_zone_size(uint8_t zone, uint16_t slot, size_t* size);
 // AES command functions
 ATCA_STATUS atcab_aes(uint8_t mode, uint16_t key_id, const uint8_t* aes_in, uint8_t* aes_out);
 ATCA_STATUS atcab_aes_encrypt(uint16_t key_id, uint8_t key_block, const uint8_t* plaintext, uint8_t* ciphertext);
+ATCA_STATUS atcab_aes_encrypt_ext(ATCADevice device, uint16_t key_id, uint8_t key_block, const uint8_t* plaintext, uint8_t* ciphertext);
 ATCA_STATUS atcab_aes_decrypt(uint16_t key_id, uint8_t key_block, const uint8_t* ciphertext, uint8_t* plaintext);
+ATCA_STATUS atcab_aes_decrypt_ext(ATCADevice device, uint16_t key_id, uint8_t key_block, const uint8_t* ciphertext, uint8_t* plaintext);
 ATCA_STATUS atcab_aes_gfm(const uint8_t* h, const uint8_t* input, uint8_t* output);
 
-/*
+/* AES GCM */
 ATCA_STATUS atcab_aes_gcm_init(atca_aes_gcm_ctx_t* ctx, uint16_t key_id, uint8_t key_block, const uint8_t* iv, size_t iv_size);
 ATCA_STATUS atcab_aes_gcm_init_rand(atca_aes_gcm_ctx_t* ctx, uint16_t key_id, uint8_t key_block, size_t rand_size,
                                     const uint8_t* free_field, size_t free_field_size, uint8_t* iv);
@@ -422,7 +433,6 @@ ATCA_STATUS atcab_aes_gcm_encrypt_update(atca_aes_gcm_ctx_t* ctx, const uint8_t*
 ATCA_STATUS atcab_aes_gcm_encrypt_finish(atca_aes_gcm_ctx_t* ctx, uint8_t* tag, size_t tag_size);
 ATCA_STATUS atcab_aes_gcm_decrypt_update(atca_aes_gcm_ctx_t* ctx, const uint8_t* ciphertext, uint32_t ciphertext_size, uint8_t* plaintext);
 ATCA_STATUS atcab_aes_gcm_decrypt_finish(atca_aes_gcm_ctx_t* ctx, const uint8_t* tag, size_t tag_size, bool* is_verified);
-*/
 
 /* CheckMAC command */
 ATCA_STATUS atcab_checkmac(uint8_t mode, uint16_t key_id, const uint8_t* challenge, const uint8_t* response, const uint8_t* other_data);
@@ -497,6 +507,7 @@ ATCA_STATUS atcab_priv_write(uint16_t key_id, const uint8_t priv_key[36], uint16
 
 // Random command functions
 ATCA_STATUS atcab_random(uint8_t* rand_out);
+ATCA_STATUS atcab_random_ext(ATCADevice device, uint8_t* rand_out);
 
 // Read command functions
 ATCA_STATUS atcab_read_zone(uint8_t zone, uint16_t slot, uint8_t block, uint8_t offset, uint8_t* data, uint8_t len);
@@ -535,17 +546,14 @@ ATCA_STATUS atcab_sha_write_context(const uint8_t* context, uint16_t context_siz
 ATCA_STATUS atcab_sha(uint16_t length, const uint8_t* message, uint8_t* digest);
 ATCA_STATUS atcab_hw_sha2_256(const uint8_t* data, size_t data_size, uint8_t* digest);
 
-/*
 ATCA_STATUS atcab_hw_sha2_256_init(atca_sha256_ctx_t* ctx);
 ATCA_STATUS atcab_hw_sha2_256_update(atca_sha256_ctx_t* ctx, const uint8_t* data, size_t data_size);
 ATCA_STATUS atcab_hw_sha2_256_finish(atca_sha256_ctx_t* ctx, uint8_t* digest);
 ATCA_STATUS atcab_sha_hmac_init(atca_hmac_sha256_ctx_t* ctx, uint16_t key_slot);
 ATCA_STATUS atcab_sha_hmac_update(atca_hmac_sha256_ctx_t* ctx, const uint8_t* data, size_t data_size);
 ATCA_STATUS atcab_sha_hmac_finish(atca_hmac_sha256_ctx_t* ctx, uint8_t* digest, uint8_t target);
-*/
 
 ATCA_STATUS atcab_sha_hmac(const uint8_t* data, size_t data_size, uint16_t key_slot, uint8_t* digest, uint8_t target);
-
 
 /* Sign command */
 ATCA_STATUS atcab_sign_base(uint8_t mode, uint16_t key_id, uint8_t* signature);
@@ -588,5 +596,5 @@ ATCA_STATUS atcab_write_config_counter(uint16_t counter_id, uint32_t counter_val
 #endif
 
 /** @} */
-
+/*lint -flb*/
 #endif /* ATCA_BASIC_H_ */

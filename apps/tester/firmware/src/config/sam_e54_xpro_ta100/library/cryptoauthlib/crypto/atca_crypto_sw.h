@@ -83,8 +83,14 @@ typedef atca_evp_ctx atcac_hmac_sha256_ctx;
 #include "wolfssl/wolfcrypt/hmac.h"
 #include "wolfssl/wolfcrypt/sha.h"
 #include "wolfssl/wolfcrypt/sha256.h"
+#include "wolfssl/wolfcrypt/error-crypt.h"
 
-typedef Aes         atcac_aes_gcm_ctx;
+typedef struct
+{
+    Aes         aes;
+    uint8_t     iv[AES_BLOCK_SIZE];
+    uint16_t    iv_len;
+} atcac_aes_gcm_ctx;
 typedef wc_Sha      atcac_sha1_ctx;
 typedef wc_Sha256   atcac_sha2_256_ctx;
 typedef Cmac        atcac_aes_cmac_ctx;
@@ -118,23 +124,31 @@ typedef struct
 } atcac_hmac_sha256_ctx;
 #endif
 
-
 #if defined(ATCA_MBEDTLS) || defined(ATCA_OPENSSL) || defined(ATCA_WOLFSSL)
-
-ATCA_STATUS atcac_aes_gcm_aad_update(atcac_aes_gcm_ctx* ctx, const uint8_t* aad, const size_t aad_len);
-
 ATCA_STATUS atcac_aes_gcm_encrypt_start(atcac_aes_gcm_ctx* ctx, const uint8_t* key, const uint8_t key_len, const uint8_t* iv, const uint8_t iv_len);
-ATCA_STATUS atcac_aes_gcm_encrypt_update(atcac_aes_gcm_ctx* ctx, const uint8_t* plaintext, const size_t pt_len, uint8_t* ciphertext, size_t* ct_len);
-ATCA_STATUS atcac_aes_gcm_encrypt_finish(atcac_aes_gcm_ctx* ctx, uint8_t* tag, size_t tag_len);
-
 ATCA_STATUS atcac_aes_gcm_decrypt_start(atcac_aes_gcm_ctx* ctx, const uint8_t* key, const uint8_t key_len, const uint8_t* iv, const uint8_t iv_len);
-ATCA_STATUS atcac_aes_gcm_decrypt_update(atcac_aes_gcm_ctx* ctx, const uint8_t* ciphertext, const size_t ct_len, uint8_t* plaintext, size_t * pt_len);
-ATCA_STATUS atcac_aes_gcm_decrypt_finish(atcac_aes_gcm_ctx* ctx, const uint8_t* tag, size_t tag_len, bool* is_verified);
 
 ATCA_STATUS atcac_aes_cmac_init(atcac_aes_cmac_ctx* ctx, const uint8_t* key, const uint8_t key_len);
 ATCA_STATUS atcac_aes_cmac_update(atcac_aes_cmac_ctx* ctx, const uint8_t* data, const size_t data_size);
-ATCA_STATUS atcac_aes_cmac_finish(atcac_aes_cmac_ctx* ctx, uint8_t* cmac, size_t * cmac_size);
+ATCA_STATUS atcac_aes_cmac_finish(atcac_aes_cmac_ctx* ctx, uint8_t* cmac, size_t* cmac_size);
+#endif
 
+#if defined(ATCA_MBEDTLS) || defined(ATCA_OPENSSL)
+ATCA_STATUS atcac_aes_gcm_aad_update(atcac_aes_gcm_ctx* ctx, const uint8_t* aad, const size_t aad_len);
+
+ATCA_STATUS atcac_aes_gcm_encrypt_update(atcac_aes_gcm_ctx* ctx, const uint8_t* plaintext, const size_t pt_len, uint8_t* ciphertext, size_t* ct_len);
+ATCA_STATUS atcac_aes_gcm_encrypt_finish(atcac_aes_gcm_ctx* ctx, uint8_t* tag, size_t tag_len);
+
+ATCA_STATUS atcac_aes_gcm_decrypt_update(atcac_aes_gcm_ctx* ctx, const uint8_t* ciphertext, const size_t ct_len, uint8_t* plaintext, size_t* pt_len);
+ATCA_STATUS atcac_aes_gcm_decrypt_finish(atcac_aes_gcm_ctx* ctx, const uint8_t* tag, size_t tag_len, bool* is_verified);
+
+#elif defined(ATCA_WOLFSSL)
+ATCA_STATUS atcac_aes_gcm_encrypt(atcac_aes_gcm_ctx* ctx, const uint8_t* plaintext, const size_t pt_len, uint8_t* ciphertext, uint8_t* tag, 
+                                  size_t tag_len, const uint8_t* aad, const size_t aad_len);
+
+
+ATCA_STATUS atcac_aes_gcm_decrypt(atcac_aes_gcm_ctx* ctx, const uint8_t* ciphertext, const size_t ct_len, uint8_t* plaintext, const uint8_t* tag, 
+                                  size_t tag_len, const uint8_t* aad, const size_t aad_len, bool* is_verified);
 #endif
 
 #ifdef __cplusplus

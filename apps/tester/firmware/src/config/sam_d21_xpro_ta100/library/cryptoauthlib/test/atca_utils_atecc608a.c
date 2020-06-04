@@ -175,7 +175,7 @@ ATCA_STATUS set_chip_mode(uint8_t i2c_user_extra_add, uint8_t ttl_enable, uint8_
     return status;
 }
 
-void set_clock_divider_m0(int argc, char* argv[])
+int set_clock_divider_m0(int argc, char* argv[])
 {
     ATCA_STATUS status = set_chip_mode(0xFF, 0xFF, ATCA_CHIPMODE_WATCHDOG_SHORT, ATCA_CHIPMODE_CLOCK_DIV_M0);
 
@@ -183,9 +183,10 @@ void set_clock_divider_m0(int argc, char* argv[])
     {
         printf("Set device to clock divider M0 (0x%02X) and watchdog to 1.3s nominal.\r\n", ATCA_CHIPMODE_CLOCK_DIV_M0 >> 3);
     }
+    return status;
 }
 
-void set_clock_divider_m1(int argc, char* argv[])
+int set_clock_divider_m1(int argc, char* argv[])
 {
     ATCA_STATUS status = set_chip_mode(0xFF, 0xFF, ATCA_CHIPMODE_WATCHDOG_SHORT, ATCA_CHIPMODE_CLOCK_DIV_M1);
 
@@ -193,9 +194,10 @@ void set_clock_divider_m1(int argc, char* argv[])
     {
         printf("Set device to clock divider M1 (0x%02X) and watchdog to 1.3s nominal.\r\n", ATCA_CHIPMODE_CLOCK_DIV_M1 >> 3);
     }
+    return status;
 }
 
-void set_clock_divider_m2(int argc, char* argv[])
+int set_clock_divider_m2(int argc, char* argv[])
 {
     // Additionally set watchdog to long settings (~13s) as some commands
     // can't complete in time on the faster watchdog setting.
@@ -205,6 +207,7 @@ void set_clock_divider_m2(int argc, char* argv[])
     {
         printf("Set device to clock divider M2 (0x%02X) and watchdog to 13s nominal.\r\n", ATCA_CHIPMODE_CLOCK_DIV_M2 >> 3);
     }
+    return status;
 }
 
 #endif

@@ -373,7 +373,6 @@
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_device.c</itemPath>
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_device.h</itemPath>
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_devtypes.h</itemPath>
-              <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_execution.h</itemPath>
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_helpers.h</itemPath>
               <itemPath>../src/config/sam_d21_xpro_ecc608_ta100/library/cryptoauthlib/atca_iface.c</itemPath>
@@ -446,8 +445,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMD21_DFP" vendor="Microchip" version="3.1.71"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMD21_DFP" vendor="Microchip" version="3.1.71"/>
       </packs>
       <compileType>
         <linkerTool>

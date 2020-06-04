@@ -33,8 +33,8 @@
  * THIS SOFTWARE.
  */
 
+#include "cryptoauthlib.h"
 #include "calib_aes_gcm.h"
-#include "atca_compiler.h"
 
 /** \ingroup calib_
  * @{
@@ -42,10 +42,14 @@
 
 const char* atca_basic_aes_gcm_version = "2.0";
 
+/* Compatibility define */
+#define RETURN  return ATCA_TRACE
+
 /** \brief Performs running GHASH calculations using the current hash value,
  *         hash subkey, and data received. In case of partial blocks, the last
  *         block is padded with zeros to get the output.
  *
+ * \param[in]     device     Device context pointer
  * \param[in]     h          Subkey to use in GHASH calculations.
  * \param[in]     data       Input data to hash.
  * \param[in]     data_size  Data size in bytes.
@@ -144,6 +148,7 @@ static ATCA_STATUS calib_aes_gcm_increment(uint8_t* cb, size_t counter_size)
 /** \brief Initialize context for AES GCM operation with an existing IV, which
  *         is common when starting a decrypt operation.
  *
+ * \param[in] device        Device context pointer
  * \param[in] ctx           AES GCM context to be initialized.
  * \param[in] key_id        Key location. Can either be a slot number or
  *                          ATCA_TEMPKEY_KEYID for TempKey.
@@ -213,6 +218,7 @@ ATCA_STATUS calib_aes_gcm_init(ATCADevice device, atca_aes_gcm_ctx_t* ctx, uint1
  *         random and optional fixed(free) field, which is common when
  *         starting an encrypt operation.
  *
+ * \param[in]  device           Device context pointer
  * \param[in]  ctx              AES CTR context to be initialized.
  * \param[in]  key_id           Key location. Can either be a slot number or
  *                              ATCA_TEMPKEY_KEYID for TempKey.
@@ -268,6 +274,7 @@ ATCA_STATUS calib_aes_gcm_init_rand(ATCADevice device, atca_aes_gcm_ctx_t* ctx, 
  * function. When there is AAD to include, this should be called before
  * atcab_aes_gcm_encrypt_update() or atcab_aes_gcm_decrypt_update().
  *
+ * \param[in] device    Device context pointer
  * \param[in] ctx       AES GCM context
  * \param[in] aad       Additional authenticated data to be added
  * \param[in] aad_size  Size of aad in bytes
@@ -330,6 +337,7 @@ ATCA_STATUS calib_aes_gcm_aad_update(ATCADevice device, atca_aes_gcm_ctx_t* ctx,
  *         atcab_aes_gcm_init() or atcab_aes_gcm_init_rand() should be called
  *         before the first use of this function.
  *
+ * \param[in]  device      Device context pointer
  * \param[in]  ctx         AES GCM context structure.
  * \param[in]  input       Data to be processed.
  * \param[in]  input_size  Size of input in bytes.
@@ -411,6 +419,7 @@ static ATCA_STATUS calib_aes_gcm_update(ATCADevice device, atca_aes_gcm_ctx_t* c
  *         atcab_aes_gcm_init() or atcab_aes_gcm_init_rand() should be called
  *         before the first use of this function.
  *
+ * \param[in]  device          Device context pointer
  * \param[in]  ctx             AES GCM context structure.
  * \param[in]  plaintext       Plaintext to be encrypted (16 bytes).
  * \param[in]  plaintext_size  Size of plaintext in bytes.
@@ -429,6 +438,7 @@ ATCA_STATUS calib_aes_gcm_encrypt_update(ATCADevice device, atca_aes_gcm_ctx_t* 
  * calculates the tag. This should be called last in a encrypt/decrypt
  * operation.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  ctx          AES GCM context structure.
  * \param[out] tag          Authentication tag is returned here.
  * \param[in]  tag_size     Required size for the tag. Must be 12 to 16 bytes.
@@ -480,6 +490,7 @@ static ATCA_STATUS calib_aes_gcm_calc_auth_tag(ATCADevice device, atca_aes_gcm_c
 
 /** \brief Complete a GCM encrypt operation returning the authentication tag.
  *
+ * \param[in]  device    Device context pointer
  * \param[in]  ctx       AES GCM context structure.
  * \param[out] tag       Authentication tag is returned here.
  * \param[in]  tag_size  Tag size in bytes (12 to 16 bytes).
@@ -523,6 +534,7 @@ ATCA_STATUS calib_aes_gcm_encrypt_finish(ATCADevice device, atca_aes_gcm_ctx_t* 
  *         atcab_aes_gcm_init() or atcab_aes_gcm_init_rand() should be called
  *         before the first use of this function.
  *
+ * \param[in]  device           Device context pointer
  * \param[in]  ctx              AES GCM context structure.
  * \param[in]  ciphertext       Ciphertext to be decrypted.
  * \param[in]  ciphertext_size  Size of ciphertext in bytes.
@@ -537,6 +549,7 @@ ATCA_STATUS calib_aes_gcm_decrypt_update(ATCADevice device, atca_aes_gcm_ctx_t* 
 
 /** \brief Complete a GCM decrypt operation verifying the authentication tag.
  *
+ * \param[in]  device       Device context pointer
  * \param[in]  ctx          AES GCM context structure.
  * \param[in]  tag          Expected authentication tag.
  * \param[in]  tag_size     Size of tag in bytes (12 to 16 bytes).

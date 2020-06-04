@@ -344,13 +344,46 @@ TEST(atcacert_client, atcacert_read_cert_device)
     TEST_ASSERT_EQUAL_MEMORY(g_device_cert_ref, cert, cert_size);
 }
 
+TEST(atcacert_client, atcacert_read_subj_key_id)
+{
+    int ret = 0;
+    uint8_t cert[512];
+    size_t cert_size = sizeof(cert);
+    uint8_t key_id_ref[20];
+    uint8_t key_id[20];
+
+    ret = atcacert_read_cert(&g_test_cert_def_1_signer, g_signer_ca_public_key, cert, &cert_size);
+    TEST_ASSERT_EQUAL(ATCACERT_E_SUCCESS, ret);
+    TEST_ASSERT_EQUAL(g_signer_cert_ref_size, cert_size);
+    TEST_ASSERT_EQUAL_MEMORY(g_signer_cert_ref, cert, cert_size);
+
+    ret = atcacert_get_subj_key_id(&g_test_cert_def_1_signer, cert, cert_size, key_id_ref);
+    TEST_ASSERT_EQUAL(ATCACERT_E_SUCCESS, ret);
+
+    ret = atcacert_read_subj_key_id(&g_test_cert_def_1_signer, key_id);
+    TEST_ASSERT_EQUAL(ATCACERT_E_SUCCESS, ret);
+    TEST_ASSERT_EQUAL_MEMORY(key_id_ref, key_id, sizeof(key_id));
+}
+
 TEST(atcacert_client, atcacert_read_cert_small_buf)
 {
     int ret = 0;
-    uint8_t cert[64];
+    uint8_t cert[512];
     size_t cert_size = sizeof(cert);
 
-    ret = atcacert_read_cert(&g_test_cert_def_1_signer, g_signer_ca_public_key, cert, &cert_size);
+    // Getting the actual buffer size needed for the certificate
+    ret = atcacert_read_cert(&g_test_cert_def_0_device, g_signer_public_key, NULL, &cert_size);
+    TEST_ASSERT_EQUAL(ATCACERT_E_SUCCESS, ret);
+
+    // Read the device certificate
+    ret = atcacert_read_cert(&g_test_cert_def_0_device, g_signer_public_key, cert, &cert_size);
+    TEST_ASSERT_EQUAL(ATCACERT_E_SUCCESS, ret);
+    TEST_ASSERT_EQUAL(g_device_cert_ref_size, cert_size);
+    TEST_ASSERT_EQUAL_MEMORY(g_device_cert_ref, cert, cert_size);
+
+    // Decrease the size of the buffer needed for device certificate
+    cert_size -= 1;
+    ret = atcacert_read_cert(&g_test_cert_def_0_device, g_signer_public_key, cert, &cert_size);
     TEST_ASSERT_EQUAL(ATCACERT_E_BUFFER_TOO_SMALL, ret);
 }
 
@@ -366,13 +399,7 @@ TEST(atcacert_client, atcacert_read_cert_bad_params)
     ret = atcacert_read_cert(NULL, NULL, cert, &cert_size);
     TEST_ASSERT_EQUAL(ATCACERT_E_BAD_PARAMS, ret);
 
-    ret = atcacert_read_cert(&g_test_cert_def_0_device, g_signer_public_key, NULL, &cert_size);
-    TEST_ASSERT_EQUAL(ATCACERT_E_BAD_PARAMS, ret);
-
     ret = atcacert_read_cert(NULL, g_signer_public_key, NULL, &cert_size);
-    TEST_ASSERT_EQUAL(ATCACERT_E_BAD_PARAMS, ret);
-
-    ret = atcacert_read_cert(&g_test_cert_def_0_device, NULL, NULL, &cert_size);
     TEST_ASSERT_EQUAL(ATCACERT_E_BAD_PARAMS, ret);
 
     ret = atcacert_read_cert(NULL, NULL, NULL, &cert_size);

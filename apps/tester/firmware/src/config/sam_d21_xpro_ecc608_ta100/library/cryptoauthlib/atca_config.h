@@ -84,4 +84,6 @@ extern atca_plib_spi_api_t sercom0_plib_spi_api;
 extern atca_plib_i2c_api_t sercom2_plib_i2c_api;
 
 
+
+
 #endif // ATCA_CONFIG_H

@@ -307,12 +307,12 @@ static void test_basic_hw_sha2_256_nist_simple(const char* filename)
 
 TEST(atca_cmd_basic_test, sha2_256_nist_short)
 {
-    test_basic_hw_sha2_256_nist_simple("vectors/sha-byte-test-vectors/SHA256ShortMsg.rsp");
+    test_basic_hw_sha2_256_nist_simple("sha-byte-test-vectors/SHA256ShortMsg.rsp");
 }
 
 TEST(atca_cmd_basic_test, sha2_256_nist_long)
 {
-    test_basic_hw_sha2_256_nist_simple("vectors/sha-byte-test-vectors/SHA256LongMsg.rsp");
+    test_basic_hw_sha2_256_nist_simple("sha-byte-test-vectors/SHA256LongMsg.rsp");
 }
 
 TEST(atca_cmd_basic_test, sha2_256_nist_monte)
@@ -612,7 +612,7 @@ t_test_case_info sha_basic_test_info[] =
     //{ REGISTER_TEST_CASE(atca_cmd_basic_test, sha2_256_nist_monte), DEVICE_MASK(ATSHA204A) | DEVICE_MASK_ECC                      },
 #if ATCA_CA_SUPPORT
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_context),                                                           DEVICE_MASK(ATECC608A) },
-    { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_context_simple),                                                    DEVICE_MASK(TA100)     },4
+    { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_context_simple),                                                    DEVICE_MASK(TA100)     },
 #endif
     { REGISTER_TEST_CASE(atca_cmd_basic_test, sha_hmac),                                                DEVICE_MASK_ECC | DEVICE_MASK(TA100) },
 #ifdef ATCA_ATECC608A_SUPPORT

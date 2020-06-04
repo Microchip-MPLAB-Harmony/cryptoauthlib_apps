@@ -31,12 +31,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Executes Random command, which generates a 32 byte random number
  *          from the CryptoAuth device.
  *
+ * \param[in]  device    Device context pointer
  * \param[out] rand_out  32 bytes of random data is returned here.
  *
  * \return ATCA_SUCCESS on success, otherwise an error code.

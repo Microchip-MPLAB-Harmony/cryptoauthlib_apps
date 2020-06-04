@@ -307,12 +307,12 @@ static void test_basic_hw_sha2_256_nist_simple(const char* filename)
 
 TEST(atca_cmd_basic_test, sha2_256_nist_short)
 {
-    test_basic_hw_sha2_256_nist_simple("vectors/sha-byte-test-vectors/SHA256ShortMsg.rsp");
+    test_basic_hw_sha2_256_nist_simple("sha-byte-test-vectors/SHA256ShortMsg.rsp");
 }
 
 TEST(atca_cmd_basic_test, sha2_256_nist_long)
 {
-    test_basic_hw_sha2_256_nist_simple("vectors/sha-byte-test-vectors/SHA256LongMsg.rsp");
+    test_basic_hw_sha2_256_nist_simple("sha-byte-test-vectors/SHA256LongMsg.rsp");
 }
 
 TEST(atca_cmd_basic_test, sha2_256_nist_monte)

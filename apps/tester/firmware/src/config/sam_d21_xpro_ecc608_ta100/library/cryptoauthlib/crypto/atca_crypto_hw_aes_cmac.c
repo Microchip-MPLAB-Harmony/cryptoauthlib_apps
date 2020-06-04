@@ -46,6 +46,28 @@ static const uint8_t g_aes_zero_block[ATCA_AES128_BLOCK_SIZE] = {
 
 /** \brief Initialize a CMAC calculation using an AES-128 key in the device.
  *
+ * \param[in] device     Device context pointer
+ * \param[in] ctx        AES-128 CMAC context.
+ * \param[in] key_id     Key location. Can either be a slot/handles or
+ *                       in TempKey.
+ * \param[in] key_block  Index of the 16-byte block to use within the key
+ *                       location for the actual key.
+ *
+ * \return ATCA_SUCCESS on success, otherwise an error code.
+ */
+ATCA_STATUS atcab_aes_cmac_init_ext(ATCADevice device, atca_aes_cmac_ctx_t* ctx, uint16_t key_id, uint8_t key_block)
+{
+    if (ctx == NULL)
+    {
+        return ATCA_BAD_PARAM;
+    }
+    memset(ctx, 0, sizeof(*ctx));
+    // IV for CMAC CBC calculations is all zeros
+    return atcab_aes_cbc_init_ext(device, &ctx->cbc_ctx, key_id, key_block, g_aes_zero_block);
+}
+
+/** \brief Initialize a CMAC calculation using an AES-128 key in the device.
+ *
  * \param[in] ctx        AES-128 CMAC context.
  * \param[in] key_id     Key location. Can either be a slot/handles or
  *                       in TempKey.
@@ -56,13 +78,7 @@ static const uint8_t g_aes_zero_block[ATCA_AES128_BLOCK_SIZE] = {
  */
 ATCA_STATUS atcab_aes_cmac_init(atca_aes_cmac_ctx_t* ctx, uint16_t key_id, uint8_t key_block)
 {
-    if (ctx == NULL)
-    {
-        return ATCA_BAD_PARAM;
-    }
-    memset(ctx, 0, sizeof(*ctx));
-    // IV for CMAC CBC calculations is all zeros
-    return atcab_aes_cbc_init(&ctx->cbc_ctx, key_id, key_block, g_aes_zero_block);
+    return atcab_aes_cmac_init_ext(atcab_get_device(), ctx, key_id, key_block);
 }
 
 /** \brief Add data to an initialized CMAC calculation.
@@ -82,7 +98,7 @@ ATCA_STATUS atcab_aes_cmac_update(atca_aes_cmac_ctx_t* ctx, const uint8_t* data,
     uint32_t block_count;
     uint32_t i;
 
-    if (ctx == NULL || (data == NULL && data_size > 0))
+    if (ctx == NULL || data == NULL)
     {
         return ATCA_BAD_PARAM;
     }
@@ -128,7 +144,7 @@ ATCA_STATUS atcab_aes_cmac_update(atca_aes_cmac_ctx_t* ctx, const uint8_t* data,
 
 /** \brief Left shift an MSB buffer by 1 bit.
  *
- * \param[inout] data       Data to left shift.
+ * \param[in,out] data       Data to left shift.
  * \param[in]    data_size  Size of data in bytes.
  */
 static void left_shift_one(uint8_t* data, size_t data_size)
@@ -167,7 +183,7 @@ ATCA_STATUS atcab_aes_cmac_finish(atca_aes_cmac_ctx_t* ctx, uint8_t* cmac, uint3
     }
 
     // Calculate L as AES Encrypt of an all zero block
-    if(ATCA_SUCCESS != (status = atcab_aes_encrypt(ctx->cbc_ctx.key_id, ctx->cbc_ctx.key_block, g_aes_zero_block, subkey)))
+    if(ATCA_SUCCESS != (status = atcab_aes_encrypt_ext(ctx->cbc_ctx.device, ctx->cbc_ctx.key_id, ctx->cbc_ctx.key_block, g_aes_zero_block, subkey)))
     {
         return status;
     }

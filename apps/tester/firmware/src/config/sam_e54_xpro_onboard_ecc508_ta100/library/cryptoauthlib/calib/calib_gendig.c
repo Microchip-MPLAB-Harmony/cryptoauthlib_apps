@@ -33,12 +33,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Issues a GenDig command, which performs a SHA256 hash on the source data indicated by zone with the
  *  contents of TempKey.  See the CryptoAuth datasheet for your chip to see what the values of zone
  *  correspond to.
+ *  \param[in] device           Device context pointer
  *  \param[in] zone             Designates the source of the data to hash with TempKey.
  *  \param[in] key_id           Indicates the key, OTP block, or message order for shared nonce mode.
  *  \param[in] other_data       Four bytes of data for SHA calculation when using a NoMac key, 32 bytes for

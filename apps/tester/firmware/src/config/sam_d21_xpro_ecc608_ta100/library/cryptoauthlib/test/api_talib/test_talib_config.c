@@ -100,7 +100,7 @@ int talib_config_print_handles(int argc, char* argv[])
 
     if (ATCA_SMALL_BUFFER == status)
     {
-        printf("Truncated List - actual %zu\n", handle_count);
+        printf("\rTruncated List - actual %zu\r\n", handle_count);
         handle_count = sizeof(handles) / sizeof(uint16_t);
         status = ATCA_SUCCESS;
     }
@@ -110,7 +110,7 @@ int talib_config_print_handles(int argc, char* argv[])
         uint8_t handle_info[9];
         status = talib_info_get_handle_info(atcab_get_device(), handles[i], handle_info);
 
-        printf("Handle: 0x%04x, Class: %d\n", handles[i], handle_info[0] & TA_HANDLE_INFO_CLASS_MASK);
+        printf("\rHandle: 0x%04x, Class: %d\r\n", handles[i], handle_info[0] & TA_HANDLE_INFO_CLASS_MASK);
     }
 
     return 0;
@@ -132,7 +132,7 @@ int talib_config_clear_handles(int argc, char* argv[])
 
     if (ATCA_SMALL_BUFFER == status)
     {
-        printf("Truncated List - actual %zu\n", handle_count);
+        printf("\rTruncated List - actual %zu\r\n", handle_count);
         handle_count = sizeof(handles) / sizeof(uint16_t);
         status = ATCA_SUCCESS;
     }
@@ -140,7 +140,7 @@ int talib_config_clear_handles(int argc, char* argv[])
     for (i = 0; i < (int)handle_count && !status; i++)
     {
         status = talib_delete_handle(atcab_get_device(), handles[i]);
-        printf("Deleted: 0x%04x\n", handles[i]);
+        printf("\rDeleted: 0x%04x\r\n", handles[i]);
     }
     return 0;
 }

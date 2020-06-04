@@ -31,17 +31,16 @@
  * THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR
  * THIS SOFTWARE.
  */
-#include "calib_basic.h"
-#include "calib_execution.h"
 
+#include "cryptoauthlib.h"
 
 /** \brief Compute the Counter functions
- *  \param[in]  mode the mode used for the counter
- *  \param[in]  counter_id The counter to be used
- *  \param[out] counter_value pointer to the counter value returned from device
+ *  \param[in]  device         Device context pointer
+ *  \param[in]  mode           the mode used for the counter
+ *  \param[in]  counter_id     The counter to be used
+ *  \param[out] counter_value  pointer to the counter value returned from device
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
-
 ATCA_STATUS calib_counter(ATCADevice device, uint8_t mode, uint16_t counter_id, uint32_t *counter_value)
 {
     ATCAPacket packet;
@@ -91,6 +90,7 @@ ATCA_STATUS calib_counter(ATCADevice device, uint8_t mode, uint16_t counter_id, 
 }
 
 /** \brief Increments one of the device's monotonic counters
+ *  \param[in]  device         Device context pointer
  *  \param[in]  counter_id     Counter to be incremented
  *  \param[out] counter_value  New value of the counter is returned here. Can be
  *                             NULL if not needed.
@@ -102,6 +102,7 @@ ATCA_STATUS calib_counter_increment(ATCADevice device, uint16_t counter_id, uint
 }
 
 /** \brief Read one of the device's monotonic counters
+ *  \param[in]  device         Device context pointer
  *  \param[in]  counter_id     Counter to be read
  *  \param[out] counter_value  Counter value is returned here.
  *  \return ATCA_SUCCESS on success, otherwise an error code.

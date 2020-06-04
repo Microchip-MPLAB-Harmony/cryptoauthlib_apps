@@ -42,6 +42,8 @@ const char* ATCA_TEST_HELPER_FILE = "In helper: " __FILE__;
 const char* TEST_GROUP_atca_cmd_basic_test = "atca_cmd_basic_test";
 const char* TEST_GROUP_atca_cmd_unit_test = "atca_cmd_unit_test";
 
+bool g_atca_test_quiet_mode = false;
+
 #ifdef ATCA_SHA_SUPPORT
 
 const uint8_t sha204_default_config[ATCA_SHA_CONFIG_SIZE] = {

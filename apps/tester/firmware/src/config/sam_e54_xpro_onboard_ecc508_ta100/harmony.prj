@@ -67,16 +67,16 @@
           <Name dnOrder="1">atca_basic.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">83F38E488EF1A403C117530A108C984C</GeneratedChecksum>
-          <UserChecksum dnOrder="5">83F38E488EF1A403C117530A108C984C</UserChecksum>
+          <GeneratedChecksum dnOrder="4">689BEBAAA112F8909512FA20C7F693B1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">689BEBAAA112F8909512FA20C7F693B1</UserChecksum>
         </File>
         <File dnOrder="8">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_basic.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">DEBF13AB23E93C1868557DB1B2D9AC48</GeneratedChecksum>
-          <UserChecksum dnOrder="5">DEBF13AB23E93C1868557DB1B2D9AC48</UserChecksum>
+          <GeneratedChecksum dnOrder="4">EAC4DB97EA75C9DFE56F3030EFBD1C2D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">EAC4DB97EA75C9DFE56F3030EFBD1C2D</UserChecksum>
         </File>
         <File dnOrder="9">
           <Type dnOrder="0">SOURCE</Type>
@@ -107,16 +107,16 @@
           <Name dnOrder="1">atca_command.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">EDC6061BA935F6817AC79227EF08BC02</GeneratedChecksum>
-          <UserChecksum dnOrder="5">EDC6061BA935F6817AC79227EF08BC02</UserChecksum>
+          <GeneratedChecksum dnOrder="4">958A2F605D328A1DD679BACBA8AD4AFA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">958A2F605D328A1DD679BACBA8AD4AFA</UserChecksum>
         </File>
         <File dnOrder="13">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_command.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">9461FFDC32D737E1D83C7F3BA6625EE3</GeneratedChecksum>
-          <UserChecksum dnOrder="5">9461FFDC32D737E1D83C7F3BA6625EE3</UserChecksum>
+          <GeneratedChecksum dnOrder="4">A699E93A802539F77DC8A54AB9961305</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A699E93A802539F77DC8A54AB9961305</UserChecksum>
         </File>
         <File dnOrder="14">
           <Type dnOrder="0">SOURCE</Type>
@@ -131,40 +131,40 @@
           <Name dnOrder="1">atca_crypto_hw_aes.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">79144DB1E47E03B7266AC5482CBF8F86</GeneratedChecksum>
-          <UserChecksum dnOrder="5">79144DB1E47E03B7266AC5482CBF8F86</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5311664AD46C6A0A4C2B7FC5D5B0EDF6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5311664AD46C6A0A4C2B7FC5D5B0EDF6</UserChecksum>
         </File>
         <File dnOrder="16">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_crypto_hw_aes_cbc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">3C140F07D4F999E8FB0606BBA685AA25</GeneratedChecksum>
-          <UserChecksum dnOrder="5">3C140F07D4F999E8FB0606BBA685AA25</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C625D7FF05803D39C52439BE0E35341B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C625D7FF05803D39C52439BE0E35341B</UserChecksum>
         </File>
         <File dnOrder="17">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_crypto_hw_aes_cmac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">A40F3F8954177C77F42D05493FBF6434</GeneratedChecksum>
-          <UserChecksum dnOrder="5">A40F3F8954177C77F42D05493FBF6434</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7D4E7DCA06797E4EE0E07B6ED0DA7D9A</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7D4E7DCA06797E4EE0E07B6ED0DA7D9A</UserChecksum>
         </File>
         <File dnOrder="18">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_crypto_hw_aes_ctr.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">05ED2E35476145D32591BB13F2F96147</GeneratedChecksum>
-          <UserChecksum dnOrder="5">05ED2E35476145D32591BB13F2F96147</UserChecksum>
+          <GeneratedChecksum dnOrder="4">8869DE1AE823A74A3008640DAB2111F9</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8869DE1AE823A74A3008640DAB2111F9</UserChecksum>
         </File>
         <File dnOrder="19">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_crypto_sw.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">8A03382341B32E97C806847E1F9D6D42</GeneratedChecksum>
-          <UserChecksum dnOrder="5">8A03382341B32E97C806847E1F9D6D42</UserChecksum>
+          <GeneratedChecksum dnOrder="4">044125C5B1E3A04BEC183A3F9DEB7832</GeneratedChecksum>
+          <UserChecksum dnOrder="5">044125C5B1E3A04BEC183A3F9DEB7832</UserChecksum>
         </File>
         <File dnOrder="20">
           <Type dnOrder="0">SOURCE</Type>
@@ -219,8 +219,8 @@
           <Name dnOrder="1">atca_crypto_sw_sha2.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/crypto/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">CB0D2753A5458716AC8E072E5921A645</GeneratedChecksum>
-          <UserChecksum dnOrder="5">CB0D2753A5458716AC8E072E5921A645</UserChecksum>
+          <GeneratedChecksum dnOrder="4">4393D6DEE59D21AC15E8E45B4C173AF8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4393D6DEE59D21AC15E8E45B4C173AF8</UserChecksum>
         </File>
         <File dnOrder="27">
           <Type dnOrder="0">SOURCE</Type>
@@ -235,8 +235,8 @@
           <Name dnOrder="1">atca_crypto_sw_tests.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">0E3EDB77878E96E6DD31FF973C7AE27B</GeneratedChecksum>
-          <UserChecksum dnOrder="5">0E3EDB77878E96E6DD31FF973C7AE27B</UserChecksum>
+          <GeneratedChecksum dnOrder="4">462169C237E9F00BD3283DB36D61CB79</GeneratedChecksum>
+          <UserChecksum dnOrder="5">462169C237E9F00BD3283DB36D61CB79</UserChecksum>
         </File>
         <File dnOrder="29">
           <Type dnOrder="0">SOURCE</Type>
@@ -259,16 +259,16 @@
           <Name dnOrder="1">atca_device.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">25599B09E78DA270EB97C822B582B5FE</GeneratedChecksum>
-          <UserChecksum dnOrder="5">25599B09E78DA270EB97C822B582B5FE</UserChecksum>
+          <GeneratedChecksum dnOrder="4">43C5FF2398A4F18A68B28D6F44173072</GeneratedChecksum>
+          <UserChecksum dnOrder="5">43C5FF2398A4F18A68B28D6F44173072</UserChecksum>
         </File>
         <File dnOrder="32">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_device.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">8EAB4DB3B32CD22C19318B9CE58842D7</GeneratedChecksum>
-          <UserChecksum dnOrder="5">8EAB4DB3B32CD22C19318B9CE58842D7</UserChecksum>
+          <GeneratedChecksum dnOrder="4">A9EBF0CA4967C9C4823A3DBB3EA5364D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A9EBF0CA4967C9C4823A3DBB3EA5364D</UserChecksum>
         </File>
         <File dnOrder="33">
           <Type dnOrder="0">SOURCE</Type>
@@ -280,21 +280,13 @@
         </File>
         <File dnOrder="34">
           <Type dnOrder="0">SOURCE</Type>
-          <Name dnOrder="1">atca_execution.h</Name>
-          <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
-          <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">5843DFFD92FF7931E4B53BBF897E9804</GeneratedChecksum>
-          <UserChecksum dnOrder="5">5843DFFD92FF7931E4B53BBF897E9804</UserChecksum>
-        </File>
-        <File dnOrder="35">
-          <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_hal.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">278B19B44568B74CFC63B7E19457BAD5</GeneratedChecksum>
-          <UserChecksum dnOrder="5">278B19B44568B74CFC63B7E19457BAD5</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B1EC87C61E0262886371C6F621307545</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B1EC87C61E0262886371C6F621307545</UserChecksum>
         </File>
-        <File dnOrder="36">
+        <File dnOrder="35">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_hal.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
@@ -302,15 +294,15 @@
           <GeneratedChecksum dnOrder="4">2E688B1546CF8DEEA45C5B3CDDA97455</GeneratedChecksum>
           <UserChecksum dnOrder="5">2E688B1546CF8DEEA45C5B3CDDA97455</UserChecksum>
         </File>
-        <File dnOrder="37">
+        <File dnOrder="36">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_helpers.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">3D238ACD53FF71C37A5E3E878FB1A08D</GeneratedChecksum>
-          <UserChecksum dnOrder="5">3D238ACD53FF71C37A5E3E878FB1A08D</UserChecksum>
+          <GeneratedChecksum dnOrder="4">E4D5015B6ED91C69BBF1AA82B29C876B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E4D5015B6ED91C69BBF1AA82B29C876B</UserChecksum>
         </File>
-        <File dnOrder="38">
+        <File dnOrder="37">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_helpers.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
@@ -318,31 +310,31 @@
           <GeneratedChecksum dnOrder="4">0B1D806FEDFACA63DEDCF4F3A6A8922C</GeneratedChecksum>
           <UserChecksum dnOrder="5">0B1D806FEDFACA63DEDCF4F3A6A8922C</UserChecksum>
         </File>
-        <File dnOrder="39">
+        <File dnOrder="38">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_host.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/host</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/host/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">52D5164ED73A96B76B0B5E1597239132</GeneratedChecksum>
-          <UserChecksum dnOrder="5">52D5164ED73A96B76B0B5E1597239132</UserChecksum>
+          <GeneratedChecksum dnOrder="4">FCDBC1A948F7A0DEB78EE018B1CC3F22</GeneratedChecksum>
+          <UserChecksum dnOrder="5">FCDBC1A948F7A0DEB78EE018B1CC3F22</UserChecksum>
         </File>
-        <File dnOrder="40">
+        <File dnOrder="39">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_host.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/host</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/host/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">1183011A754AF15D78D38791F86CE57D</GeneratedChecksum>
-          <UserChecksum dnOrder="5">1183011A754AF15D78D38791F86CE57D</UserChecksum>
+          <GeneratedChecksum dnOrder="4">8ECE7F5EA697082F734C84ED616AC6C8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8ECE7F5EA697082F734C84ED616AC6C8</UserChecksum>
         </File>
-        <File dnOrder="41">
+        <File dnOrder="40">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_iface.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">16CA578D68611E6F3185B11E5F1D99D9</GeneratedChecksum>
-          <UserChecksum dnOrder="5">16CA578D68611E6F3185B11E5F1D99D9</UserChecksum>
+          <GeneratedChecksum dnOrder="4">E09C1465B725BB068B890D02BD6F887E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E09C1465B725BB068B890D02BD6F887E</UserChecksum>
         </File>
-        <File dnOrder="42">
+        <File dnOrder="41">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_iface.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
@@ -350,7 +342,7 @@
           <GeneratedChecksum dnOrder="4">CC54399FCE48DEB93E18E988DCD7D063</GeneratedChecksum>
           <UserChecksum dnOrder="5">CC54399FCE48DEB93E18E988DCD7D063</UserChecksum>
         </File>
-        <File dnOrder="43">
+        <File dnOrder="42">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_jwt.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/jwt</LogicalPath>
@@ -358,7 +350,7 @@
           <GeneratedChecksum dnOrder="4">CA051859F3F10276EE04149B20E844AF</GeneratedChecksum>
           <UserChecksum dnOrder="5">CA051859F3F10276EE04149B20E844AF</UserChecksum>
         </File>
-        <File dnOrder="44">
+        <File dnOrder="43">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_jwt.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/jwt</LogicalPath>
@@ -366,7 +358,7 @@
           <GeneratedChecksum dnOrder="4">F41DD68794903B094FB89C320406C227</GeneratedChecksum>
           <UserChecksum dnOrder="5">F41DD68794903B094FB89C320406C227</UserChecksum>
         </File>
-        <File dnOrder="45">
+        <File dnOrder="44">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_jwt_test.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/jwt</LogicalPath>
@@ -374,7 +366,7 @@
           <GeneratedChecksum dnOrder="4">950569ED1E2AC3F25FAA4FDE5D3BDEB0</GeneratedChecksum>
           <UserChecksum dnOrder="5">950569ED1E2AC3F25FAA4FDE5D3BDEB0</UserChecksum>
         </File>
-        <File dnOrder="46">
+        <File dnOrder="45">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_start_config.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
@@ -382,7 +374,7 @@
           <GeneratedChecksum dnOrder="4">020C76CD6D5D9555C514427B9B3EAC49</GeneratedChecksum>
           <UserChecksum dnOrder="5">020C76CD6D5D9555C514427B9B3EAC49</UserChecksum>
         </File>
-        <File dnOrder="47">
+        <File dnOrder="46">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_start_iface.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
@@ -390,7 +382,7 @@
           <GeneratedChecksum dnOrder="4">020C76CD6D5D9555C514427B9B3EAC49</GeneratedChecksum>
           <UserChecksum dnOrder="5">020C76CD6D5D9555C514427B9B3EAC49</UserChecksum>
         </File>
-        <File dnOrder="48">
+        <File dnOrder="47">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_status.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
@@ -398,31 +390,31 @@
           <GeneratedChecksum dnOrder="4">C44F01BA65C6AC0A0BB2F1F257D2C405</GeneratedChecksum>
           <UserChecksum dnOrder="5">C44F01BA65C6AC0A0BB2F1F257D2C405</UserChecksum>
         </File>
-        <File dnOrder="49">
+        <File dnOrder="48">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_test.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">B147F3806B6157012801DC81B2A66D94</GeneratedChecksum>
-          <UserChecksum dnOrder="5">B147F3806B6157012801DC81B2A66D94</UserChecksum>
+          <GeneratedChecksum dnOrder="4">393951C1E67A9C2E0A9CDDF5989C69F5</GeneratedChecksum>
+          <UserChecksum dnOrder="5">393951C1E67A9C2E0A9CDDF5989C69F5</UserChecksum>
         </File>
-        <File dnOrder="50">
+        <File dnOrder="49">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_test_config.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">DFFF47950BB85FC211DE1AF3305D7D23</GeneratedChecksum>
-          <UserChecksum dnOrder="5">DFFF47950BB85FC211DE1AF3305D7D23</UserChecksum>
+          <GeneratedChecksum dnOrder="4">18DB10C9E6A77923C2C5CA988082C667</GeneratedChecksum>
+          <UserChecksum dnOrder="5">18DB10C9E6A77923C2C5CA988082C667</UserChecksum>
         </File>
-        <File dnOrder="51">
+        <File dnOrder="50">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_test_console.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">5F4D50A15853334E2CBC18B9927D16FB</GeneratedChecksum>
-          <UserChecksum dnOrder="5">5F4D50A15853334E2CBC18B9927D16FB</UserChecksum>
+          <GeneratedChecksum dnOrder="4">80DFFCCB7BA242EE9173FA88D701C9E6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">80DFFCCB7BA242EE9173FA88D701C9E6</UserChecksum>
         </File>
-        <File dnOrder="52">
+        <File dnOrder="51">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_aes.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -430,7 +422,7 @@
           <GeneratedChecksum dnOrder="4">3F9F6CC185D31CD03474EB15BBC9078E</GeneratedChecksum>
           <UserChecksum dnOrder="5">3F9F6CC185D31CD03474EB15BBC9078E</UserChecksum>
         </File>
-        <File dnOrder="53">
+        <File dnOrder="52">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_aes_cbc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -438,7 +430,7 @@
           <GeneratedChecksum dnOrder="4">5C5E38C46AFA5EB49D186174C8B4DA26</GeneratedChecksum>
           <UserChecksum dnOrder="5">5C5E38C46AFA5EB49D186174C8B4DA26</UserChecksum>
         </File>
-        <File dnOrder="54">
+        <File dnOrder="53">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_aes_cmac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -446,7 +438,7 @@
           <GeneratedChecksum dnOrder="4">B48D896CA40EF6544A4BD332A53F9C37</GeneratedChecksum>
           <UserChecksum dnOrder="5">B48D896CA40EF6544A4BD332A53F9C37</UserChecksum>
         </File>
-        <File dnOrder="55">
+        <File dnOrder="54">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_aes_ctr.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -454,15 +446,15 @@
           <GeneratedChecksum dnOrder="4">30F67EA0D19DA80B2308647F8C013AF2</GeneratedChecksum>
           <UserChecksum dnOrder="5">30F67EA0D19DA80B2308647F8C013AF2</UserChecksum>
         </File>
-        <File dnOrder="56">
+        <File dnOrder="55">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_aes_gcm.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/api_atcab/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">8902270D696CE406D1FDCA15D4ABC753</GeneratedChecksum>
-          <UserChecksum dnOrder="5">8902270D696CE406D1FDCA15D4ABC753</UserChecksum>
+          <GeneratedChecksum dnOrder="4">277232A270A3CD144E54B26759DE19FA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">277232A270A3CD144E54B26759DE19FA</UserChecksum>
         </File>
-        <File dnOrder="57">
+        <File dnOrder="56">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_counter.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -470,7 +462,7 @@
           <GeneratedChecksum dnOrder="4">6B979B2C244F208EDD8658C01FD0F97E</GeneratedChecksum>
           <UserChecksum dnOrder="5">6B979B2C244F208EDD8658C01FD0F97E</UserChecksum>
         </File>
-        <File dnOrder="58">
+        <File dnOrder="57">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_derivekey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -478,7 +470,7 @@
           <GeneratedChecksum dnOrder="4">C6C2A11040B3F6C79D52C472D7D0326F</GeneratedChecksum>
           <UserChecksum dnOrder="5">C6C2A11040B3F6C79D52C472D7D0326F</UserChecksum>
         </File>
-        <File dnOrder="59">
+        <File dnOrder="58">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_ecdh.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -486,7 +478,7 @@
           <GeneratedChecksum dnOrder="4">98C63572F1407389DC45F3A5C3DCE86C</GeneratedChecksum>
           <UserChecksum dnOrder="5">98C63572F1407389DC45F3A5C3DCE86C</UserChecksum>
         </File>
-        <File dnOrder="60">
+        <File dnOrder="59">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_gendig.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -494,7 +486,7 @@
           <GeneratedChecksum dnOrder="4">772333E2033636CDE2A5662F75CFBD71</GeneratedChecksum>
           <UserChecksum dnOrder="5">772333E2033636CDE2A5662F75CFBD71</UserChecksum>
         </File>
-        <File dnOrder="61">
+        <File dnOrder="60">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_genkey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -502,7 +494,7 @@
           <GeneratedChecksum dnOrder="4">7796F90F8A226C49882FF84E97F61FF7</GeneratedChecksum>
           <UserChecksum dnOrder="5">7796F90F8A226C49882FF84E97F61FF7</UserChecksum>
         </File>
-        <File dnOrder="62">
+        <File dnOrder="61">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_helper.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -510,7 +502,7 @@
           <GeneratedChecksum dnOrder="4">0E8879E59666A5F4895EA075F5958C59</GeneratedChecksum>
           <UserChecksum dnOrder="5">0E8879E59666A5F4895EA075F5958C59</UserChecksum>
         </File>
-        <File dnOrder="63">
+        <File dnOrder="62">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_hmac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -518,7 +510,7 @@
           <GeneratedChecksum dnOrder="4">E6AA4B4272311598EFFBA8729093B107</GeneratedChecksum>
           <UserChecksum dnOrder="5">E6AA4B4272311598EFFBA8729093B107</UserChecksum>
         </File>
-        <File dnOrder="64">
+        <File dnOrder="63">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_info.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -526,7 +518,7 @@
           <GeneratedChecksum dnOrder="4">AD828453D8AA7AB0688EF4B684551089</GeneratedChecksum>
           <UserChecksum dnOrder="5">AD828453D8AA7AB0688EF4B684551089</UserChecksum>
         </File>
-        <File dnOrder="65">
+        <File dnOrder="64">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_kdf.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -534,7 +526,7 @@
           <GeneratedChecksum dnOrder="4">F96DD516EE7487EEE70E8FB88DAEFA2F</GeneratedChecksum>
           <UserChecksum dnOrder="5">F96DD516EE7487EEE70E8FB88DAEFA2F</UserChecksum>
         </File>
-        <File dnOrder="66">
+        <File dnOrder="65">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_lock.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -542,7 +534,7 @@
           <GeneratedChecksum dnOrder="4">B31AA37049FF38038AF41AE947045939</GeneratedChecksum>
           <UserChecksum dnOrder="5">B31AA37049FF38038AF41AE947045939</UserChecksum>
         </File>
-        <File dnOrder="67">
+        <File dnOrder="66">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_mac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -550,7 +542,7 @@
           <GeneratedChecksum dnOrder="4">AA0EC6E271B9CEBC4D6CC4DFE9D83A25</GeneratedChecksum>
           <UserChecksum dnOrder="5">AA0EC6E271B9CEBC4D6CC4DFE9D83A25</UserChecksum>
         </File>
-        <File dnOrder="68">
+        <File dnOrder="67">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_nonce.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -558,7 +550,7 @@
           <GeneratedChecksum dnOrder="4">E217225ED796C4FFB6F3F9CBAF4642A7</GeneratedChecksum>
           <UserChecksum dnOrder="5">E217225ED796C4FFB6F3F9CBAF4642A7</UserChecksum>
         </File>
-        <File dnOrder="69">
+        <File dnOrder="68">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_otpzero.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -566,7 +558,7 @@
           <GeneratedChecksum dnOrder="4">91C5795B66DF1EA7E0F6C2B3AD19B1DE</GeneratedChecksum>
           <UserChecksum dnOrder="5">91C5795B66DF1EA7E0F6C2B3AD19B1DE</UserChecksum>
         </File>
-        <File dnOrder="70">
+        <File dnOrder="69">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_privwrite.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -574,7 +566,7 @@
           <GeneratedChecksum dnOrder="4">DA45C21E5C5EDBFA4FE59CABCD74E92A</GeneratedChecksum>
           <UserChecksum dnOrder="5">DA45C21E5C5EDBFA4FE59CABCD74E92A</UserChecksum>
         </File>
-        <File dnOrder="71">
+        <File dnOrder="70">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_random.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -582,15 +574,15 @@
           <GeneratedChecksum dnOrder="4">7357843B2D2F5B1F607348C4380708B3</GeneratedChecksum>
           <UserChecksum dnOrder="5">7357843B2D2F5B1F607348C4380708B3</UserChecksum>
         </File>
-        <File dnOrder="72">
+        <File dnOrder="71">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_read.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/api_atcab/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">AC8358C98D51B8B4988F6CED4ED782DF</GeneratedChecksum>
-          <UserChecksum dnOrder="5">AC8358C98D51B8B4988F6CED4ED782DF</UserChecksum>
+          <GeneratedChecksum dnOrder="4">66BBB46074291C916D751F87DEFBF245</GeneratedChecksum>
+          <UserChecksum dnOrder="5">66BBB46074291C916D751F87DEFBF245</UserChecksum>
         </File>
-        <File dnOrder="73">
+        <File dnOrder="72">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_secureboot.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -598,7 +590,7 @@
           <GeneratedChecksum dnOrder="4">99DA719B2663EA8A932C4500A8787A53</GeneratedChecksum>
           <UserChecksum dnOrder="5">99DA719B2663EA8A932C4500A8787A53</UserChecksum>
         </File>
-        <File dnOrder="74">
+        <File dnOrder="73">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_selftest.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -606,15 +598,15 @@
           <GeneratedChecksum dnOrder="4">2DC68A8990030DB8563B7C848B3DF225</GeneratedChecksum>
           <UserChecksum dnOrder="5">2DC68A8990030DB8563B7C848B3DF225</UserChecksum>
         </File>
-        <File dnOrder="75">
+        <File dnOrder="74">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_sha.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/api_atcab/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">73534DE6E787C1993257E26672B0BB56</GeneratedChecksum>
-          <UserChecksum dnOrder="5">73534DE6E787C1993257E26672B0BB56</UserChecksum>
+          <GeneratedChecksum dnOrder="4">A0AC8372BC13CC7148DB0E7C1D533CA2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A0AC8372BC13CC7148DB0E7C1D533CA2</UserChecksum>
         </File>
-        <File dnOrder="76">
+        <File dnOrder="75">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_sign.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -622,7 +614,7 @@
           <GeneratedChecksum dnOrder="4">7EBCDBA7E8F18442C771A4FEC3844691</GeneratedChecksum>
           <UserChecksum dnOrder="5">7EBCDBA7E8F18442C771A4FEC3844691</UserChecksum>
         </File>
-        <File dnOrder="77">
+        <File dnOrder="76">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_startup.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -630,7 +622,7 @@
           <GeneratedChecksum dnOrder="4">0BFC3172FC8B10DF994767C21823D271</GeneratedChecksum>
           <UserChecksum dnOrder="5">0BFC3172FC8B10DF994767C21823D271</UserChecksum>
         </File>
-        <File dnOrder="78">
+        <File dnOrder="77">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_updateextra.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -638,7 +630,7 @@
           <GeneratedChecksum dnOrder="4">9FFA8232BD142476F472698ADE347579</GeneratedChecksum>
           <UserChecksum dnOrder="5">9FFA8232BD142476F472698ADE347579</UserChecksum>
         </File>
-        <File dnOrder="79">
+        <File dnOrder="78">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_verify.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -646,7 +638,7 @@
           <GeneratedChecksum dnOrder="4">CFB7BA5CCDB80275A3D5A51C0BD8FFE4</GeneratedChecksum>
           <UserChecksum dnOrder="5">CFB7BA5CCDB80275A3D5A51C0BD8FFE4</UserChecksum>
         </File>
-        <File dnOrder="80">
+        <File dnOrder="79">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_tests_write.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_atcab</LogicalPath>
@@ -654,15 +646,15 @@
           <GeneratedChecksum dnOrder="4">E47804E43620E2983958B71F232EDE42</GeneratedChecksum>
           <UserChecksum dnOrder="5">E47804E43620E2983958B71F232EDE42</UserChecksum>
         </File>
-        <File dnOrder="81">
+        <File dnOrder="80">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_utils_atecc608a.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">4D127C6DAE70C24D5C681E284209AD93</GeneratedChecksum>
-          <UserChecksum dnOrder="5">4D127C6DAE70C24D5C681E284209AD93</UserChecksum>
+          <GeneratedChecksum dnOrder="4">3169D9C1CC889D361546B7BB00A274DC</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3169D9C1CC889D361546B7BB00A274DC</UserChecksum>
         </File>
-        <File dnOrder="82">
+        <File dnOrder="81">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atca_version.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
@@ -670,7 +662,7 @@
           <GeneratedChecksum dnOrder="4">835A93AEC4DBE5936FE2462AE4355D27</GeneratedChecksum>
           <UserChecksum dnOrder="5">835A93AEC4DBE5936FE2462AE4355D27</UserChecksum>
         </File>
-        <File dnOrder="83">
+        <File dnOrder="82">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -678,23 +670,23 @@
           <GeneratedChecksum dnOrder="4">39B479CDDBCD8CEB51C6FDAD2D5D6527</GeneratedChecksum>
           <UserChecksum dnOrder="5">39B479CDDBCD8CEB51C6FDAD2D5D6527</UserChecksum>
         </File>
-        <File dnOrder="84">
+        <File dnOrder="83">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_client.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">0A1FAAD3A80894F5624A4CC98FD4F9BB</GeneratedChecksum>
-          <UserChecksum dnOrder="5">0A1FAAD3A80894F5624A4CC98FD4F9BB</UserChecksum>
+          <GeneratedChecksum dnOrder="4">211050E83F1EB4D7E5E1B5EFE6693CC1</GeneratedChecksum>
+          <UserChecksum dnOrder="5">211050E83F1EB4D7E5E1B5EFE6693CC1</UserChecksum>
         </File>
-        <File dnOrder="85">
+        <File dnOrder="84">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_client.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">9546ECB79D470B71060EA25B1DC69137</GeneratedChecksum>
-          <UserChecksum dnOrder="5">9546ECB79D470B71060EA25B1DC69137</UserChecksum>
+          <GeneratedChecksum dnOrder="4">481CEFA6107D950DA2593A78494043C4</GeneratedChecksum>
+          <UserChecksum dnOrder="5">481CEFA6107D950DA2593A78494043C4</UserChecksum>
         </File>
-        <File dnOrder="86">
+        <File dnOrder="85">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_date.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -702,31 +694,31 @@
           <GeneratedChecksum dnOrder="4">E1F6E19BE0F5C1147E9CAEDEDE1866F1</GeneratedChecksum>
           <UserChecksum dnOrder="5">E1F6E19BE0F5C1147E9CAEDEDE1866F1</UserChecksum>
         </File>
-        <File dnOrder="87">
+        <File dnOrder="86">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_date.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">27B8E3B423B42EE3289EBC9C64537256</GeneratedChecksum>
-          <UserChecksum dnOrder="5">27B8E3B423B42EE3289EBC9C64537256</UserChecksum>
+          <GeneratedChecksum dnOrder="4">E2AD6521ED3BA4CF60934CC5A66A14C2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">E2AD6521ED3BA4CF60934CC5A66A14C2</UserChecksum>
         </File>
-        <File dnOrder="88">
+        <File dnOrder="87">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_def.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">E34D15F77C8F96BE7899B8E41B43C27A</GeneratedChecksum>
-          <UserChecksum dnOrder="5">E34D15F77C8F96BE7899B8E41B43C27A</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7EE1A85B7E90E04BAF4BCE9CD912FE79</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7EE1A85B7E90E04BAF4BCE9CD912FE79</UserChecksum>
         </File>
-        <File dnOrder="89">
+        <File dnOrder="88">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_def.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">023B4B35E241316B7A47B8C8056226D0</GeneratedChecksum>
-          <UserChecksum dnOrder="5">023B4B35E241316B7A47B8C8056226D0</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7E81275CEC5D18195AFAB0069751E90F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7E81275CEC5D18195AFAB0069751E90F</UserChecksum>
         </File>
-        <File dnOrder="90">
+        <File dnOrder="89">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_der.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -734,15 +726,15 @@
           <GeneratedChecksum dnOrder="4">CA5248E40F9A4EA9DD0811D8670F1D08</GeneratedChecksum>
           <UserChecksum dnOrder="5">CA5248E40F9A4EA9DD0811D8670F1D08</UserChecksum>
         </File>
-        <File dnOrder="91">
+        <File dnOrder="90">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_der.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">5A79AED0990325A8C0CAA307F7490AF7</GeneratedChecksum>
-          <UserChecksum dnOrder="5">5A79AED0990325A8C0CAA307F7490AF7</UserChecksum>
+          <GeneratedChecksum dnOrder="4">78E60FE1968E176C2FAAECFF28F15859</GeneratedChecksum>
+          <UserChecksum dnOrder="5">78E60FE1968E176C2FAAECFF28F15859</UserChecksum>
         </File>
-        <File dnOrder="92">
+        <File dnOrder="91">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_host_hw.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -750,7 +742,7 @@
           <GeneratedChecksum dnOrder="4">1FD52A0985CB9AB9612CC71F43229BB3</GeneratedChecksum>
           <UserChecksum dnOrder="5">1FD52A0985CB9AB9612CC71F43229BB3</UserChecksum>
         </File>
-        <File dnOrder="93">
+        <File dnOrder="92">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_host_hw.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -758,7 +750,7 @@
           <GeneratedChecksum dnOrder="4">EEBBBFD34F708E36768B5D57BAF655E7</GeneratedChecksum>
           <UserChecksum dnOrder="5">EEBBBFD34F708E36768B5D57BAF655E7</UserChecksum>
         </File>
-        <File dnOrder="94">
+        <File dnOrder="93">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_host_sw.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -766,7 +758,7 @@
           <GeneratedChecksum dnOrder="4">8F2BE817F0A3805F591C160C0AB2A8B1</GeneratedChecksum>
           <UserChecksum dnOrder="5">8F2BE817F0A3805F591C160C0AB2A8B1</UserChecksum>
         </File>
-        <File dnOrder="95">
+        <File dnOrder="94">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_host_sw.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -774,7 +766,7 @@
           <GeneratedChecksum dnOrder="4">938C9787ED5322AEC1364D6F77BAE706</GeneratedChecksum>
           <UserChecksum dnOrder="5">938C9787ED5322AEC1364D6F77BAE706</UserChecksum>
         </File>
-        <File dnOrder="96">
+        <File dnOrder="95">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_pem.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
@@ -782,71 +774,71 @@
           <GeneratedChecksum dnOrder="4">B43120C9C0EBACC26AAE248978D18B77</GeneratedChecksum>
           <UserChecksum dnOrder="5">B43120C9C0EBACC26AAE248978D18B77</UserChecksum>
         </File>
-        <File dnOrder="97">
+        <File dnOrder="96">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">atcacert_pem.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">44F8D878D67BC580B8390B67BEB3C640</GeneratedChecksum>
-          <UserChecksum dnOrder="5">44F8D878D67BC580B8390B67BEB3C640</UserChecksum>
+          <GeneratedChecksum dnOrder="4">DD048659E440B34428ED209F89C42D9D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">DD048659E440B34428ED209F89C42D9D</UserChecksum>
         </File>
-        <File dnOrder="98">
+        <File dnOrder="97">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_aes.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">4A96639B2E8F334D8C768193363FF29C</GeneratedChecksum>
-          <UserChecksum dnOrder="5">4A96639B2E8F334D8C768193363FF29C</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7A2229CED21F669BF226CB73A6AAA3A6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7A2229CED21F669BF226CB73A6AAA3A6</UserChecksum>
         </File>
-        <File dnOrder="99">
+        <File dnOrder="98">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_aes_gcm.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">93F387C9A579ACA60401BA8656C29B80</GeneratedChecksum>
-          <UserChecksum dnOrder="5">93F387C9A579ACA60401BA8656C29B80</UserChecksum>
+          <GeneratedChecksum dnOrder="4">4636E738D0C42E5C2F9B89DFBCB211F3</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4636E738D0C42E5C2F9B89DFBCB211F3</UserChecksum>
         </File>
-        <File dnOrder="100">
+        <File dnOrder="99">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_aes_gcm.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">BDFAD4F42E9DBEC2E4FD01E7F215D4B7</GeneratedChecksum>
-          <UserChecksum dnOrder="5">BDFAD4F42E9DBEC2E4FD01E7F215D4B7</UserChecksum>
+          <GeneratedChecksum dnOrder="4">EA3115EBE1DA89D1E95D834CAD16F601</GeneratedChecksum>
+          <UserChecksum dnOrder="5">EA3115EBE1DA89D1E95D834CAD16F601</UserChecksum>
         </File>
-        <File dnOrder="101">
+        <File dnOrder="100">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_basic.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">65E393B4763D41BB391A931D69C7C370</GeneratedChecksum>
-          <UserChecksum dnOrder="5">65E393B4763D41BB391A931D69C7C370</UserChecksum>
+          <GeneratedChecksum dnOrder="4">6EF309E5D332C7223A76B20B981D6BC2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">6EF309E5D332C7223A76B20B981D6BC2</UserChecksum>
         </File>
-        <File dnOrder="102">
+        <File dnOrder="101">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_basic.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">6955A6D386CC205FC6D4B6E77B3C2415</GeneratedChecksum>
-          <UserChecksum dnOrder="5">6955A6D386CC205FC6D4B6E77B3C2415</UserChecksum>
+          <GeneratedChecksum dnOrder="4">BB08971C2FE2D2E14D688F6E55BCEB54</GeneratedChecksum>
+          <UserChecksum dnOrder="5">BB08971C2FE2D2E14D688F6E55BCEB54</UserChecksum>
         </File>
-        <File dnOrder="103">
+        <File dnOrder="102">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_checkmac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">63C6998D3877C59EC563909F845CF6A1</GeneratedChecksum>
-          <UserChecksum dnOrder="5">63C6998D3877C59EC563909F845CF6A1</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7AD1A419346161C81C7C89CB1DBE1B4B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7AD1A419346161C81C7C89CB1DBE1B4B</UserChecksum>
         </File>
-        <File dnOrder="104">
+        <File dnOrder="103">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_command.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">2D56413562364F80C330127CE7020F60</GeneratedChecksum>
-          <UserChecksum dnOrder="5">2D56413562364F80C330127CE7020F60</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D81E1EF45BD4582A1FE22A984C92AC53</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D81E1EF45BD4582A1FE22A984C92AC53</UserChecksum>
         </File>
-        <File dnOrder="105">
+        <File dnOrder="104">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_command.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
@@ -854,39 +846,39 @@
           <GeneratedChecksum dnOrder="4">3D5DDF979A720B13C7FC5E8A832DF470</GeneratedChecksum>
           <UserChecksum dnOrder="5">3D5DDF979A720B13C7FC5E8A832DF470</UserChecksum>
         </File>
-        <File dnOrder="106">
+        <File dnOrder="105">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_counter.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">428EDDF789B9B750C7689B00777DB3F3</GeneratedChecksum>
-          <UserChecksum dnOrder="5">428EDDF789B9B750C7689B00777DB3F3</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5426CEC066C8F545A351E39CEA228EFD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5426CEC066C8F545A351E39CEA228EFD</UserChecksum>
         </File>
-        <File dnOrder="107">
+        <File dnOrder="106">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_derivekey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">92E8AA66BB84F73066AFAC53C75A74CD</GeneratedChecksum>
-          <UserChecksum dnOrder="5">92E8AA66BB84F73066AFAC53C75A74CD</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C6BCA003B38A28589A59DB9368596A6B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C6BCA003B38A28589A59DB9368596A6B</UserChecksum>
         </File>
-        <File dnOrder="108">
+        <File dnOrder="107">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_ecdh.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">F5B64796B847DCA8BD5FD54CEECC4409</GeneratedChecksum>
-          <UserChecksum dnOrder="5">F5B64796B847DCA8BD5FD54CEECC4409</UserChecksum>
+          <GeneratedChecksum dnOrder="4">A7FDEBAAD773483A113969472C152D08</GeneratedChecksum>
+          <UserChecksum dnOrder="5">A7FDEBAAD773483A113969472C152D08</UserChecksum>
         </File>
-        <File dnOrder="109">
+        <File dnOrder="108">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_execution.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">B14CBBFDF31699563E8E164FF707BFCC</GeneratedChecksum>
-          <UserChecksum dnOrder="5">B14CBBFDF31699563E8E164FF707BFCC</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9D53899EDB21A5DA2FC22B2C88CE33EB</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9D53899EDB21A5DA2FC22B2C88CE33EB</UserChecksum>
         </File>
-        <File dnOrder="110">
+        <File dnOrder="109">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_execution.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
@@ -894,151 +886,151 @@
           <GeneratedChecksum dnOrder="4">6389B47A7BB5B31BB86219D4EEC9C0C6</GeneratedChecksum>
           <UserChecksum dnOrder="5">6389B47A7BB5B31BB86219D4EEC9C0C6</UserChecksum>
         </File>
-        <File dnOrder="111">
+        <File dnOrder="110">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_gendig.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">D98BAE0BF04B134227456B4ABCDACF4A</GeneratedChecksum>
-          <UserChecksum dnOrder="5">D98BAE0BF04B134227456B4ABCDACF4A</UserChecksum>
+          <GeneratedChecksum dnOrder="4">F2DDCF2B7C034E32F90A2040DC8395D8</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F2DDCF2B7C034E32F90A2040DC8395D8</UserChecksum>
         </File>
-        <File dnOrder="112">
+        <File dnOrder="111">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_genkey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">0AFD3CF7964A9C82B7BAFE2212480EED</GeneratedChecksum>
-          <UserChecksum dnOrder="5">0AFD3CF7964A9C82B7BAFE2212480EED</UserChecksum>
+          <GeneratedChecksum dnOrder="4">BB091C3FC69A7CFBE349DBAF043E7D15</GeneratedChecksum>
+          <UserChecksum dnOrder="5">BB091C3FC69A7CFBE349DBAF043E7D15</UserChecksum>
         </File>
-        <File dnOrder="113">
+        <File dnOrder="112">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_hmac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">D7D3011CD871434C6F7C9732C50C4EC0</GeneratedChecksum>
-          <UserChecksum dnOrder="5">D7D3011CD871434C6F7C9732C50C4EC0</UserChecksum>
+          <GeneratedChecksum dnOrder="4">479FED1A0A31663249F032F9CE6BCA7D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">479FED1A0A31663249F032F9CE6BCA7D</UserChecksum>
         </File>
-        <File dnOrder="114">
+        <File dnOrder="113">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_info.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">1BA2D5BFE95FE844B0F9B1D8D3F27575</GeneratedChecksum>
-          <UserChecksum dnOrder="5">1BA2D5BFE95FE844B0F9B1D8D3F27575</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5082305F9B96F40F4B30FD98986D9B82</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5082305F9B96F40F4B30FD98986D9B82</UserChecksum>
         </File>
-        <File dnOrder="115">
+        <File dnOrder="114">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_kdf.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">9F9827400E3B912F10F17FE85D587106</GeneratedChecksum>
-          <UserChecksum dnOrder="5">9F9827400E3B912F10F17FE85D587106</UserChecksum>
+          <GeneratedChecksum dnOrder="4">FB8C7563DB6199AEDA9423ED440F004D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">FB8C7563DB6199AEDA9423ED440F004D</UserChecksum>
         </File>
-        <File dnOrder="116">
+        <File dnOrder="115">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_lock.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">354FA13CAD4A81931EE2C6863F08D8CF</GeneratedChecksum>
-          <UserChecksum dnOrder="5">354FA13CAD4A81931EE2C6863F08D8CF</UserChecksum>
+          <GeneratedChecksum dnOrder="4">4C4736FCA5654D3B5D3E209523D5034E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4C4736FCA5654D3B5D3E209523D5034E</UserChecksum>
         </File>
-        <File dnOrder="117">
+        <File dnOrder="116">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_mac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">A70CC44B458F35C8061B6A1819187283</GeneratedChecksum>
-          <UserChecksum dnOrder="5">A70CC44B458F35C8061B6A1819187283</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D75E6C42526741A6AE96C456577ADB44</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D75E6C42526741A6AE96C456577ADB44</UserChecksum>
         </File>
-        <File dnOrder="118">
+        <File dnOrder="117">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_nonce.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">8FD727FB110EAFBF75F7EE7B00FE76FC</GeneratedChecksum>
-          <UserChecksum dnOrder="5">8FD727FB110EAFBF75F7EE7B00FE76FC</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9A04E890D8B2E7C742C87D878D2D9700</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9A04E890D8B2E7C742C87D878D2D9700</UserChecksum>
         </File>
-        <File dnOrder="119">
+        <File dnOrder="118">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_privwrite.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">7AB00E8C429FD5B9C0FC1F2117F3396C</GeneratedChecksum>
-          <UserChecksum dnOrder="5">7AB00E8C429FD5B9C0FC1F2117F3396C</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9D6C7E37FA17B13596D5AD6E2B611D84</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9D6C7E37FA17B13596D5AD6E2B611D84</UserChecksum>
         </File>
-        <File dnOrder="120">
+        <File dnOrder="119">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_random.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">945B215F6511B0C5EF801859B6272E9B</GeneratedChecksum>
-          <UserChecksum dnOrder="5">945B215F6511B0C5EF801859B6272E9B</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D7B9300404A88F74D170AA3092E07104</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D7B9300404A88F74D170AA3092E07104</UserChecksum>
         </File>
-        <File dnOrder="121">
+        <File dnOrder="120">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_read.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">8478D02B24D18F33944D1CDA1A7F84AA</GeneratedChecksum>
-          <UserChecksum dnOrder="5">8478D02B24D18F33944D1CDA1A7F84AA</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D8DBDD298A2B38BAC71F41428993F446</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D8DBDD298A2B38BAC71F41428993F446</UserChecksum>
         </File>
-        <File dnOrder="122">
+        <File dnOrder="121">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_secureboot.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">74C87F607124D01C811393E43D87E463</GeneratedChecksum>
-          <UserChecksum dnOrder="5">74C87F607124D01C811393E43D87E463</UserChecksum>
+          <GeneratedChecksum dnOrder="4">CD36D8B328F27B5CC83C7860A41DFC6F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CD36D8B328F27B5CC83C7860A41DFC6F</UserChecksum>
         </File>
-        <File dnOrder="123">
+        <File dnOrder="122">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_selftest.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">D171269AF8193E5ACB96567CB1BFD4D0</GeneratedChecksum>
-          <UserChecksum dnOrder="5">D171269AF8193E5ACB96567CB1BFD4D0</UserChecksum>
+          <GeneratedChecksum dnOrder="4">CE987163071702B399C08CB6D8A9271E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CE987163071702B399C08CB6D8A9271E</UserChecksum>
         </File>
-        <File dnOrder="124">
+        <File dnOrder="123">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_sha.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">E9A20575C994E4B35E75392314C3EB89</GeneratedChecksum>
-          <UserChecksum dnOrder="5">E9A20575C994E4B35E75392314C3EB89</UserChecksum>
+          <GeneratedChecksum dnOrder="4">CA70B46B87A1C4EF599086A2EDCAB084</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CA70B46B87A1C4EF599086A2EDCAB084</UserChecksum>
         </File>
-        <File dnOrder="125">
+        <File dnOrder="124">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_sign.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">2ED46E5949CFAA2067619AFBD10E024A</GeneratedChecksum>
-          <UserChecksum dnOrder="5">2ED46E5949CFAA2067619AFBD10E024A</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D5C07A2F5F3EBE1775C1521CBFB72D2F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D5C07A2F5F3EBE1775C1521CBFB72D2F</UserChecksum>
         </File>
-        <File dnOrder="126">
+        <File dnOrder="125">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_updateextra.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">66DF9FC0DBB01FD48C6EEBE14D78FDEE</GeneratedChecksum>
-          <UserChecksum dnOrder="5">66DF9FC0DBB01FD48C6EEBE14D78FDEE</UserChecksum>
+          <GeneratedChecksum dnOrder="4">74D38B89125267CDC37726F085047146</GeneratedChecksum>
+          <UserChecksum dnOrder="5">74D38B89125267CDC37726F085047146</UserChecksum>
         </File>
-        <File dnOrder="127">
+        <File dnOrder="126">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_verify.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">0612225223591824D353FFBD5D477D0E</GeneratedChecksum>
-          <UserChecksum dnOrder="5">0612225223591824D353FFBD5D477D0E</UserChecksum>
+          <GeneratedChecksum dnOrder="4">F04B62DE6CD2F37C35E9397F1080CE7B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F04B62DE6CD2F37C35E9397F1080CE7B</UserChecksum>
         </File>
-        <File dnOrder="128">
+        <File dnOrder="127">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">calib_write.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/calib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/calib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">BA164444AC54A7FABDF61566F7283287</GeneratedChecksum>
-          <UserChecksum dnOrder="5">BA164444AC54A7FABDF61566F7283287</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5A4F3593ED122CA1FD52BE5D2674F3B9</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5A4F3593ED122CA1FD52BE5D2674F3B9</UserChecksum>
         </File>
-        <File dnOrder="129">
+        <File dnOrder="128">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">cmd-processor.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
@@ -1046,15 +1038,15 @@
           <GeneratedChecksum dnOrder="4">D71994CA4F9667C4BBBA6DFF38C17566</GeneratedChecksum>
           <UserChecksum dnOrder="5">D71994CA4F9667C4BBBA6DFF38C17566</UserChecksum>
         </File>
-        <File dnOrder="130">
+        <File dnOrder="129">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">cryptoauthlib.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">BED8693EC80649929B2C4B94B798D06C</GeneratedChecksum>
-          <UserChecksum dnOrder="5">BED8693EC80649929B2C4B94B798D06C</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B7833FCE8F8D56D1549220D3740F1D1F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B7833FCE8F8D56D1549220D3740F1D1F</UserChecksum>
         </File>
-        <File dnOrder="131">
+        <File dnOrder="130">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">exceptions.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -1062,7 +1054,7 @@
           <GeneratedChecksum dnOrder="4">3C64B0B744B67F634A4B2C0AF49B32A8</GeneratedChecksum>
           <UserChecksum dnOrder="5">3C64B0B744B67F634A4B2C0AF49B32A8</UserChecksum>
         </File>
-        <File dnOrder="132">
+        <File dnOrder="131">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">hal_cortex_m_delay.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
@@ -1070,31 +1062,31 @@
           <GeneratedChecksum dnOrder="4">9558D5C8F00DA534E0F60606479A74CD</GeneratedChecksum>
           <UserChecksum dnOrder="5">9558D5C8F00DA534E0F60606479A74CD</UserChecksum>
         </File>
-        <File dnOrder="133">
+        <File dnOrder="132">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">hal_harmony_init.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">2D35B78519DF5E27DA3FBC269EB95DA6</GeneratedChecksum>
-          <UserChecksum dnOrder="5">7BE0BF7D515E0D963D03243D3FF628EF</UserChecksum>
+          <GeneratedChecksum dnOrder="4">84CB91444287DB502DA47EE37DC6EFDD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">84CB91444287DB502DA47EE37DC6EFDD</UserChecksum>
         </File>
-        <File dnOrder="134">
+        <File dnOrder="133">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">hal_i2c_harmony.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">59E24CADF2040A6E591D92B61181ED72</GeneratedChecksum>
-          <UserChecksum dnOrder="5">59E24CADF2040A6E591D92B61181ED72</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9DD432EA98FE2BD239574BFD8E750E20</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9DD432EA98FE2BD239574BFD8E750E20</UserChecksum>
         </File>
-        <File dnOrder="135">
+        <File dnOrder="134">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">hal_spi_harmony.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/hal/</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/hal/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">E605A047439E2A4443FEFA478C219617</GeneratedChecksum>
-          <UserChecksum dnOrder="5">E605A047439E2A4443FEFA478C219617</UserChecksum>
+          <GeneratedChecksum dnOrder="4">87E6B8E20AB594ED28F1D1FACFD66635</GeneratedChecksum>
+          <UserChecksum dnOrder="5">87E6B8E20AB594ED28F1D1FACFD66635</UserChecksum>
         </File>
-        <File dnOrder="136">
+        <File dnOrder="135">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">initialization.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -1102,7 +1094,7 @@
           <GeneratedChecksum dnOrder="4">97E585A49688CEFB136033DE9EA052C3</GeneratedChecksum>
           <UserChecksum dnOrder="5">97E585A49688CEFB136033DE9EA052C3</UserChecksum>
         </File>
-        <File dnOrder="137">
+        <File dnOrder="136">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">interrupts.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -1110,7 +1102,7 @@
           <GeneratedChecksum dnOrder="4">35DE26811B3E75A7F72B50F9E4D5DCD8</GeneratedChecksum>
           <UserChecksum dnOrder="5">35DE26811B3E75A7F72B50F9E4D5DCD8</UserChecksum>
         </File>
-        <File dnOrder="138">
+        <File dnOrder="137">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">libc_syscalls.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -1118,7 +1110,7 @@
           <GeneratedChecksum dnOrder="4">328F1E09E0DD9BEE901C4562A3E5180A</GeneratedChecksum>
           <UserChecksum dnOrder="5">328F1E09E0DD9BEE901C4562A3E5180A</UserChecksum>
         </File>
-        <File dnOrder="139">
+        <File dnOrder="138">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">main.c</Name>
           <LogicalPath dnOrder="2"/>
@@ -1126,7 +1118,7 @@
           <GeneratedChecksum dnOrder="4"/>
           <UserChecksum dnOrder="5"/>
         </File>
-        <File dnOrder="140">
+        <File dnOrder="139">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_clock.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/clock/</LogicalPath>
@@ -1134,7 +1126,7 @@
           <GeneratedChecksum dnOrder="4">43CE6567806A68A7E4CE52E7A0B4CF53</GeneratedChecksum>
           <UserChecksum dnOrder="5">43CE6567806A68A7E4CE52E7A0B4CF53</UserChecksum>
         </File>
-        <File dnOrder="141">
+        <File dnOrder="140">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_cmcc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/cmcc/</LogicalPath>
@@ -1142,7 +1134,7 @@
           <GeneratedChecksum dnOrder="4">FD8CCFC86D63BF1AC9F15EBA909D181D</GeneratedChecksum>
           <UserChecksum dnOrder="5">FD8CCFC86D63BF1AC9F15EBA909D181D</UserChecksum>
         </File>
-        <File dnOrder="142">
+        <File dnOrder="141">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_evsys.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/evsys</LogicalPath>
@@ -1150,7 +1142,7 @@
           <GeneratedChecksum dnOrder="4">C99E6D9B9BA371EA749B7DC16BC2C209</GeneratedChecksum>
           <UserChecksum dnOrder="5">C99E6D9B9BA371EA749B7DC16BC2C209</UserChecksum>
         </File>
-        <File dnOrder="143">
+        <File dnOrder="142">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_nvic.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/nvic/</LogicalPath>
@@ -1158,7 +1150,7 @@
           <GeneratedChecksum dnOrder="4">5631C7F10DD9468576391A2ADA55121F</GeneratedChecksum>
           <UserChecksum dnOrder="5">5631C7F10DD9468576391A2ADA55121F</UserChecksum>
         </File>
-        <File dnOrder="144">
+        <File dnOrder="143">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_nvmctrl.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/nvmctrl/</LogicalPath>
@@ -1166,7 +1158,7 @@
           <GeneratedChecksum dnOrder="4">8AA3681EED55E354B4F2764AAECA5347</GeneratedChecksum>
           <UserChecksum dnOrder="5">8AA3681EED55E354B4F2764AAECA5347</UserChecksum>
         </File>
-        <File dnOrder="145">
+        <File dnOrder="144">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_port.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/port/</LogicalPath>
@@ -1174,7 +1166,7 @@
           <GeneratedChecksum dnOrder="4">885C511B494B730FC9D1FFB0A437F4F3</GeneratedChecksum>
           <UserChecksum dnOrder="5">885C511B494B730FC9D1FFB0A437F4F3</UserChecksum>
         </File>
-        <File dnOrder="146">
+        <File dnOrder="145">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_sercom2_usart.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/usart/</LogicalPath>
@@ -1182,7 +1174,7 @@
           <GeneratedChecksum dnOrder="4">64B2A6D1887919D425D8046170F803B7</GeneratedChecksum>
           <UserChecksum dnOrder="5">64B2A6D1887919D425D8046170F803B7</UserChecksum>
         </File>
-        <File dnOrder="147">
+        <File dnOrder="146">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_sercom4_spi.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/spim/</LogicalPath>
@@ -1190,7 +1182,7 @@
           <GeneratedChecksum dnOrder="4">CE502F6B44AD4DBC06C40D5C787F497B</GeneratedChecksum>
           <UserChecksum dnOrder="5">CE502F6B44AD4DBC06C40D5C787F497B</UserChecksum>
         </File>
-        <File dnOrder="148">
+        <File dnOrder="147">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_sercom7_i2c_master.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/i2c_master/</LogicalPath>
@@ -1198,7 +1190,7 @@
           <GeneratedChecksum dnOrder="4">83CC74D2AE8DF897AC70D8DB198DC28E</GeneratedChecksum>
           <UserChecksum dnOrder="5">83CC74D2AE8DF897AC70D8DB198DC28E</UserChecksum>
         </File>
-        <File dnOrder="149">
+        <File dnOrder="148">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">sha1_routines.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto/hashes</LogicalPath>
@@ -1206,7 +1198,7 @@
           <GeneratedChecksum dnOrder="4">2678A6AC469B2CBC962FC647A763814C</GeneratedChecksum>
           <UserChecksum dnOrder="5">2678A6AC469B2CBC962FC647A763814C</UserChecksum>
         </File>
-        <File dnOrder="150">
+        <File dnOrder="149">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">sha1_routines.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto/hashes</LogicalPath>
@@ -1214,7 +1206,7 @@
           <GeneratedChecksum dnOrder="4">604A05C17479FC6839FB64A83B4F5C36</GeneratedChecksum>
           <UserChecksum dnOrder="5">604A05C17479FC6839FB64A83B4F5C36</UserChecksum>
         </File>
-        <File dnOrder="151">
+        <File dnOrder="150">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">sha2_routines.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto/hashes</LogicalPath>
@@ -1222,7 +1214,7 @@
           <GeneratedChecksum dnOrder="4">F8BB44C367E52E7A3A24643E786055A7</GeneratedChecksum>
           <UserChecksum dnOrder="5">F8BB44C367E52E7A3A24643E786055A7</UserChecksum>
         </File>
-        <File dnOrder="152">
+        <File dnOrder="151">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">sha2_routines.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/crypto/hashes</LogicalPath>
@@ -1230,7 +1222,7 @@
           <GeneratedChecksum dnOrder="4">03F315974E54C941C8B481677BAE592A</GeneratedChecksum>
           <UserChecksum dnOrder="5">03F315974E54C941C8B481677BAE592A</UserChecksum>
         </File>
-        <File dnOrder="153">
+        <File dnOrder="152">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">startup_xc32.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -1238,55 +1230,55 @@
           <GeneratedChecksum dnOrder="4">31987BD86EE19226FFF4173AE2BDDAB7</GeneratedChecksum>
           <UserChecksum dnOrder="5">31987BD86EE19226FFF4173AE2BDDAB7</UserChecksum>
         </File>
-        <File dnOrder="154">
+        <File dnOrder="153">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_aes.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">AB8EBC7C8D38777D2A8B03E7BDBD30D7</GeneratedChecksum>
-          <UserChecksum dnOrder="5">AB8EBC7C8D38777D2A8B03E7BDBD30D7</UserChecksum>
+          <GeneratedChecksum dnOrder="4">8193700CE89C07E61552CE72E34E9EC5</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8193700CE89C07E61552CE72E34E9EC5</UserChecksum>
         </File>
-        <File dnOrder="155">
+        <File dnOrder="154">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_auth.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">377A0863AC19064DC40B4407FFE6ACA5</GeneratedChecksum>
-          <UserChecksum dnOrder="5">377A0863AC19064DC40B4407FFE6ACA5</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B0D9D543566C4E1E467F442CAC7ED6AF</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B0D9D543566C4E1E467F442CAC7ED6AF</UserChecksum>
         </File>
-        <File dnOrder="156">
+        <File dnOrder="155">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_basic.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">38DC59D668067174D0BFB18070CB2222</GeneratedChecksum>
-          <UserChecksum dnOrder="5">38DC59D668067174D0BFB18070CB2222</UserChecksum>
+          <GeneratedChecksum dnOrder="4">F4E8869C85D03A90C1B821A57CA01971</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F4E8869C85D03A90C1B821A57CA01971</UserChecksum>
         </File>
-        <File dnOrder="157">
+        <File dnOrder="156">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_basic.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">57DE4A53DD4697A4F94E5B5658453003</GeneratedChecksum>
-          <UserChecksum dnOrder="5">57DE4A53DD4697A4F94E5B5658453003</UserChecksum>
+          <GeneratedChecksum dnOrder="4">8377E76749F2956DB309738ED2D3DFAB</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8377E76749F2956DB309738ED2D3DFAB</UserChecksum>
         </File>
-        <File dnOrder="158">
+        <File dnOrder="157">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_counter.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">440EEA7D688F9BE71669787A0D8CF701</GeneratedChecksum>
-          <UserChecksum dnOrder="5">440EEA7D688F9BE71669787A0D8CF701</UserChecksum>
+          <GeneratedChecksum dnOrder="4">92B84E4AB9ED0F1B852C30637B16CDA5</GeneratedChecksum>
+          <UserChecksum dnOrder="5">92B84E4AB9ED0F1B852C30637B16CDA5</UserChecksum>
         </File>
-        <File dnOrder="159">
+        <File dnOrder="158">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_crc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">0F1164170DFC0CB16CB64D61FAD49A8A</GeneratedChecksum>
-          <UserChecksum dnOrder="5">0F1164170DFC0CB16CB64D61FAD49A8A</UserChecksum>
+          <GeneratedChecksum dnOrder="4">F7C14AFB6253B376D707C90AC9F6557E</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F7C14AFB6253B376D707C90AC9F6557E</UserChecksum>
         </File>
-        <File dnOrder="160">
+        <File dnOrder="159">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_crc.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
@@ -1294,15 +1286,15 @@
           <GeneratedChecksum dnOrder="4">0332E78ED4781309B2E05114B30C50BA</GeneratedChecksum>
           <UserChecksum dnOrder="5">0332E78ED4781309B2E05114B30C50BA</UserChecksum>
         </File>
-        <File dnOrder="161">
+        <File dnOrder="160">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_create.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">41D4E4E09940D19A32ADC8971B204F10</GeneratedChecksum>
-          <UserChecksum dnOrder="5">41D4E4E09940D19A32ADC8971B204F10</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C74F2C848C0A3C6BABAEF09F13B24233</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C74F2C848C0A3C6BABAEF09F13B24233</UserChecksum>
         </File>
-        <File dnOrder="162">
+        <File dnOrder="161">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_defines.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
@@ -1310,31 +1302,31 @@
           <GeneratedChecksum dnOrder="4">6F1731653BFC36DA8782E9D5995F42A6</GeneratedChecksum>
           <UserChecksum dnOrder="5">6F1731653BFC36DA8782E9D5995F42A6</UserChecksum>
         </File>
-        <File dnOrder="163">
+        <File dnOrder="162">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_delete.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">6E1A9D9D5E27466D01C4E3B0F01C121F</GeneratedChecksum>
-          <UserChecksum dnOrder="5">6E1A9D9D5E27466D01C4E3B0F01C121F</UserChecksum>
+          <GeneratedChecksum dnOrder="4">CA0CF0D0FC94B1EB9CC3EB78379E1376</GeneratedChecksum>
+          <UserChecksum dnOrder="5">CA0CF0D0FC94B1EB9CC3EB78379E1376</UserChecksum>
         </File>
-        <File dnOrder="164">
+        <File dnOrder="163">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_ecdh.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">C8F9117D0A96293FB225D132B6E3AC93</GeneratedChecksum>
-          <UserChecksum dnOrder="5">C8F9117D0A96293FB225D132B6E3AC93</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5633E28B1163F525ED1008E17D9F4100</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5633E28B1163F525ED1008E17D9F4100</UserChecksum>
         </File>
-        <File dnOrder="165">
+        <File dnOrder="164">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_execution.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">4FBE87243CCFBE3A695932C361E587B3</GeneratedChecksum>
-          <UserChecksum dnOrder="5">4FBE87243CCFBE3A695932C361E587B3</UserChecksum>
+          <GeneratedChecksum dnOrder="4">0BC31318F9889B2CE4058CEDD7F7B266</GeneratedChecksum>
+          <UserChecksum dnOrder="5">0BC31318F9889B2CE4058CEDD7F7B266</UserChecksum>
         </File>
-        <File dnOrder="166">
+        <File dnOrder="165">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_execution.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
@@ -1342,71 +1334,71 @@
           <GeneratedChecksum dnOrder="4">6E84B97A25A4991EA6FC0F8DC1F0CB5D</GeneratedChecksum>
           <UserChecksum dnOrder="5">6E84B97A25A4991EA6FC0F8DC1F0CB5D</UserChecksum>
         </File>
-        <File dnOrder="167">
+        <File dnOrder="166">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_export.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">4F42546FAE013E218BF9CC618387CADB</GeneratedChecksum>
-          <UserChecksum dnOrder="5">4F42546FAE013E218BF9CC618387CADB</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9C02C8DEADE6FFF7E83A19F5D4B9D65D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9C02C8DEADE6FFF7E83A19F5D4B9D65D</UserChecksum>
         </File>
-        <File dnOrder="168">
+        <File dnOrder="167">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_genkey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">B1116AEA0C996E49CC68955B8402614D</GeneratedChecksum>
-          <UserChecksum dnOrder="5">B1116AEA0C996E49CC68955B8402614D</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C5E768319667BA9C2369AB5531F9089B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C5E768319667BA9C2369AB5531F9089B</UserChecksum>
         </File>
-        <File dnOrder="169">
+        <File dnOrder="168">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_handle.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">9A40F148EA463821F4869C39D2615DF5</GeneratedChecksum>
-          <UserChecksum dnOrder="5">9A40F148EA463821F4869C39D2615DF5</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C21E00224190E361B77024AA8115E371</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C21E00224190E361B77024AA8115E371</UserChecksum>
         </File>
-        <File dnOrder="170">
+        <File dnOrder="169">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_info.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">5A54F4938DEB16AA97EB382CC61B309E</GeneratedChecksum>
-          <UserChecksum dnOrder="5">5A54F4938DEB16AA97EB382CC61B309E</UserChecksum>
+          <GeneratedChecksum dnOrder="4">EFAD23B76E43A10E930BD27DC9D5A018</GeneratedChecksum>
+          <UserChecksum dnOrder="5">EFAD23B76E43A10E930BD27DC9D5A018</UserChecksum>
         </File>
-        <File dnOrder="171">
+        <File dnOrder="170">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_kdf.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">59CE70AC90FA73463E5EB615ECF49C16</GeneratedChecksum>
-          <UserChecksum dnOrder="5">59CE70AC90FA73463E5EB615ECF49C16</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B2F755AF84D0E94464E4288BEFB79E37</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B2F755AF84D0E94464E4288BEFB79E37</UserChecksum>
         </File>
-        <File dnOrder="172">
+        <File dnOrder="171">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_lock.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">5BB59F27FAAC1F1DD175AAFED6315830</GeneratedChecksum>
-          <UserChecksum dnOrder="5">5BB59F27FAAC1F1DD175AAFED6315830</UserChecksum>
+          <GeneratedChecksum dnOrder="4">D44608E6097EFC441B01E20047F96565</GeneratedChecksum>
+          <UserChecksum dnOrder="5">D44608E6097EFC441B01E20047F96565</UserChecksum>
         </File>
-        <File dnOrder="173">
+        <File dnOrder="172">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_mac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">1CC9821B386A82A14030398F1E641AE1</GeneratedChecksum>
-          <UserChecksum dnOrder="5">1CC9821B386A82A14030398F1E641AE1</UserChecksum>
+          <GeneratedChecksum dnOrder="4">EBCEF3C946B53AD5B44267F6FBC6B260</GeneratedChecksum>
+          <UserChecksum dnOrder="5">EBCEF3C946B53AD5B44267F6FBC6B260</UserChecksum>
         </File>
-        <File dnOrder="174">
+        <File dnOrder="173">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_managecert.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">D31EE76CCC68FBB9A6DD581B5FB64807</GeneratedChecksum>
-          <UserChecksum dnOrder="5">D31EE76CCC68FBB9A6DD581B5FB64807</UserChecksum>
+          <GeneratedChecksum dnOrder="4">9BB43DB6436CBE06DE6086C9A5DBBFBC</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9BB43DB6436CBE06DE6086C9A5DBBFBC</UserChecksum>
         </File>
-        <File dnOrder="175">
+        <File dnOrder="174">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_packet.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
@@ -1414,7 +1406,7 @@
           <GeneratedChecksum dnOrder="4">675B44AB3CA8D89D5110154F63818392</GeneratedChecksum>
           <UserChecksum dnOrder="5">675B44AB3CA8D89D5110154F63818392</UserChecksum>
         </File>
-        <File dnOrder="176">
+        <File dnOrder="175">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_packet.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
@@ -1422,103 +1414,103 @@
           <GeneratedChecksum dnOrder="4">5A567494E6FA778B01825511D80959DD</GeneratedChecksum>
           <UserChecksum dnOrder="5">5A567494E6FA778B01825511D80959DD</UserChecksum>
         </File>
-        <File dnOrder="177">
+        <File dnOrder="176">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_power.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">523C4BFA2B13DA86B304F2C550289670</GeneratedChecksum>
-          <UserChecksum dnOrder="5">523C4BFA2B13DA86B304F2C550289670</UserChecksum>
+          <GeneratedChecksum dnOrder="4">8E0D56F61F1871FEB7E63A8491CA1144</GeneratedChecksum>
+          <UserChecksum dnOrder="5">8E0D56F61F1871FEB7E63A8491CA1144</UserChecksum>
         </File>
-        <File dnOrder="178">
+        <File dnOrder="177">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_random.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">60A33EABAEEFB90C36E930A505D18F24</GeneratedChecksum>
-          <UserChecksum dnOrder="5">60A33EABAEEFB90C36E930A505D18F24</UserChecksum>
+          <GeneratedChecksum dnOrder="4">3BA1CE350E897BE865F529028BAA994D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3BA1CE350E897BE865F529028BAA994D</UserChecksum>
         </File>
-        <File dnOrder="179">
+        <File dnOrder="178">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_read.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">CE3AD79FEBCE6EEC59C83227AA2730A0</GeneratedChecksum>
-          <UserChecksum dnOrder="5">CE3AD79FEBCE6EEC59C83227AA2730A0</UserChecksum>
+          <GeneratedChecksum dnOrder="4">98E9D2CDC552A7BEEAF3041530C4A475</GeneratedChecksum>
+          <UserChecksum dnOrder="5">98E9D2CDC552A7BEEAF3041530C4A475</UserChecksum>
         </File>
-        <File dnOrder="180">
+        <File dnOrder="179">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_rsaenc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">26F381A4AB1BA88C1898780A1A507B17</GeneratedChecksum>
-          <UserChecksum dnOrder="5">26F381A4AB1BA88C1898780A1A507B17</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B582A32B905CDAB5232F209462E1E15F</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B582A32B905CDAB5232F209462E1E15F</UserChecksum>
         </File>
-        <File dnOrder="181">
+        <File dnOrder="180">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_selftest.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">6A3EC040B6A39E17312D24AE3E63F4C7</GeneratedChecksum>
-          <UserChecksum dnOrder="5">6A3EC040B6A39E17312D24AE3E63F4C7</UserChecksum>
+          <GeneratedChecksum dnOrder="4">3138AEE7A084F8ACB01D57200E393DE5</GeneratedChecksum>
+          <UserChecksum dnOrder="5">3138AEE7A084F8ACB01D57200E393DE5</UserChecksum>
         </File>
-        <File dnOrder="182">
+        <File dnOrder="181">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_sha.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">A8CBF13095667F654232F99D8521780C</GeneratedChecksum>
-          <UserChecksum dnOrder="5">A8CBF13095667F654232F99D8521780C</UserChecksum>
+          <GeneratedChecksum dnOrder="4">89B9528E2DB612AA65A07DCF9BDBCFBA</GeneratedChecksum>
+          <UserChecksum dnOrder="5">89B9528E2DB612AA65A07DCF9BDBCFBA</UserChecksum>
         </File>
-        <File dnOrder="183">
+        <File dnOrder="182">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_sign.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">F57A7AF491D9CAACBCCA0351EAB0B03E</GeneratedChecksum>
-          <UserChecksum dnOrder="5">F57A7AF491D9CAACBCCA0351EAB0B03E</UserChecksum>
+          <GeneratedChecksum dnOrder="4">049186DA1FA49E5C3C82D1BC7116A2CD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">049186DA1FA49E5C3C82D1BC7116A2CD</UserChecksum>
         </File>
-        <File dnOrder="184">
+        <File dnOrder="183">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_status.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">C421F7DEBFA84E3F180F9CAE6EAC04D3</GeneratedChecksum>
-          <UserChecksum dnOrder="5">C421F7DEBFA84E3F180F9CAE6EAC04D3</UserChecksum>
+          <GeneratedChecksum dnOrder="4">1E8E74211931F170EC844ED91FE14151</GeneratedChecksum>
+          <UserChecksum dnOrder="5">1E8E74211931F170EC844ED91FE14151</UserChecksum>
         </File>
-        <File dnOrder="185">
+        <File dnOrder="184">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_verify.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">AD730B4D624549DA7AA8ECF51E854980</GeneratedChecksum>
-          <UserChecksum dnOrder="5">AD730B4D624549DA7AA8ECF51E854980</UserChecksum>
+          <GeneratedChecksum dnOrder="4">709AE80D769CDF8CC0EC143405ED3D76</GeneratedChecksum>
+          <UserChecksum dnOrder="5">709AE80D769CDF8CC0EC143405ED3D76</UserChecksum>
         </File>
-        <File dnOrder="186">
+        <File dnOrder="185">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">talib_write.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">96F7D348B51399F27C6566D5AC4AEB1D</GeneratedChecksum>
-          <UserChecksum dnOrder="5">96F7D348B51399F27C6566D5AC4AEB1D</UserChecksum>
+          <GeneratedChecksum dnOrder="4">850B8ADC0089AD9854E406A3DE419774</GeneratedChecksum>
+          <UserChecksum dnOrder="5">850B8ADC0089AD9854E406A3DE419774</UserChecksum>
         </File>
-        <File dnOrder="187">
+        <File dnOrder="186">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_client.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">BA1024A11E0B043E4BEF539A8218F9FD</GeneratedChecksum>
-          <UserChecksum dnOrder="5">BA1024A11E0B043E4BEF539A8218F9FD</UserChecksum>
+          <GeneratedChecksum dnOrder="4">FA3B1AC9170D4CAC76D0DDCA86E68D86</GeneratedChecksum>
+          <UserChecksum dnOrder="5">FA3B1AC9170D4CAC76D0DDCA86E68D86</UserChecksum>
         </File>
-        <File dnOrder="188">
+        <File dnOrder="187">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_client_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">47B956E0F7000DDFF8D7FDC636546DC8</GeneratedChecksum>
-          <UserChecksum dnOrder="5">47B956E0F7000DDFF8D7FDC636546DC8</UserChecksum>
+          <GeneratedChecksum dnOrder="4">0F3E2F78212A4BEED28D1B74F015986A</GeneratedChecksum>
+          <UserChecksum dnOrder="5">0F3E2F78212A4BEED28D1B74F015986A</UserChecksum>
         </File>
-        <File dnOrder="189">
+        <File dnOrder="188">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_date.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1526,7 +1518,7 @@
           <GeneratedChecksum dnOrder="4">EBA294B29BBB0201E8C176EEAA4B2B00</GeneratedChecksum>
           <UserChecksum dnOrder="5">EBA294B29BBB0201E8C176EEAA4B2B00</UserChecksum>
         </File>
-        <File dnOrder="190">
+        <File dnOrder="189">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_date_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1534,15 +1526,15 @@
           <GeneratedChecksum dnOrder="4">68227F79F6859AE064454CEC81E9CE49</GeneratedChecksum>
           <UserChecksum dnOrder="5">68227F79F6859AE064454CEC81E9CE49</UserChecksum>
         </File>
-        <File dnOrder="191">
+        <File dnOrder="190">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_def.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/atcacert/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">449F4A891F3A7183CCB6129986133392</GeneratedChecksum>
-          <UserChecksum dnOrder="5">449F4A891F3A7183CCB6129986133392</UserChecksum>
+          <GeneratedChecksum dnOrder="4">4D5A2A6CCF2246BD8E6C98D22229E4DD</GeneratedChecksum>
+          <UserChecksum dnOrder="5">4D5A2A6CCF2246BD8E6C98D22229E4DD</UserChecksum>
         </File>
-        <File dnOrder="192">
+        <File dnOrder="191">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_def_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1550,7 +1542,7 @@
           <GeneratedChecksum dnOrder="4">D91A68D5ED608AC8424139B85856384A</GeneratedChecksum>
           <UserChecksum dnOrder="5">D91A68D5ED608AC8424139B85856384A</UserChecksum>
         </File>
-        <File dnOrder="193">
+        <File dnOrder="192">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_ecdsa_sig_value.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1558,7 +1550,7 @@
           <GeneratedChecksum dnOrder="4">3F7DD119B3E46386169A4EE0FF123362</GeneratedChecksum>
           <UserChecksum dnOrder="5">3F7DD119B3E46386169A4EE0FF123362</UserChecksum>
         </File>
-        <File dnOrder="194">
+        <File dnOrder="193">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_ecdsa_sig_value_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1566,7 +1558,7 @@
           <GeneratedChecksum dnOrder="4">849EB7D2054207D2D2241E9B628A47F6</GeneratedChecksum>
           <UserChecksum dnOrder="5">849EB7D2054207D2D2241E9B628A47F6</UserChecksum>
         </File>
-        <File dnOrder="195">
+        <File dnOrder="194">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_integer.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1574,7 +1566,7 @@
           <GeneratedChecksum dnOrder="4">F3E5B0FA30BA8BC2168FA8ED185E4995</GeneratedChecksum>
           <UserChecksum dnOrder="5">F3E5B0FA30BA8BC2168FA8ED185E4995</UserChecksum>
         </File>
-        <File dnOrder="196">
+        <File dnOrder="195">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_integer_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1582,7 +1574,7 @@
           <GeneratedChecksum dnOrder="4">E6D988859A12C8B3E0EBED7F9A889E71</GeneratedChecksum>
           <UserChecksum dnOrder="5">E6D988859A12C8B3E0EBED7F9A889E71</UserChecksum>
         </File>
-        <File dnOrder="197">
+        <File dnOrder="196">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_length.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1590,7 +1582,7 @@
           <GeneratedChecksum dnOrder="4">41129D34C7615D3219AD705615B23080</GeneratedChecksum>
           <UserChecksum dnOrder="5">41129D34C7615D3219AD705615B23080</UserChecksum>
         </File>
-        <File dnOrder="198">
+        <File dnOrder="197">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_der_length_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1598,7 +1590,7 @@
           <GeneratedChecksum dnOrder="4">8E752AB0EBBF2547BB16DB34C4E6E5D8</GeneratedChecksum>
           <UserChecksum dnOrder="5">8E752AB0EBBF2547BB16DB34C4E6E5D8</UserChecksum>
         </File>
-        <File dnOrder="199">
+        <File dnOrder="198">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_host_hw.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1606,7 +1598,7 @@
           <GeneratedChecksum dnOrder="4">89062AE38D59BEE9DE1135DEB65100F2</GeneratedChecksum>
           <UserChecksum dnOrder="5">89062AE38D59BEE9DE1135DEB65100F2</UserChecksum>
         </File>
-        <File dnOrder="200">
+        <File dnOrder="199">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_atcacert_host_hw_runner.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1614,7 +1606,7 @@
           <GeneratedChecksum dnOrder="4">440616D4829A949A7FA39E94D65D78CA</GeneratedChecksum>
           <UserChecksum dnOrder="5">440616D4829A949A7FA39E94D65D78CA</UserChecksum>
         </File>
-        <File dnOrder="201">
+        <File dnOrder="200">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_calib.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_calib</LogicalPath>
@@ -1622,7 +1614,7 @@
           <GeneratedChecksum dnOrder="4">E8733082F6A2BF716B91210A981AF610</GeneratedChecksum>
           <UserChecksum dnOrder="5">E8733082F6A2BF716B91210A981AF610</UserChecksum>
         </File>
-        <File dnOrder="202">
+        <File dnOrder="201">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_calib_commands.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_calib</LogicalPath>
@@ -1630,7 +1622,7 @@
           <GeneratedChecksum dnOrder="4">7F1D0D054F4DD689A30197357DC89478</GeneratedChecksum>
           <UserChecksum dnOrder="5">7F1D0D054F4DD689A30197357DC89478</UserChecksum>
         </File>
-        <File dnOrder="203">
+        <File dnOrder="202">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_calib_config.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_calib</LogicalPath>
@@ -1638,7 +1630,7 @@
           <GeneratedChecksum dnOrder="4">68075B745834385D5E123ABD1634FC6C</GeneratedChecksum>
           <UserChecksum dnOrder="5">68075B745834385D5E123ABD1634FC6C</UserChecksum>
         </File>
-        <File dnOrder="204">
+        <File dnOrder="203">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_calib_packet.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_calib</LogicalPath>
@@ -1646,7 +1638,7 @@
           <GeneratedChecksum dnOrder="4">084EFE0FD37D14AD8E15C5B68DCB52FA</GeneratedChecksum>
           <UserChecksum dnOrder="5">084EFE0FD37D14AD8E15C5B68DCB52FA</UserChecksum>
         </File>
-        <File dnOrder="205">
+        <File dnOrder="204">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_0_device.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1654,7 +1646,7 @@
           <GeneratedChecksum dnOrder="4">4F1BC3E922246E27586E66FD7153709B</GeneratedChecksum>
           <UserChecksum dnOrder="5">4F1BC3E922246E27586E66FD7153709B</UserChecksum>
         </File>
-        <File dnOrder="206">
+        <File dnOrder="205">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_0_device.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1662,7 +1654,7 @@
           <GeneratedChecksum dnOrder="4">7149BC2EAE0A157704224B7AF459CC85</GeneratedChecksum>
           <UserChecksum dnOrder="5">7149BC2EAE0A157704224B7AF459CC85</UserChecksum>
         </File>
-        <File dnOrder="207">
+        <File dnOrder="206">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_1_signer.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1670,7 +1662,7 @@
           <GeneratedChecksum dnOrder="4">2ECA61504D3A612A34B3323EC403D757</GeneratedChecksum>
           <UserChecksum dnOrder="5">2ECA61504D3A612A34B3323EC403D757</UserChecksum>
         </File>
-        <File dnOrder="208">
+        <File dnOrder="207">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_1_signer.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1678,7 +1670,7 @@
           <GeneratedChecksum dnOrder="4">F8C390A22CE2BD83FE5375C64C596CEF</GeneratedChecksum>
           <UserChecksum dnOrder="5">F8C390A22CE2BD83FE5375C64C596CEF</UserChecksum>
         </File>
-        <File dnOrder="209">
+        <File dnOrder="208">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_2_device_csr.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1686,7 +1678,7 @@
           <GeneratedChecksum dnOrder="4">68CA6648427E2B9C4C1699FC912E6A96</GeneratedChecksum>
           <UserChecksum dnOrder="5">68CA6648427E2B9C4C1699FC912E6A96</UserChecksum>
         </File>
-        <File dnOrder="210">
+        <File dnOrder="209">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_2_device_csr.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1694,7 +1686,7 @@
           <GeneratedChecksum dnOrder="4">99FB65BE750B6D0F19A687A4E7B4AFC0</GeneratedChecksum>
           <UserChecksum dnOrder="5">99FB65BE750B6D0F19A687A4E7B4AFC0</UserChecksum>
         </File>
-        <File dnOrder="211">
+        <File dnOrder="210">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_3_device.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1702,7 +1694,7 @@
           <GeneratedChecksum dnOrder="4">5A064B140F422898D77C96D9AAF1EDAD</GeneratedChecksum>
           <UserChecksum dnOrder="5">5A064B140F422898D77C96D9AAF1EDAD</UserChecksum>
         </File>
-        <File dnOrder="212">
+        <File dnOrder="211">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_cert_def_3_device.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/atcacert</LogicalPath>
@@ -1710,7 +1702,7 @@
           <GeneratedChecksum dnOrder="4">AA57E9E9B2B0E22B05E5348A3B3CDFEF</GeneratedChecksum>
           <UserChecksum dnOrder="5">AA57E9E9B2B0E22B05E5348A3B3CDFEF</UserChecksum>
         </File>
-        <File dnOrder="213">
+        <File dnOrder="212">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_ecc_certificate_chain.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1718,7 +1710,7 @@
           <GeneratedChecksum dnOrder="4">59CF35F20650669BD429C1698A2E5110</GeneratedChecksum>
           <UserChecksum dnOrder="5">59CF35F20650669BD429C1698A2E5110</UserChecksum>
         </File>
-        <File dnOrder="214">
+        <File dnOrder="213">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_ecc_certificate_chain.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1726,7 +1718,7 @@
           <GeneratedChecksum dnOrder="4">380BF8163A9F363414EA24E2467454BC</GeneratedChecksum>
           <UserChecksum dnOrder="5">380BF8163A9F363414EA24E2467454BC</UserChecksum>
         </File>
-        <File dnOrder="215">
+        <File dnOrder="214">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1734,15 +1726,15 @@
           <GeneratedChecksum dnOrder="4">8C88E3D443F25EA9361CDB7A8F91E657</GeneratedChecksum>
           <UserChecksum dnOrder="5">8C88E3D443F25EA9361CDB7A8F91E657</UserChecksum>
         </File>
-        <File dnOrder="216">
+        <File dnOrder="215">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_aes.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/api_talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">48B9E93A8E67CC3AA1D7EC0AA5727F62</GeneratedChecksum>
-          <UserChecksum dnOrder="5">48B9E93A8E67CC3AA1D7EC0AA5727F62</UserChecksum>
+          <GeneratedChecksum dnOrder="4">48748750E5049CD07FD97F2E7C706AE2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">48748750E5049CD07FD97F2E7C706AE2</UserChecksum>
         </File>
-        <File dnOrder="217">
+        <File dnOrder="216">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_auth.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1750,15 +1742,15 @@
           <GeneratedChecksum dnOrder="4">7F7EC4D5863EF9167B5BC1415BF24A2E</GeneratedChecksum>
           <UserChecksum dnOrder="5">7F7EC4D5863EF9167B5BC1415BF24A2E</UserChecksum>
         </File>
-        <File dnOrder="218">
+        <File dnOrder="217">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_config.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/api_talib/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">80FAB92D181EE435971CC03984A03293</GeneratedChecksum>
-          <UserChecksum dnOrder="5">80FAB92D181EE435971CC03984A03293</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B17B261EC9A183A68EB50D051AE65F4D</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B17B261EC9A183A68EB50D051AE65F4D</UserChecksum>
         </File>
-        <File dnOrder="219">
+        <File dnOrder="218">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_counter.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1766,7 +1758,7 @@
           <GeneratedChecksum dnOrder="4">DA73F1F019F6387AE7EA54D94FBE59C3</GeneratedChecksum>
           <UserChecksum dnOrder="5">DA73F1F019F6387AE7EA54D94FBE59C3</UserChecksum>
         </File>
-        <File dnOrder="220">
+        <File dnOrder="219">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_create.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1774,7 +1766,7 @@
           <GeneratedChecksum dnOrder="4">CEDE5D8C76220A8502A594A38E701F73</GeneratedChecksum>
           <UserChecksum dnOrder="5">CEDE5D8C76220A8502A594A38E701F73</UserChecksum>
         </File>
-        <File dnOrder="221">
+        <File dnOrder="220">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_ecdh.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1782,7 +1774,7 @@
           <GeneratedChecksum dnOrder="4">ACB5DF6E656442C1E086ED0A0649F587</GeneratedChecksum>
           <UserChecksum dnOrder="5">ACB5DF6E656442C1E086ED0A0649F587</UserChecksum>
         </File>
-        <File dnOrder="222">
+        <File dnOrder="221">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_genkey.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1790,7 +1782,7 @@
           <GeneratedChecksum dnOrder="4">6BEB80924C3C19733C9210146AF50D54</GeneratedChecksum>
           <UserChecksum dnOrder="5">6BEB80924C3C19733C9210146AF50D54</UserChecksum>
         </File>
-        <File dnOrder="223">
+        <File dnOrder="222">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_info.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1798,7 +1790,7 @@
           <GeneratedChecksum dnOrder="4">3F41896763198C0D955695F995EF8B70</GeneratedChecksum>
           <UserChecksum dnOrder="5">3F41896763198C0D955695F995EF8B70</UserChecksum>
         </File>
-        <File dnOrder="224">
+        <File dnOrder="223">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_kdf.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1806,7 +1798,7 @@
           <GeneratedChecksum dnOrder="4">FD5DB8C24D95B6BB48C873DAD5F86440</GeneratedChecksum>
           <UserChecksum dnOrder="5">FD5DB8C24D95B6BB48C873DAD5F86440</UserChecksum>
         </File>
-        <File dnOrder="225">
+        <File dnOrder="224">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_mac.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1814,7 +1806,7 @@
           <GeneratedChecksum dnOrder="4">29D30A3C6480104D32E938251466946D</GeneratedChecksum>
           <UserChecksum dnOrder="5">29D30A3C6480104D32E938251466946D</UserChecksum>
         </File>
-        <File dnOrder="226">
+        <File dnOrder="225">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_managecert.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1822,7 +1814,7 @@
           <GeneratedChecksum dnOrder="4">A0D7058D86E64BF7AA08586014DBC23A</GeneratedChecksum>
           <UserChecksum dnOrder="5">A0D7058D86E64BF7AA08586014DBC23A</UserChecksum>
         </File>
-        <File dnOrder="227">
+        <File dnOrder="226">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_random.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1830,7 +1822,7 @@
           <GeneratedChecksum dnOrder="4">D56DCFFDA45899E082BEFDC20764CBFC</GeneratedChecksum>
           <UserChecksum dnOrder="5">D56DCFFDA45899E082BEFDC20764CBFC</UserChecksum>
         </File>
-        <File dnOrder="228">
+        <File dnOrder="227">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_rsa_enc.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1838,7 +1830,7 @@
           <GeneratedChecksum dnOrder="4">410F869176F71144B6683D523AB10F8C</GeneratedChecksum>
           <UserChecksum dnOrder="5">410F869176F71144B6683D523AB10F8C</UserChecksum>
         </File>
-        <File dnOrder="229">
+        <File dnOrder="228">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_selftest.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1846,7 +1838,7 @@
           <GeneratedChecksum dnOrder="4">4B17D6E7070003827914301C5CF85962</GeneratedChecksum>
           <UserChecksum dnOrder="5">4B17D6E7070003827914301C5CF85962</UserChecksum>
         </File>
-        <File dnOrder="230">
+        <File dnOrder="229">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_sha.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1854,7 +1846,7 @@
           <GeneratedChecksum dnOrder="4">8330187E9918FC39515DA1FCA02257BF</GeneratedChecksum>
           <UserChecksum dnOrder="5">8330187E9918FC39515DA1FCA02257BF</UserChecksum>
         </File>
-        <File dnOrder="231">
+        <File dnOrder="230">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_sign.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1862,7 +1854,7 @@
           <GeneratedChecksum dnOrder="4">5D2F53BB724BC39E18D852F227C09AA7</GeneratedChecksum>
           <UserChecksum dnOrder="5">5D2F53BB724BC39E18D852F227C09AA7</UserChecksum>
         </File>
-        <File dnOrder="232">
+        <File dnOrder="231">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_verify.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1870,7 +1862,7 @@
           <GeneratedChecksum dnOrder="4">D5015246A61F2CBF9C4DA0BF98DE6F60</GeneratedChecksum>
           <UserChecksum dnOrder="5">D5015246A61F2CBF9C4DA0BF98DE6F60</UserChecksum>
         </File>
-        <File dnOrder="233">
+        <File dnOrder="232">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">test_talib_write.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test/api_talib</LogicalPath>
@@ -1878,7 +1870,7 @@
           <GeneratedChecksum dnOrder="4">3AD44E2EA208FA5BECF1B1CFB4A7D5D3</GeneratedChecksum>
           <UserChecksum dnOrder="5">3AD44E2EA208FA5BECF1B1CFB4A7D5D3</UserChecksum>
         </File>
-        <File dnOrder="234">
+        <File dnOrder="233">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1886,7 +1878,7 @@
           <GeneratedChecksum dnOrder="4">71A77E3452E99DEAD57A19D78E08ADD6</GeneratedChecksum>
           <UserChecksum dnOrder="5">71A77E3452E99DEAD57A19D78E08ADD6</UserChecksum>
         </File>
-        <File dnOrder="235">
+        <File dnOrder="234">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1894,7 +1886,7 @@
           <GeneratedChecksum dnOrder="4">4E627565A9455C59BAAA30038DA59501</GeneratedChecksum>
           <UserChecksum dnOrder="5">4E627565A9455C59BAAA30038DA59501</UserChecksum>
         </File>
-        <File dnOrder="236">
+        <File dnOrder="235">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_fixture.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1902,7 +1894,7 @@
           <GeneratedChecksum dnOrder="4">FFAF73F16B6165437C3653C326EF570A</GeneratedChecksum>
           <UserChecksum dnOrder="5">FFAF73F16B6165437C3653C326EF570A</UserChecksum>
         </File>
-        <File dnOrder="237">
+        <File dnOrder="236">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_fixture.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1910,7 +1902,7 @@
           <GeneratedChecksum dnOrder="4">167650BFB9A547329FEB0C56207F857B</GeneratedChecksum>
           <UserChecksum dnOrder="5">167650BFB9A547329FEB0C56207F857B</UserChecksum>
         </File>
-        <File dnOrder="238">
+        <File dnOrder="237">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_fixture_internals.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1918,7 +1910,7 @@
           <GeneratedChecksum dnOrder="4">DB741095DCCEEB259331E2526758F9C7</GeneratedChecksum>
           <UserChecksum dnOrder="5">DB741095DCCEEB259331E2526758F9C7</UserChecksum>
         </File>
-        <File dnOrder="239">
+        <File dnOrder="238">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_internals.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1926,7 +1918,7 @@
           <GeneratedChecksum dnOrder="4">5D05B4FB5B5FCC34188B4C25473833E9</GeneratedChecksum>
           <UserChecksum dnOrder="5">5D05B4FB5B5FCC34188B4C25473833E9</UserChecksum>
         </File>
-        <File dnOrder="240">
+        <File dnOrder="239">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_memory.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1934,7 +1926,7 @@
           <GeneratedChecksum dnOrder="4">79F42C0E719EF4EF69411F7BDBE640A5</GeneratedChecksum>
           <UserChecksum dnOrder="5">79F42C0E719EF4EF69411F7BDBE640A5</UserChecksum>
         </File>
-        <File dnOrder="241">
+        <File dnOrder="240">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">unity_memory.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/third_party/unity/</LogicalPath>
@@ -1942,7 +1934,7 @@
           <GeneratedChecksum dnOrder="4">35FF94E51F818ECCEA498C346A282639</GeneratedChecksum>
           <UserChecksum dnOrder="5">35FF94E51F818ECCEA498C346A282639</UserChecksum>
         </File>
-        <File dnOrder="242">
+        <File dnOrder="241">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">xc32_monitor.c</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/stdio/</LogicalPath>
@@ -1950,7 +1942,7 @@
           <GeneratedChecksum dnOrder="4">33404ECBACC7E8AB9F3D73100596B2A3</GeneratedChecksum>
           <UserChecksum dnOrder="5">33404ECBACC7E8AB9F3D73100596B2A3</UserChecksum>
         </File>
-        <File dnOrder="243">
+        <File dnOrder="242">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">ac.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -1958,7 +1950,7 @@
           <GeneratedChecksum dnOrder="4">B4951ACE738DFA1F3A2C1B38B3726205</GeneratedChecksum>
           <UserChecksum dnOrder="5">B4951ACE738DFA1F3A2C1B38B3726205</UserChecksum>
         </File>
-        <File dnOrder="244">
+        <File dnOrder="243">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">adc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -1966,7 +1958,7 @@
           <GeneratedChecksum dnOrder="4">C5FAB4E05DC36C551A0F3274325EEBD9</GeneratedChecksum>
           <UserChecksum dnOrder="5">C5FAB4E05DC36C551A0F3274325EEBD9</UserChecksum>
         </File>
-        <File dnOrder="245">
+        <File dnOrder="244">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">aes.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -1974,7 +1966,7 @@
           <GeneratedChecksum dnOrder="4">E29C57EC35AEE0F49474AB97A9DC91E2</GeneratedChecksum>
           <UserChecksum dnOrder="5">E29C57EC35AEE0F49474AB97A9DC91E2</UserChecksum>
         </File>
-        <File dnOrder="246">
+        <File dnOrder="245">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">atca_config.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/</LogicalPath>
@@ -1982,7 +1974,7 @@
           <GeneratedChecksum dnOrder="4">4AF69E723274DCC4DFBEF95F39B81F1E</GeneratedChecksum>
           <UserChecksum dnOrder="5">4AF69E723274DCC4DFBEF95F39B81F1E</UserChecksum>
         </File>
-        <File dnOrder="247">
+        <File dnOrder="246">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">atca_crypto_sw_tests.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
@@ -1990,15 +1982,15 @@
           <GeneratedChecksum dnOrder="4">3B19EF07C2D96C4187EE4B6AD8C6B6AF</GeneratedChecksum>
           <UserChecksum dnOrder="5">3B19EF07C2D96C4187EE4B6AD8C6B6AF</UserChecksum>
         </File>
-        <File dnOrder="248">
+        <File dnOrder="247">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">atca_test.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
           <PhysicalPath dnOrder="3">/library/cryptoauthlib/test/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">E9021E894268417DCFFF7B0DF5CF663D</GeneratedChecksum>
-          <UserChecksum dnOrder="5">E9021E894268417DCFFF7B0DF5CF663D</UserChecksum>
+          <GeneratedChecksum dnOrder="4">2A75FFEE9FE6041A80EA17B266427B56</GeneratedChecksum>
+          <UserChecksum dnOrder="5">2A75FFEE9FE6041A80EA17B266427B56</UserChecksum>
         </File>
-        <File dnOrder="249">
+        <File dnOrder="248">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">atsame54p20a.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/</LogicalPath>
@@ -2006,7 +1998,7 @@
           <GeneratedChecksum dnOrder="4">B558A4D48591B159212DE3B8CC49D2CB</GeneratedChecksum>
           <UserChecksum dnOrder="5">B558A4D48591B159212DE3B8CC49D2CB</UserChecksum>
         </File>
-        <File dnOrder="250">
+        <File dnOrder="249">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">can.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2014,7 +2006,7 @@
           <GeneratedChecksum dnOrder="4">F116682C6DC85E38966EF957B45A8053</GeneratedChecksum>
           <UserChecksum dnOrder="5">F116682C6DC85E38966EF957B45A8053</UserChecksum>
         </File>
-        <File dnOrder="251">
+        <File dnOrder="250">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cbuf.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
@@ -2022,7 +2014,7 @@
           <GeneratedChecksum dnOrder="4">3A55369AD239B87890A6ACFD060470CD</GeneratedChecksum>
           <UserChecksum dnOrder="5">3A55369AD239B87890A6ACFD060470CD</UserChecksum>
         </File>
-        <File dnOrder="252">
+        <File dnOrder="251">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">ccl.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2030,7 +2022,7 @@
           <GeneratedChecksum dnOrder="4">08AE76DF2792F16BD764AD0E987816BD</GeneratedChecksum>
           <UserChecksum dnOrder="5">08AE76DF2792F16BD764AD0E987816BD</UserChecksum>
         </File>
-        <File dnOrder="253">
+        <File dnOrder="252">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmcc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2038,7 +2030,7 @@
           <GeneratedChecksum dnOrder="4">7B48C40D160333DB288A27EA70579E5D</GeneratedChecksum>
           <UserChecksum dnOrder="5">7B48C40D160333DB288A27EA70579E5D</UserChecksum>
         </File>
-        <File dnOrder="254">
+        <File dnOrder="253">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmd-processor.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/library/cryptoauthlib/test</LogicalPath>
@@ -2046,7 +2038,7 @@
           <GeneratedChecksum dnOrder="4">E0C49A4AFAE86B8BBE2D3D21133E1E7C</GeneratedChecksum>
           <UserChecksum dnOrder="5">E0C49A4AFAE86B8BBE2D3D21133E1E7C</UserChecksum>
         </File>
-        <File dnOrder="255">
+        <File dnOrder="254">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_armcc.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2054,7 +2046,7 @@
           <GeneratedChecksum dnOrder="4">D0A91713174AE0A9464105CD4157DEC1</GeneratedChecksum>
           <UserChecksum dnOrder="5">D0A91713174AE0A9464105CD4157DEC1</UserChecksum>
         </File>
-        <File dnOrder="256">
+        <File dnOrder="255">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_armclang.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2062,7 +2054,7 @@
           <GeneratedChecksum dnOrder="4">FB9082D52CC87C29BABCEC7CDA5DA8CD</GeneratedChecksum>
           <UserChecksum dnOrder="5">FB9082D52CC87C29BABCEC7CDA5DA8CD</UserChecksum>
         </File>
-        <File dnOrder="257">
+        <File dnOrder="256">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_armclang_ltm.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2070,7 +2062,7 @@
           <GeneratedChecksum dnOrder="4">787D64C13CE3DCD1082EA06108F51EC6</GeneratedChecksum>
           <UserChecksum dnOrder="5">787D64C13CE3DCD1082EA06108F51EC6</UserChecksum>
         </File>
-        <File dnOrder="258">
+        <File dnOrder="257">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_compiler.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2078,7 +2070,7 @@
           <GeneratedChecksum dnOrder="4">60385A5C6C9882B5D30709A1F6EAEC35</GeneratedChecksum>
           <UserChecksum dnOrder="5">60385A5C6C9882B5D30709A1F6EAEC35</UserChecksum>
         </File>
-        <File dnOrder="259">
+        <File dnOrder="258">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_gcc.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2086,7 +2078,7 @@
           <GeneratedChecksum dnOrder="4">B2E4B79E96D9481B139252F7F1C5924F</GeneratedChecksum>
           <UserChecksum dnOrder="5">B2E4B79E96D9481B139252F7F1C5924F</UserChecksum>
         </File>
-        <File dnOrder="260">
+        <File dnOrder="259">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_iccarm.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2094,7 +2086,7 @@
           <GeneratedChecksum dnOrder="4">AF3CC89090034E070238E8A7BE343262</GeneratedChecksum>
           <UserChecksum dnOrder="5">AF3CC89090034E070238E8A7BE343262</UserChecksum>
         </File>
-        <File dnOrder="261">
+        <File dnOrder="260">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">cmsis_version.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2102,7 +2094,7 @@
           <GeneratedChecksum dnOrder="4">8D06BEF47A08B8A7A91DE48D1C5DFDAB</GeneratedChecksum>
           <UserChecksum dnOrder="5">8D06BEF47A08B8A7A91DE48D1C5DFDAB</UserChecksum>
         </File>
-        <File dnOrder="262">
+        <File dnOrder="261">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">core_cm4.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2110,7 +2102,7 @@
           <GeneratedChecksum dnOrder="4">CD5F1A2F242BE3D7B766157EEBF09823</GeneratedChecksum>
           <UserChecksum dnOrder="5">CD5F1A2F242BE3D7B766157EEBF09823</UserChecksum>
         </File>
-        <File dnOrder="263">
+        <File dnOrder="262">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">dac.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2118,7 +2110,7 @@
           <GeneratedChecksum dnOrder="4">CF140471FD3349AD9D2A9F2994809CCC</GeneratedChecksum>
           <UserChecksum dnOrder="5">CF140471FD3349AD9D2A9F2994809CCC</UserChecksum>
         </File>
-        <File dnOrder="264">
+        <File dnOrder="263">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">definitions.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -2126,7 +2118,7 @@
           <GeneratedChecksum dnOrder="4">FDEE320C834AAF0CF5BFC6B71CF40FB1</GeneratedChecksum>
           <UserChecksum dnOrder="5">FDEE320C834AAF0CF5BFC6B71CF40FB1</UserChecksum>
         </File>
-        <File dnOrder="265">
+        <File dnOrder="264">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">device.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/</LogicalPath>
@@ -2134,7 +2126,7 @@
           <GeneratedChecksum dnOrder="4">21F486E52CA55F38E7CEF72A10139F09</GeneratedChecksum>
           <UserChecksum dnOrder="5">21F486E52CA55F38E7CEF72A10139F09</UserChecksum>
         </File>
-        <File dnOrder="266">
+        <File dnOrder="265">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">device_cache.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -2142,7 +2134,7 @@
           <GeneratedChecksum dnOrder="4">85D3482D395C59BDFF268B01940CDDDE</GeneratedChecksum>
           <UserChecksum dnOrder="5">85D3482D395C59BDFF268B01940CDDDE</UserChecksum>
         </File>
-        <File dnOrder="267">
+        <File dnOrder="266">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">dmac.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2150,7 +2142,7 @@
           <GeneratedChecksum dnOrder="4">87864F8E86B84298231DA42203F26294</GeneratedChecksum>
           <UserChecksum dnOrder="5">87864F8E86B84298231DA42203F26294</UserChecksum>
         </File>
-        <File dnOrder="268">
+        <File dnOrder="267">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">dsu.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2158,7 +2150,7 @@
           <GeneratedChecksum dnOrder="4">4CB2BD68A07CBC337922F5492CA2DE27</GeneratedChecksum>
           <UserChecksum dnOrder="5">4CB2BD68A07CBC337922F5492CA2DE27</UserChecksum>
         </File>
-        <File dnOrder="269">
+        <File dnOrder="268">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">eic.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2166,7 +2158,7 @@
           <GeneratedChecksum dnOrder="4">2EBD4928D329E7F858F4FAEAED0E8465</GeneratedChecksum>
           <UserChecksum dnOrder="5">2EBD4928D329E7F858F4FAEAED0E8465</UserChecksum>
         </File>
-        <File dnOrder="270">
+        <File dnOrder="269">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">evsys.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2174,7 +2166,7 @@
           <GeneratedChecksum dnOrder="4">242DB37DF89C3D84BB8CC7BAC48F0419</GeneratedChecksum>
           <UserChecksum dnOrder="5">242DB37DF89C3D84BB8CC7BAC48F0419</UserChecksum>
         </File>
-        <File dnOrder="271">
+        <File dnOrder="270">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">freqm.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2182,7 +2174,7 @@
           <GeneratedChecksum dnOrder="4">0338A8DB1B2D13B43E28BA1AEB279283</GeneratedChecksum>
           <UserChecksum dnOrder="5">0338A8DB1B2D13B43E28BA1AEB279283</UserChecksum>
         </File>
-        <File dnOrder="272">
+        <File dnOrder="271">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">gclk.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2190,7 +2182,7 @@
           <GeneratedChecksum dnOrder="4">A02CB465D67A757269E86FAB8E555673</GeneratedChecksum>
           <UserChecksum dnOrder="5">A02CB465D67A757269E86FAB8E555673</UserChecksum>
         </File>
-        <File dnOrder="273">
+        <File dnOrder="272">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">gmac.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2198,7 +2190,7 @@
           <GeneratedChecksum dnOrder="4">1B3C76490B05A029ECD82082237F35DD</GeneratedChecksum>
           <UserChecksum dnOrder="5">1B3C76490B05A029ECD82082237F35DD</UserChecksum>
         </File>
-        <File dnOrder="274">
+        <File dnOrder="273">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">hmatrixb.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2206,7 +2198,7 @@
           <GeneratedChecksum dnOrder="4">2BC4A5CDBB10742B4DE9A0CE13852013</GeneratedChecksum>
           <UserChecksum dnOrder="5">2BC4A5CDBB10742B4DE9A0CE13852013</UserChecksum>
         </File>
-        <File dnOrder="275">
+        <File dnOrder="274">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">i2s.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2214,7 +2206,7 @@
           <GeneratedChecksum dnOrder="4">45A373DED4D9E8D4E8934F284C555D7C</GeneratedChecksum>
           <UserChecksum dnOrder="5">45A373DED4D9E8D4E8934F284C555D7C</UserChecksum>
         </File>
-        <File dnOrder="276">
+        <File dnOrder="275">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">icm.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2222,7 +2214,7 @@
           <GeneratedChecksum dnOrder="4">A59A10FA26FC00E4E07CEF0C0C0E3E9C</GeneratedChecksum>
           <UserChecksum dnOrder="5">A59A10FA26FC00E4E07CEF0C0C0E3E9C</UserChecksum>
         </File>
-        <File dnOrder="277">
+        <File dnOrder="276">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">mclk.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2230,7 +2222,7 @@
           <GeneratedChecksum dnOrder="4">0ED06295BF961157D0145F5CC8246FEF</GeneratedChecksum>
           <UserChecksum dnOrder="5">0ED06295BF961157D0145F5CC8246FEF</UserChecksum>
         </File>
-        <File dnOrder="278">
+        <File dnOrder="277">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">mpu_armv7.h</Name>
           <LogicalPath dnOrder="2">packs/CMSIS/CMSIS/Core/Include/</LogicalPath>
@@ -2238,7 +2230,7 @@
           <GeneratedChecksum dnOrder="4">A0246C3B848A6A45D54CE5DA8DF3B9C8</GeneratedChecksum>
           <UserChecksum dnOrder="5">A0246C3B848A6A45D54CE5DA8DF3B9C8</UserChecksum>
         </File>
-        <File dnOrder="279">
+        <File dnOrder="278">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">nvmctrl.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2246,7 +2238,7 @@
           <GeneratedChecksum dnOrder="4">70E7AA001229D2A9965220C6AD1D4D20</GeneratedChecksum>
           <UserChecksum dnOrder="5">70E7AA001229D2A9965220C6AD1D4D20</UserChecksum>
         </File>
-        <File dnOrder="280">
+        <File dnOrder="279">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">osc32kctrl.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2254,7 +2246,7 @@
           <GeneratedChecksum dnOrder="4">DB21EDF2AD93CE9F7C0EF6EF4DA36587</GeneratedChecksum>
           <UserChecksum dnOrder="5">DB21EDF2AD93CE9F7C0EF6EF4DA36587</UserChecksum>
         </File>
-        <File dnOrder="281">
+        <File dnOrder="280">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">oscctrl.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2262,7 +2254,7 @@
           <GeneratedChecksum dnOrder="4">11ED79E44C5FF994B0AFE7E57EF11356</GeneratedChecksum>
           <UserChecksum dnOrder="5">11ED79E44C5FF994B0AFE7E57EF11356</UserChecksum>
         </File>
-        <File dnOrder="282">
+        <File dnOrder="281">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">pac.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2270,7 +2262,7 @@
           <GeneratedChecksum dnOrder="4">A583DDF84C7AE69D81CE46D7BB58CE1D</GeneratedChecksum>
           <UserChecksum dnOrder="5">A583DDF84C7AE69D81CE46D7BB58CE1D</UserChecksum>
         </File>
-        <File dnOrder="283">
+        <File dnOrder="282">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">pcc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2278,7 +2270,7 @@
           <GeneratedChecksum dnOrder="4">D61D8DD5DD7EB1FF050C59A7657506B5</GeneratedChecksum>
           <UserChecksum dnOrder="5">D61D8DD5DD7EB1FF050C59A7657506B5</UserChecksum>
         </File>
-        <File dnOrder="284">
+        <File dnOrder="283">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">pdec.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2286,7 +2278,7 @@
           <GeneratedChecksum dnOrder="4">DAAC696C679B8770628968823DD63937</GeneratedChecksum>
           <UserChecksum dnOrder="5">DAAC696C679B8770628968823DD63937</UserChecksum>
         </File>
-        <File dnOrder="285">
+        <File dnOrder="284">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_clock.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/clock/</LogicalPath>
@@ -2294,7 +2286,7 @@
           <GeneratedChecksum dnOrder="4">0416F129713FDF989ACC1FC57065125C</GeneratedChecksum>
           <UserChecksum dnOrder="5">0416F129713FDF989ACC1FC57065125C</UserChecksum>
         </File>
-        <File dnOrder="286">
+        <File dnOrder="285">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_cmcc.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/cmcc/</LogicalPath>
@@ -2302,7 +2294,7 @@
           <GeneratedChecksum dnOrder="4">4209AA8D29CCA5F4F705D4A6C8722DDB</GeneratedChecksum>
           <UserChecksum dnOrder="5">4209AA8D29CCA5F4F705D4A6C8722DDB</UserChecksum>
         </File>
-        <File dnOrder="287">
+        <File dnOrder="286">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_evsys.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/evsys</LogicalPath>
@@ -2310,7 +2302,7 @@
           <GeneratedChecksum dnOrder="4">CCAEF942C66AF995876DFD85CEFF611F</GeneratedChecksum>
           <UserChecksum dnOrder="5">CCAEF942C66AF995876DFD85CEFF611F</UserChecksum>
         </File>
-        <File dnOrder="288">
+        <File dnOrder="287">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_nvic.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/nvic/</LogicalPath>
@@ -2318,7 +2310,7 @@
           <GeneratedChecksum dnOrder="4">E95AB23B866AA0CE6F0ABF637E9E2C83</GeneratedChecksum>
           <UserChecksum dnOrder="5">E95AB23B866AA0CE6F0ABF637E9E2C83</UserChecksum>
         </File>
-        <File dnOrder="289">
+        <File dnOrder="288">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_nvmctrl.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/nvmctrl/</LogicalPath>
@@ -2326,7 +2318,7 @@
           <GeneratedChecksum dnOrder="4">979C4115BB3514CB386D0B6C8F6E1525</GeneratedChecksum>
           <UserChecksum dnOrder="5">979C4115BB3514CB386D0B6C8F6E1525</UserChecksum>
         </File>
-        <File dnOrder="290">
+        <File dnOrder="289">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_port.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/port/</LogicalPath>
@@ -2334,7 +2326,7 @@
           <GeneratedChecksum dnOrder="4">9B3C0EC2466ADBECD38901A6C1660F5B</GeneratedChecksum>
           <UserChecksum dnOrder="5">9B3C0EC2466ADBECD38901A6C1660F5B</UserChecksum>
         </File>
-        <File dnOrder="291">
+        <File dnOrder="290">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom2_usart.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/usart/</LogicalPath>
@@ -2342,7 +2334,7 @@
           <GeneratedChecksum dnOrder="4">00C3980E8783050E40894918F1788F2B</GeneratedChecksum>
           <UserChecksum dnOrder="5">00C3980E8783050E40894918F1788F2B</UserChecksum>
         </File>
-        <File dnOrder="292">
+        <File dnOrder="291">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom4_spi.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/spim/</LogicalPath>
@@ -2350,7 +2342,7 @@
           <GeneratedChecksum dnOrder="4">3ECDB341C04E2BAC3A2F505F91D913A2</GeneratedChecksum>
           <UserChecksum dnOrder="5">3ECDB341C04E2BAC3A2F505F91D913A2</UserChecksum>
         </File>
-        <File dnOrder="293">
+        <File dnOrder="292">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom7_i2c_master.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/i2c_master/</LogicalPath>
@@ -2358,7 +2350,7 @@
           <GeneratedChecksum dnOrder="4">EA9EB46247552490C3E497F64234A011</GeneratedChecksum>
           <UserChecksum dnOrder="5">EA9EB46247552490C3E497F64234A011</UserChecksum>
         </File>
-        <File dnOrder="294">
+        <File dnOrder="293">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom_i2c_master_common.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/i2c_master/</LogicalPath>
@@ -2366,7 +2358,7 @@
           <GeneratedChecksum dnOrder="4">BCC5E485CEA55A52548E630A8FE9198A</GeneratedChecksum>
           <UserChecksum dnOrder="5">BCC5E485CEA55A52548E630A8FE9198A</UserChecksum>
         </File>
-        <File dnOrder="295">
+        <File dnOrder="294">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom_spi_common.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/spim/</LogicalPath>
@@ -2374,7 +2366,7 @@
           <GeneratedChecksum dnOrder="4">EC6705B0D355601CE62F39DD261EEE63</GeneratedChecksum>
           <UserChecksum dnOrder="5">EC6705B0D355601CE62F39DD261EEE63</UserChecksum>
         </File>
-        <File dnOrder="296">
+        <File dnOrder="295">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_sercom_usart_common.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/peripheral/sercom/usart/</LogicalPath>
@@ -2382,7 +2374,7 @@
           <GeneratedChecksum dnOrder="4">F26B38FA1088FD5D602A6772C48878C7</GeneratedChecksum>
           <UserChecksum dnOrder="5">F26B38FA1088FD5D602A6772C48878C7</UserChecksum>
         </File>
-        <File dnOrder="297">
+        <File dnOrder="296">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">pm.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2390,7 +2382,7 @@
           <GeneratedChecksum dnOrder="4">230DC8C90F67B535E066B42DC9E75432</GeneratedChecksum>
           <UserChecksum dnOrder="5">230DC8C90F67B535E066B42DC9E75432</UserChecksum>
         </File>
-        <File dnOrder="298">
+        <File dnOrder="297">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">port.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2398,7 +2390,7 @@
           <GeneratedChecksum dnOrder="4">7994B8EDC87FE3CDD8AAE549DD928297</GeneratedChecksum>
           <UserChecksum dnOrder="5">7994B8EDC87FE3CDD8AAE549DD928297</UserChecksum>
         </File>
-        <File dnOrder="299">
+        <File dnOrder="298">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">pukcc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2406,7 +2398,7 @@
           <GeneratedChecksum dnOrder="4">37F677DB1CCF8EFEDDD0CE96179802D9</GeneratedChecksum>
           <UserChecksum dnOrder="5">37F677DB1CCF8EFEDDD0CE96179802D9</UserChecksum>
         </File>
-        <File dnOrder="300">
+        <File dnOrder="299">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">qspi.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2414,7 +2406,7 @@
           <GeneratedChecksum dnOrder="4">2DC3BF1A3EAA994600A766EA97C7A55A</GeneratedChecksum>
           <UserChecksum dnOrder="5">2DC3BF1A3EAA994600A766EA97C7A55A</UserChecksum>
         </File>
-        <File dnOrder="301">
+        <File dnOrder="300">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">ramecc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2422,7 +2414,7 @@
           <GeneratedChecksum dnOrder="4">16B67C70F45690FEAE3DC77349EC6EA1</GeneratedChecksum>
           <UserChecksum dnOrder="5">16B67C70F45690FEAE3DC77349EC6EA1</UserChecksum>
         </File>
-        <File dnOrder="302">
+        <File dnOrder="301">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">rstc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2430,7 +2422,7 @@
           <GeneratedChecksum dnOrder="4">8631BC8778695E373B39AA4E7669FE05</GeneratedChecksum>
           <UserChecksum dnOrder="5">8631BC8778695E373B39AA4E7669FE05</UserChecksum>
         </File>
-        <File dnOrder="303">
+        <File dnOrder="302">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">rtc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2438,7 +2430,7 @@
           <GeneratedChecksum dnOrder="4">D4D1F9AB294DFD9C0051A6D01319599D</GeneratedChecksum>
           <UserChecksum dnOrder="5">D4D1F9AB294DFD9C0051A6D01319599D</UserChecksum>
         </File>
-        <File dnOrder="304">
+        <File dnOrder="303">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">same54p20a.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/pio/</LogicalPath>
@@ -2446,7 +2438,7 @@
           <GeneratedChecksum dnOrder="4">F1A18FEFE4084523AEC62CA6D4C38A4F</GeneratedChecksum>
           <UserChecksum dnOrder="5">F1A18FEFE4084523AEC62CA6D4C38A4F</UserChecksum>
         </File>
-        <File dnOrder="305">
+        <File dnOrder="304">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">sdhc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2454,7 +2446,7 @@
           <GeneratedChecksum dnOrder="4">4FD3D37EE8C0AFBD796DB30C369EF48A</GeneratedChecksum>
           <UserChecksum dnOrder="5">4FD3D37EE8C0AFBD796DB30C369EF48A</UserChecksum>
         </File>
-        <File dnOrder="306">
+        <File dnOrder="305">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">sercom.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2462,7 +2454,7 @@
           <GeneratedChecksum dnOrder="4">63C3E79DF83E6E3D76E037BF87CD1A40</GeneratedChecksum>
           <UserChecksum dnOrder="5">63C3E79DF83E6E3D76E037BF87CD1A40</UserChecksum>
         </File>
-        <File dnOrder="307">
+        <File dnOrder="306">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">supc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2470,7 +2462,7 @@
           <GeneratedChecksum dnOrder="4">C6909FCEFBCE7984798EC680891990AC</GeneratedChecksum>
           <UserChecksum dnOrder="5">C6909FCEFBCE7984798EC680891990AC</UserChecksum>
         </File>
-        <File dnOrder="308">
+        <File dnOrder="307">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">tc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2478,7 +2470,7 @@
           <GeneratedChecksum dnOrder="4">18326E7C08CC5DA5A3325CB5F6AAB1A0</GeneratedChecksum>
           <UserChecksum dnOrder="5">18326E7C08CC5DA5A3325CB5F6AAB1A0</UserChecksum>
         </File>
-        <File dnOrder="309">
+        <File dnOrder="308">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">tcc.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2486,7 +2478,7 @@
           <GeneratedChecksum dnOrder="4">344C5DFE34260730CE561C89728C940D</GeneratedChecksum>
           <UserChecksum dnOrder="5">344C5DFE34260730CE561C89728C940D</UserChecksum>
         </File>
-        <File dnOrder="310">
+        <File dnOrder="309">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">toolchain_specifics.h</Name>
           <LogicalPath dnOrder="2">config/sam_e54_xpro_onboard_ecc508_ta100/</LogicalPath>
@@ -2494,7 +2486,7 @@
           <GeneratedChecksum dnOrder="4">840848BBD7970DF9AF3E06A438C4F910</GeneratedChecksum>
           <UserChecksum dnOrder="5">840848BBD7970DF9AF3E06A438C4F910</UserChecksum>
         </File>
-        <File dnOrder="311">
+        <File dnOrder="310">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">trng.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2502,7 +2494,7 @@
           <GeneratedChecksum dnOrder="4">5971A48DEF5BDB15CAC7A6A31089D545</GeneratedChecksum>
           <UserChecksum dnOrder="5">5971A48DEF5BDB15CAC7A6A31089D545</UserChecksum>
         </File>
-        <File dnOrder="312">
+        <File dnOrder="311">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">usb.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2510,7 +2502,7 @@
           <GeneratedChecksum dnOrder="4">FD65331E37E88B337F1037B5929F0ADE</GeneratedChecksum>
           <UserChecksum dnOrder="5">FD65331E37E88B337F1037B5929F0ADE</UserChecksum>
         </File>
-        <File dnOrder="313">
+        <File dnOrder="312">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">wdt.h</Name>
           <LogicalPath dnOrder="2">packs/ATSAME54P20A_DFP/component/</LogicalPath>
@@ -2536,7 +2528,7 @@
       <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\SAME54_DFP\3.2.53\atdf\ATSAME54P20A.atdf"/>
       <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
       <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
-      <Setting dnOrder="4" key="MERGE_STRATEGY" value="USER_ALL"/>
+      <Setting dnOrder="4" key="MERGE_STRATEGY" value="OVERWRITE"/>
       <Setting dnOrder="5" key="PackageFilter" value="bootloader;bsp;core;crypto;cryptoauthlib;csp;usb;"/>
       <Setting dnOrder="6" key="TRUSTZONE" value="false"/>
     </Settings>

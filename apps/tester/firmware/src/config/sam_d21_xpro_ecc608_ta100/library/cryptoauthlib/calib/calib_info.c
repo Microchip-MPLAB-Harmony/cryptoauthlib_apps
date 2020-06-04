@@ -36,12 +36,12 @@
  * THIS SOFTWARE.
  */
 
-#include "calib_basic.h"
-#include "calib_execution.h"
+#include "cryptoauthlib.h"
 
 /** \brief Issues an Info command, which return internal device information and
  *          can control GPIO and the persistent latch.
  *
+ * \param[in]  device    Device context pointer
  * \param[in]  mode      Selects which mode to be used for info command.
  * \param[in]  param2    Selects the particular fields for the mode.
  * \param[out] out_data  Response from info command (4 bytes). Can be set to
@@ -82,6 +82,7 @@ ATCA_STATUS calib_info_base(ATCADevice device, uint8_t mode, uint16_t param2, ui
 }
 
 /** \brief Use the Info command to get the device revision (DevRev).
+ *  \param[in]  device    Device context pointer
  *  \param[out] revision  Device revision is returned here (4 bytes).
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -98,7 +99,8 @@ ATCA_STATUS calib_info(ATCADevice device, uint8_t* revision)
 /** \brief Use the Info command to get the persistent latch current state for
  *          an ATECC608A device.
  *
- *  \param[out] state  The state is returned here. Set (true) or Cler (false).
+ *  \param[in]  device  Device context pointer
+ *  \param[out] state   The state is returned here. Set (true) or Cler (false).
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */
@@ -126,7 +128,8 @@ ATCA_STATUS calib_info_get_latch(ATCADevice device, bool* state)
 /** \brief Use the Info command to set the persistent latch state for an
  *          ATECC608A device.
  *
- *  \param[out] state  Persistent latch state. Set (true) or clear (false).
+ *  \param[in]  device  Device context pointer
+ *  \param[out] state   Persistent latch state. Set (true) or clear (false).
  *
  *  \return ATCA_SUCCESS on success, otherwise an error code.
  */

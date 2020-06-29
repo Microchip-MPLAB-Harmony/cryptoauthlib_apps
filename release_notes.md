@@ -3,6 +3,10 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## CryptoAuthLib Applications Release v3.2.1
+
+Update requirements to cryptoauthlib release v3.2.1
+
 ## CryptoAuthLib Applications Release v3.2.0
 ### New Features
 
